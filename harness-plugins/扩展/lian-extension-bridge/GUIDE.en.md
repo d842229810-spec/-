@@ -6,7 +6,11 @@ Package: `@local/lian-extension-bridge` · Version: `1.0.1`.
 
 ## Features
 
-Reports extension availability, connects a local ReMe service and supports public knowledge search/synchronization.
+Checks extension/tool availability and connects the assistant to local memory services such as ReMe. ReMe is installed separately; this plugin does not contain your memory data.
+
+## When to use it
+
+Use it to check whether memory or creative services are loaded, or to search an already connected local memory service. Install and start that service first.
 
 ## Requirements and limitations
 

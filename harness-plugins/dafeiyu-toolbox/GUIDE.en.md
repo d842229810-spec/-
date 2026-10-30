@@ -6,7 +6,11 @@ Package: `dafeiyu-creator-toolbox` · Version: `1.0.2`.
 
 ## Features
 
-Connects external browser, FFmpeg and related MCP services. Includes legacy offline TTS helper code.
+Connects the assistant to external tools such as a browser and video processors. MCP is a protocol for calling external tools; this component mainly supplies connection configuration, not the external applications themselves.
+
+## When to use it
+
+Use it when the assistant needs a browser or FFmpeg (a video/audio processing program) through MCP. Install and configure each service, then confirm it appears in the tool list.
 
 ## Requirements and limitations
 

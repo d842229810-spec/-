@@ -6,7 +6,11 @@ Package: `@local/dafeiyu-life` · Version: `1.4.5-lian.1`.
 
 ## Features
 
-Schedules autonomous activities, tracks budget reservations and settlement, stores source cards and supports knowledge and Bilibili reading. Cross-process locks and conflict detection protect supported state updates.
+Lets the assistant study during configured hours and manage an activity budget: for example, research a topic, save source cards, reserve estimated cost before an integrated model call and settle it afterward.
+
+## When to use it
+
+Use it when you want an assistant to research configured topics while you are away and manage the cost of those activities. Configure the schedule, budget and allowed tools first. Manual tasks and other unintegrated paid services are not controlled by this budget.
 
 ## Requirements and limitations
 
@@ -26,6 +30,6 @@ This is a host plugin, not a standalone desktop app. Original README files may c
 
 ## Provenance
 
-Local integration with MIT-licensed upstream Bilibili adapter code.
+Reuses the provider, types and wbi files from [moxingovo/dsh-bilibili](https://github.com/moxingovo/dsh-bilibili) 0.2.4 (MIT), adapted to the local bounded transport. Scheduling and budget reliability are local integration. See [upstream sources and changes](../../docs/UPSTREAM.en.md).
 
 Original third-party licenses and copyright notices are retained.

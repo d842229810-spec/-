@@ -6,7 +6,11 @@ Package: `@local/lian-codex-liaison` · Version: `1.4.1`.
 
 ## Features
 
-Supports ask/reply/inbox workflows, dedicated sessions, direct wake-up, source identity, compact envelopes and delivery deduplication.
+Lets an assistant in Harness exchange messages with a separate Codex session, reply and inspect delivery state, supporting conversations between assistants about a specific task.
+
+## When to use it
+
+For example, ask the other assistant to review a plan, then check whether it was accepted and answered. Configure both endpoints and sessions first; an unknown delivery status does not mean the recipient read it.
 
 ## Requirements and limitations
 

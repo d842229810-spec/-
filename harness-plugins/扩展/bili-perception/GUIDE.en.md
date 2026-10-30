@@ -6,7 +6,11 @@ Package: `@local/lian-bili-perception` · Version: `1.4.0`.
 
 ## Features
 
-Combines video perception, subtitle/audio information, OCR and platform-operation interfaces with source and observation scope.
+Helps analyze Bilibili videos using available subtitles, sampled frames, text recognition and comments, with time-range selection for focused review.
+
+## When to use it
+
+For example, inspect what a video says around a particular minute by checking subtitles and sampled frames, then revisiting that time range. OCR reads text from images; ASR transcribes speech. Both results and sampling need review.
 
 ## Requirements and limitations
 
@@ -26,6 +30,6 @@ This is a host plugin, not a standalone desktop app. Original README files may c
 
 ## Provenance
 
-Modified integration with upstream code; see its license and notices.
+Uses extraction code from [CZX2244/dsh-bilibili](https://github.com/CZX2244/dsh-bilibili), selected transcription checks from [Sacredbluedragon/dsh-bili-watch](https://github.com/Sacredbluedragon/dsh-bili-watch), and a sampling idea from [icyaaaww/dsh-bili-vision](https://github.com/icyaaaww/dsh-bili-vision). Their MIT licenses are included. Local adaptations add multi-part selection, interval sampling and caching. See [upstream sources and changes](../../../docs/UPSTREAM.en.md).
 
 Original third-party licenses and copyright notices are retained.

@@ -6,7 +6,11 @@ Package: `@local/lian-creation-handbooks` · Version: `4.6.1`.
 
 ## Features
 
-Reads chapters on narrative, visual design, directing and project handoff, with method data and skill documents.
+Provides creative-method material searchable by topic and chapter, covering storytelling, dialogue, visual design, video direction and project handoff.
+
+## When to use it
+
+For example, consult a dialogue chapter while writing a scene, or review storyboard and pacing methods before making a video. It provides reference material and a reader, not an automatically finished work or a personality preset.
 
 ## Requirements and limitations
 
@@ -26,6 +30,6 @@ This is a host plugin, not a standalone desktop app. Original README files may c
 
 ## Provenance
 
-Local knowledge tool; existing source information is retained.
+The creative methods are adapted from the maintainer-supplied Meiyi V4.6.1 project; the maintainer confirmed that they previously created the agent. This plugin adapts that material into a Harness chapter-reading tool.
 
 Original third-party licenses and copyright notices are retained.

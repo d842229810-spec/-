@@ -6,7 +6,11 @@ Package: `@local/lian-research-reader` · Version: `1.0.1`.
 
 ## Features
 
-Reads public web pages, PDFs and images while retaining information that can be checked against sources.
+Helps the assistant read public webpages, PDFs and image material while retaining traceable sources, useful for research or checking a document.
+
+## When to use it
+
+For example, provide a public article or PDF and ask for key points with sources. Web extraction and image recognition can be wrong, so check important claims against the original. Network/file access requires authorization.
 
 ## Requirements and limitations
 

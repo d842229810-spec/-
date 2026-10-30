@@ -28,14 +28,24 @@
       "sha256": "a0ffd0a00b98a22e724e1032a6697ebe58877bb57a982be7f19bd1274920cf19"
     },
     {
+      "path": "docs/上游来源与改动.md",
+      "bytes": 4204,
+      "sha256": "36f11345ab602dbd39c074879adc19e5e7e57d5cc456bda0bed34c1c8c5a5b69"
+    },
+    {
       "path": "docs/使用指南.md",
       "bytes": 1970,
       "sha256": "611b63154f81f93d919b1a4e7638a0dc01135f28d87893df3e73c019de173dad"
     },
     {
       "path": "docs/双语索引.md",
-      "bytes": 725,
-      "sha256": "222caf20e66e37d74ad950fc55cff18b09795e709f24f07434948a7b98227e81"
+      "bytes": 908,
+      "sha256": "cd74ec3b6c2f69037570303e7f943d6214a19b5de1ecf35264072c566be00289"
+    },
+    {
+      "path": "docs/新手术语表.md",
+      "bytes": 3064,
+      "sha256": "6c079e557690e4fd73b5423d5c6cb65583f390b6a39b1285595002585fe734f3"
     },
     {
       "path": "docs/依赖与运行时.md",
@@ -58,6 +68,11 @@
       "sha256": "e9e77773066a911f9361ac74da983374fbbb2471621ee813604f8d9c34ff1aea"
     },
     {
+      "path": "docs/GLOSSARY.en.md",
+      "bytes": 3143,
+      "sha256": "8e7122f7c491498b0013d32b2066ab373a8d635121f9090a908f2fe1f184519d"
+    },
+    {
       "path": "docs/INSTALL.en.md",
       "bytes": 3310,
       "sha256": "ed6f5defb7d59cfa4e6b0c711073f7ccb35f375202e6a1d391bc2d04d23d70c0"
@@ -78,14 +93,19 @@
       "sha256": "f063475d84b6230a502319d7c32a1dcff6b62982162014814d6c85b57a6a933a"
     },
     {
+      "path": "docs/UPSTREAM.en.md",
+      "bytes": 4364,
+      "sha256": "00ed65b1e3822c4b9fdc3b330110291dc7bde0de67ca541a0e1d901ae4357b93"
+    },
+    {
       "path": "docs/USAGE.en.md",
       "bytes": 2176,
       "sha256": "73773a142cf38a225f581afb293c582c75d2ca2f866ce9f1a77df118f596d5ab"
     },
     {
       "path": "harness-plugins/扩展/bili-perception/使用指南.md",
-      "bytes": 1368,
-      "sha256": "c3d7ea891122ac275941fccd8f127ccb727a30a0a1a6a35af569345477ae3a3e"
+      "bytes": 2075,
+      "sha256": "d595f7a25826e4ae8899318bf861978028399a80fbb411646da62eefe241e2c8"
     },
     {
       "path": "harness-plugins/扩展/bili-perception/bili-backup-streams.mjs",
@@ -114,8 +134,8 @@
     },
     {
       "path": "harness-plugins/扩展/bili-perception/GUIDE.en.md",
-      "bytes": 1500,
-      "sha256": "c7da683f973e6b1a9b7d2d46dbad2d163715eab6465833f6543f8e8a86ab149b"
+      "bytes": 2189,
+      "sha256": "16977f7571244ab5601273c87f4a1609b8c79deb9ac6a8f2942b0a6eea130e24"
     },
     {
       "path": "harness-plugins/扩展/bili-perception/handoff.mjs",
@@ -224,8 +244,8 @@
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/使用指南.md",
-      "bytes": 1338,
-      "sha256": "94c64eaa9e9ef51505a2296387fdd4618fbf2d1e11f4ab383d248fd26dc79ecc"
+      "bytes": 1799,
+      "sha256": "9d25c65d845880e920074c9987fc491d9d5ef0430a41296bec7fd30d93a2872b"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/cordis.patch.yml",
@@ -234,8 +254,8 @@
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/GUIDE.en.md",
-      "bytes": 1410,
-      "sha256": "3b80c9f149912321c1c5af578f6f2c50618c47e564f1c8ed578b94c05b4787da"
+      "bytes": 1916,
+      "sha256": "b58e089c89378133faf02d8c1a5d30e7fcf87779ca88b7dfbdf2b4ec6bf77384"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/icon.svg",
@@ -2619,8 +2639,8 @@
     },
     {
       "path": "harness-plugins/扩展/dsh-qq-bridge/使用指南.md",
-      "bytes": 1296,
-      "sha256": "1d881d4b1a04de9b7880e0751946387b0cfaab713e021063c3269fb63fb29b11"
+      "bytes": 1790,
+      "sha256": "fbb7b136d477f034b7ec88e0a3c45965766cb0760301e8ccb191b6944eb7847a"
     },
     {
       "path": "harness-plugins/扩展/dsh-qq-bridge/cordis.patch.yml",
@@ -2629,8 +2649,8 @@
     },
     {
       "path": "harness-plugins/扩展/dsh-qq-bridge/GUIDE.en.md",
-      "bytes": 1410,
-      "sha256": "e30789a2f6d2e174fe4216b349286a4bce03455fdab61226857a38465e676fd5"
+      "bytes": 1953,
+      "sha256": "b22afe92d46b3fd0851ff95ea839feec79206a56f72049c1c8100750c947bc06"
     },
     {
       "path": "harness-plugins/扩展/dsh-qq-bridge/lib/client.js",
@@ -2759,8 +2779,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/使用指南.md",
-      "bytes": 1367,
-      "sha256": "9320e2db8af519749c4d9da674bdadbbc0c96f17f7c57f1b3dca426ad935aee3"
+      "bytes": 1599,
+      "sha256": "5f39d203dbbdd88fb698406868c5ea59c383b7e5da760307a6e158a066474722"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/cen-inbound-direct.mjs",
@@ -2794,8 +2814,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/GUIDE.en.md",
-      "bytes": 1518,
-      "sha256": "e77e832935635904d575a3d38424f780a5e9069dab57c6f41fd1bc19dbd699b1"
+      "bytes": 1795,
+      "sha256": "7c9fb516d79c02481cb308d1e6348a40e87036a2e665d63e009e09be3b7ec543"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/home-mcp.mjs",
@@ -2879,8 +2899,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/使用指南.md",
-      "bytes": 1408,
-      "sha256": "0fcfb3a5659802d9238d394034ada236d6e4f636313a4afe92f366197c786f26"
+      "bytes": 1643,
+      "sha256": "40bc312c1f0d4cb755f83198f5a21f2d3bd9080bc2cb0dcd13e62922812d941c"
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/accepted-probe.mjs",
@@ -2964,8 +2984,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/GUIDE.en.md",
-      "bytes": 1494,
-      "sha256": "e194a4eef860142bbf1320bccb2eff1186e8ada74c9b466ea45315d07c32783f"
+      "bytes": 1740,
+      "sha256": "7f3808278f435271d6165ee037cdd7151b2c38863358fa2a2033b9f1a5e1ce74"
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/handoff.mjs",
@@ -3099,8 +3119,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-creation-handbooks/使用指南.md",
-      "bytes": 1289,
-      "sha256": "13344090a4ba4a8ea88eba26b882e632dc2ee5870566abbab78564652ce90c8a"
+      "bytes": 1655,
+      "sha256": "0da9bd27bc5a3aa0773fb18fb354d65786f0816307fd68090ac1ac068500daa7"
     },
     {
       "path": "harness-plugins/扩展/lian-creation-handbooks/cordis.patch.yml",
@@ -3109,13 +3129,13 @@
     },
     {
       "path": "harness-plugins/扩展/lian-creation-handbooks/dataset.json",
-      "bytes": 1473,
-      "sha256": "637a04662ded24b51a5a6e688a82337361d39a07bd1f38f4b4ba8dfd4de756de"
+      "bytes": 1392,
+      "sha256": "eba5a9512d1b685889e1e419f3d77a64ebd8350e86e44e19d599444d182348ff"
     },
     {
       "path": "harness-plugins/扩展/lian-creation-handbooks/GUIDE.en.md",
-      "bytes": 1407,
-      "sha256": "a31c19f146a43a664b17e65e43bc3235056cd46e24bc1905163554c3d4048aa6"
+      "bytes": 1853,
+      "sha256": "26d3254a7c4a9d658fd23ed4eb6d643348b530a18a063f0923b8ea07420c5c7d"
     },
     {
       "path": "harness-plugins/扩展/lian-creation-handbooks/index.js",
@@ -3169,8 +3189,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-creative-workbench/使用指南.md",
-      "bytes": 1341,
-      "sha256": "5023d90c5088a3a3a6d15db3895c32988966b52413a8a8e21c46f13eed9ff365"
+      "bytes": 1618,
+      "sha256": "eb2814b345904ae089e85ca744efb9c7f51122ca6a9d19028c3ca03db9c3709f"
     },
     {
       "path": "harness-plugins/扩展/lian-creative-workbench/comments.mjs",
@@ -3199,8 +3219,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-creative-workbench/GUIDE.en.md",
-      "bytes": 1457,
-      "sha256": "733bb38129432385a5ab6b3f31f575eb71371b798a46a27bff0a2b7bc14d795f"
+      "bytes": 1761,
+      "sha256": "c3bfc92169fc76f865bb4f64f5e8360e7df17ac057e158204cc3eb07b6fc3ff3"
     },
     {
       "path": "harness-plugins/扩展/lian-creative-workbench/history-probe.mjs",
@@ -3304,8 +3324,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-desktop-control/使用指南.md",
-      "bytes": 1340,
-      "sha256": "ce8f5fe503655e1a5926f48435da8494104f2bbb4524165577dbbb5ccf1e44b3"
+      "bytes": 1553,
+      "sha256": "3a2a50e5f004a853b4ecc2d48d3dd4154ee95f7700df94c1d4f8741706e18f70"
     },
     {
       "path": "harness-plugins/扩展/lian-desktop-control/audio_capture.py",
@@ -3359,8 +3379,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-desktop-control/GUIDE.en.md",
-      "bytes": 1451,
-      "sha256": "dee66cc209b5f44c6cd04581fff07c204f614c102490f3c38b29c02554585950"
+      "bytes": 1718,
+      "sha256": "1f071c4fa03a6490528e2969d45a27982eefc95866d12f38ad4541a4dafd430a"
     },
     {
       "path": "harness-plugins/扩展/lian-desktop-control/index-cursor-20261029.mjs",
@@ -3454,8 +3474,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-extension-bridge/使用指南.md",
-      "bytes": 1255,
-      "sha256": "28e9a84c8e8a1866ce24b353fd100c9f7f34a2ca557706c93edfb5c616de6972"
+      "bytes": 1515,
+      "sha256": "2d544a8f113206605d3e2bf9d27a77ec4f17734f23bda45a4c59b12351ee7712"
     },
     {
       "path": "harness-plugins/扩展/lian-extension-bridge/cordis.patch.yml",
@@ -3464,8 +3484,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-extension-bridge/GUIDE.en.md",
-      "bytes": 1382,
-      "sha256": "d560da981a6029f8392b1743e25fe41d68264c6c79681fc3f31d540d5c5b44a9"
+      "bytes": 1622,
+      "sha256": "73ea39fadeeac93315ba419d7c051846bf5a29a99fa11ad7f56bb7f2bc7fae2b"
     },
     {
       "path": "harness-plugins/扩展/lian-extension-bridge/index.js",
@@ -3484,8 +3504,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-research-reader/使用指南.md",
-      "bytes": 1216,
-      "sha256": "54c16ab1db282e639e5c04fc8432bc1715645619050f2d1456e824b0b0355d30"
+      "bytes": 1513,
+      "sha256": "84ba8b5335e2106da7e90ebf8115baed7c32cdf7bbb831c08047baac5688a68c"
     },
     {
       "path": "harness-plugins/扩展/lian-research-reader/cordis.patch.yml",
@@ -3494,8 +3514,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-research-reader/GUIDE.en.md",
-      "bytes": 1355,
-      "sha256": "39d516d49daa595d0739d02700f18da54417b6357fbebdcc1adf6e20cca276f0"
+      "bytes": 1640,
+      "sha256": "4895a6bc0af97b3d7b780debdc37ad616472373c67519d14349ff5b86c543ce8"
     },
     {
       "path": "harness-plugins/扩展/lian-research-reader/index.js",
@@ -3529,8 +3549,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-video-studio/使用指南.md",
-      "bytes": 1463,
-      "sha256": "bf072f2dc32a31238599b58d162dcee18bd3714f7400941fedac41715e09a884"
+      "bytes": 2024,
+      "sha256": "9c8905b2d97c40f7b1a5ed5473ca50782888b468950cf9406922e1f3e00c98a1"
     },
     {
       "path": "harness-plugins/扩展/lian-video-studio/acoustic_metrics.py",
@@ -3579,8 +3599,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-video-studio/GUIDE.en.md",
-      "bytes": 1569,
-      "sha256": "e2bf2d48b873b3de548359f648146565a196b7688e1a2433d4d28afc4ee2ea82"
+      "bytes": 2155,
+      "sha256": "5760c815a54697bf33f66213bc1e5d7c32d28619599bbbcc4291872b3442ab6d"
     },
     {
       "path": "harness-plugins/扩展/lian-video-studio/handoff.mjs",
@@ -3739,13 +3759,13 @@
     },
     {
       "path": "harness-plugins/扩展/lian-workspace-manager/使用指南.md",
-      "bytes": 1314,
-      "sha256": "fe595c32d5f047ab8253273dde7f7dac37b066c92bb1ffdff7d6af912b58bf28"
+      "bytes": 1558,
+      "sha256": "3e60eb3cb36966a3c5a544fe82011dbbde0f42a02df08049ba5dcbe5487d912e"
     },
     {
       "path": "harness-plugins/扩展/lian-workspace-manager/GUIDE.en.md",
-      "bytes": 1424,
-      "sha256": "5c6837d2030a040e67ee883e6ecdb3f115a2e5c7f0fc6e7d0f2c73e994fdef09"
+      "bytes": 1640,
+      "sha256": "9493b7e3332fad0d527c8438795b9e3a9b382e619f4cc2212f766c1d7cc2e0f7"
     },
     {
       "path": "harness-plugins/扩展/lian-workspace-manager/package.json",
@@ -3799,8 +3819,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-workspace-menu/使用指南.md",
-      "bytes": 1214,
-      "sha256": "02fcdb01fe9f4115c9a81130b6b8ce8340bb95a7fd9b82c0effc94280df26245"
+      "bytes": 1481,
+      "sha256": "fc5958bb94c3b72da3181d6d7b792ec5e85bf66d587f744621b8c4322977ae66"
     },
     {
       "path": "harness-plugins/扩展/lian-workspace-menu/client.js",
@@ -3809,8 +3829,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-workspace-menu/GUIDE.en.md",
-      "bytes": 1318,
-      "sha256": "8cd1e2b0b420daadf5fe7ea119a14a096255c6fdeb4b3cfda2beb26417a978c4"
+      "bytes": 1602,
+      "sha256": "fea69b96ad3f51119384698bb878b42c032f836beb7f507fa778922fef33d45e"
     },
     {
       "path": "harness-plugins/扩展/lian-workspace-menu/index.mjs",
@@ -3894,8 +3914,8 @@
     },
     {
       "path": "harness-plugins/dafeiyu-life/使用指南.md",
-      "bytes": 1462,
-      "sha256": "cca7ebf327eb61b51263a5828e085d43d0badb15c729d8789087454f1d44f1ca"
+      "bytes": 2006,
+      "sha256": "8f4a427e60ded53ee9cdfcafc5f1263bc01bbe2141b560d1f0605e475573ff0f"
     },
     {
       "path": "harness-plugins/dafeiyu-life/api-reference/cordis-development.md",
@@ -4434,8 +4454,8 @@
     },
     {
       "path": "harness-plugins/dafeiyu-life/GUIDE.en.md",
-      "bytes": 1627,
-      "sha256": "b100ec391871cd0bed686c9190f5e9fca8d4c1ac449b258b3592170bfd828377"
+      "bytes": 2124,
+      "sha256": "743e61e7a35c12bf562ca290a47ae0e0875fcc241ad4d097e15a1d55a829098e"
     },
     {
       "path": "harness-plugins/dafeiyu-life/icon.svg",
@@ -4664,8 +4684,8 @@
     },
     {
       "path": "harness-plugins/dafeiyu-toolbox/使用指南.md",
-      "bytes": 1277,
-      "sha256": "33b0fba6646cac5ae7488098109f57bb9123c80bdb1b46d7631124a79f6a6324"
+      "bytes": 1582,
+      "sha256": "e59cec5ada808fcb1b37dd838e3a667753c3cca7f457dd806fae155217deb8a0"
     },
     {
       "path": "harness-plugins/dafeiyu-toolbox/cordis.patch.yml",
@@ -4674,8 +4694,8 @@
     },
     {
       "path": "harness-plugins/dafeiyu-toolbox/GUIDE.en.md",
-      "bytes": 1431,
-      "sha256": "5d034ec324751e106f2e0bd9762e5ff832b87fb09f0eb15c34ebf1dce434b7ae"
+      "bytes": 1754,
+      "sha256": "35493106870dda970415e5ea17f1b6cc0d2193180a44acac260b9b5f7af91398"
     },
     {
       "path": "harness-plugins/dafeiyu-toolbox/index.js",
@@ -4949,18 +4969,18 @@
     },
     {
       "path": "README.en.md",
-      "bytes": 4762,
-      "sha256": "215cb62959e2bac4f0c8555d23056c7bccc07c8128e67a19c4b9a0bb38317bb9"
+      "bytes": 5774,
+      "sha256": "cb758679d15a9df538cd036d0ab1760fd1e5f61aa2fcf97185cc3ddaf627e602"
     },
     {
       "path": "README.md",
-      "bytes": 4637,
-      "sha256": "cc550d7bd89d9d4a73be0dcbf7de0a1742ccdad8c1926c9625a7c525812adf07"
+      "bytes": 5585,
+      "sha256": "2309ca8588565899f264c8135ea70a489fde9471396212928ce44d5f02b9a769"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 1382,
-      "sha256": "aaed388d058531a795495d322e7712e4212fe3bf6eb7f706032d42f8e1296c06"
+      "bytes": 1780,
+      "sha256": "c922f2714ad57d852b12116312fa028bb58b3df571c67c5e51fe5a32ace91ca0"
     },
     {
       "path": "tools/configure.mjs",

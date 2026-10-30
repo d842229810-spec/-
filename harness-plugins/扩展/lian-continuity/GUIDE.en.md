@@ -6,7 +6,11 @@ Package: `@local/lian-continuity` · Version: `1.3.1`.
 
 ## Features
 
-Provides source-backed retrieval, context expansion, task tracking, checkpoints, corrections and receipts describing the text actually returned.
+Helps the assistant continue work: search saved records, inspect original surrounding text, track tasks and save a handoff summary when a chat grows long.
+
+## When to use it
+
+For example, when returning to a video project days later, find the task and review its prior conclusion and source text. A read receipt states what was returned; it does not prove comprehension or permanent recall.
 
 ## Requirements and limitations
 

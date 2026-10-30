@@ -6,7 +6,11 @@ Package: `@local/lian-desktop-control` · Version: `1.5.0`.
 
 ## Features
 
-Lists windows and supports screenshots, mouse/keyboard actions, batches, short recordings and synchronized audio/video capture.
+Lets the assistant list and observe Windows windows via screenshots and, when authorized, operate the mouse and keyboard. It also supports short recordings and audio/video capture.
+
+## When to use it
+
+For example, inspect an application settings page and help click controls. An interactive Windows session and Python dependencies are required; confirm the target window and user authorization.
 
 ## Requirements and limitations
 

@@ -6,7 +6,11 @@ Package: `@local/lian-video-studio` · Version: `1.5.2-lian.1`.
 
 ## Features
 
-Creates code-video projects; manages assets, previews, rendering, timestamped overview grids, original-frame retrieval, script reviews and audio checks.
+Creates, previews and exports code-based videos and helps inspect the exported file. It can sample a video into a timestamped image grid and retrieve the original frame for a selected cell.
+
+## When to use it
+
+For example, make a ten-second animation, preview/export it and inspect subtitles, audio or key frames. Remotion makes video with React; FFmpeg processes media. Their environments must be installed separately. A grid is a sample, not every frame.
 
 ## Requirements and limitations
 
@@ -26,6 +30,6 @@ This is a host plugin, not a standalone desktop app. Original README files may c
 
 ## Provenance
 
-Local workbench using separately installed rendering and model tools.
+The overview design references [SAOS-3624/dsh-video-storyboard](https://github.com/SAOS-3624/dsh-video-storyboard) (MIT). Local time partitioning, scene selection and evidence records are independently implemented; its runtime modules were not copied. The upstream license is included. See [upstream sources and changes](../../../docs/UPSTREAM.en.md).
 
 Original third-party licenses and copyright notices are retained.

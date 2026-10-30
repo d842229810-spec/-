@@ -6,7 +6,11 @@ Package: `@local/lian-workspace-menu` · Version: `1.1.0`.
 
 ## Features
 
-Adds workspace entry points and directory-switching interaction to the Harness frontend.
+Adds workspace entry points and a directory-switching menu to the Harness interface, helping users select the directory used by the current chat.
+
+## When to use it
+
+For example, select a workspace in the UI when moving between projects. It relies on Harness client services and works with the workspace manager; running one file alone does not provide the full interface.
 
 ## Requirements and limitations
 

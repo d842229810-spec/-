@@ -10,21 +10,27 @@
 
 | 插件 | 版本 | 主要用途 |
 | --- | --- | --- |
-| [自主学习与预算管理](harness-plugins/dafeiyu-life/使用指南.md) | 1.4.5-lian.1 | 管理自主活动的时段、暂停、预算预占与结算、来源卡片、知识检索和B站读取。跨进程锁与状态冲突检查减少并发写入覆盖。 |
-| [外部工具连接配置](harness-plugins/dafeiyu-toolbox/使用指南.md) | 1.0.2 | 提供浏览器、FFmpeg等MCP连接配置及旧版离线TTS辅助代码。 |
-| [记忆、任务与上下文续接](harness-plugins/扩展/lian-continuity/使用指南.md) | 1.3.1 | 提供可回查的原文搜索、上下文展开、任务板、检查点、记忆更正、读取范围收据及上下文生命周期管理。 |
-| [扩展状态与记忆服务桥](harness-plugins/扩展/lian-extension-bridge/使用指南.md) | 1.0.1 | 汇总扩展加载状态，连接本地ReMe服务，查询和同步公开知识。 |
-| [Harness与Codex双向通信](harness-plugins/扩展/lian-codex-liaison/使用指南.md) | 1.4.1 | 提供ask、reply、inbox等通信能力；固定会话执行、直接唤醒、消息来源识别、精简信封和投递去重。 |
-| [视频项目、渲染与成片核对](harness-plugins/扩展/lian-video-studio/使用指南.md) | 1.5.2-lian.1 | 建立代码视频项目，管理素材、预览与渲染、生成带时码概览、回查原帧，组织脚本审稿、成片证据和音频核对。 |
-| [创作工作台](harness-plugins/扩展/lian-creative-workbench/使用指南.md) | 1.4.0 | 整合写作练习、Motion Canvas、Blender、OpenDesign、配音和本地音乐等创作入口。 |
-| [创作方法库](harness-plugins/扩展/lian-creation-handbooks/使用指南.md) | 4.6.1 | 按章节读取文学、视觉、导演与项目续接方法；附带可检索方法数据与技能文档。 |
-| [Windows桌面观察与控制](harness-plugins/扩展/lian-desktop-control/使用指南.md) | 1.5.0 | 枚举窗口，进行截图观察、鼠标键盘操作、批处理、短时录制，以及音频与画面同步采集。 |
-| [网页与文档阅读](harness-plugins/扩展/lian-research-reader/使用指南.md) | 1.0.1 | 读取公开网页、PDF与图片并整理可核对来源。 |
-| [B站视频感知与操作适配](harness-plugins/扩展/bili-perception/使用指南.md) | 1.4.0 | 组织视频感知、字幕与音轨信息、OCR和平台操作入口，保留来源与观察范围。 |
-| [侧栏改进版本](harness-plugins/扩展/dsh-better-sidebar/使用指南.md) | 0.28.0-lian.1 | 文件树、编辑器、搜索与会话工作区侧栏；增加路径检查、恢复与写入可靠性改进。 |
-| [QQ通信改进版本](harness-plugins/扩展/dsh-qq-bridge/使用指南.md) | 0.6.2-lian.1 | 通过OneBot HTTP连接QQ，支持私聊、群聊寻址、消息回执及语音跟进等适配。 |
-| [本地工作区管理](harness-plugins/扩展/lian-workspace-manager/使用指南.md) | 1.0.0 | 目录切换、会话工作区归属修复、备份与本地管理界面。 |
-| [工作区菜单](harness-plugins/扩展/lian-workspace-menu/使用指南.md) | 1.1.0 | 在Harness前端补充工作区入口与对应目录切换交互。 |
+| [自主学习与预算管理](harness-plugins/dafeiyu-life/使用指南.md) | 1.4.5-lian.1 | 让助手在设定的时间里自主学习，并管理活动预算：例如按主题查资料、保存来源卡片；调用已接入的模型前预留费用，结束后按回执结算。 |
+| [外部工具连接配置](harness-plugins/dafeiyu-toolbox/使用指南.md) | 1.0.2 | 把助手连接到浏览器、视频处理等外部工具。MCP 是让助手调用外部工具的连接协议；这个模块主要保存连接方式，不会替你安装所有外部软件。 |
+| [记忆、任务与上下文续接](harness-plugins/扩展/lian-continuity/使用指南.md) | 1.3.1 | 帮助手记住需要延续的工作：按关键词找记录、回看原文上下文、记录任务进度，以及在聊天过长时保存续接摘要。 |
+| [扩展状态与记忆服务桥](harness-plugins/扩展/lian-extension-bridge/使用指南.md) | 1.0.1 | 查看插件和工具是否接通，并把助手连接到 ReMe 等本地记忆服务。ReMe 是另行安装的记忆服务，插件本身不包含你的记忆数据。 |
+| [Harness与Codex双向通信](harness-plugins/扩展/lian-codex-liaison/使用指南.md) | 1.4.1 | 让 Harness 中的助手与独立的 Codex 会话互相发消息、答复和查看收件状态，适合两个助手围绕具体问题交流。 |
+| [视频项目、渲染与成片核对](harness-plugins/扩展/lian-video-studio/使用指南.md) | 1.5.2-lian.1 | 用代码创建、预览和导出视频，并检查导出的成片；可把一段视频抽成带时间标记的画面宫格，再点回某一张原帧。 |
+| [创作工作台](harness-plugins/扩展/lian-creative-workbench/使用指南.md) | 1.4.0 | 把写作、代码动画、三维制作、设计和声音工具放到统一工作台，方便助手从构思进入不同创作工具。 |
+| [创作方法库](harness-plugins/扩展/lian-creation-handbooks/使用指南.md) | 4.6.1 | 提供可按主题和章节查询的创作方法资料，内容涉及写故事、对白、视觉设计、视频导演和项目续接。 |
+| [Windows桌面观察与控制](harness-plugins/扩展/lian-desktop-control/使用指南.md) | 1.5.0 | 让助手在 Windows 桌面列出窗口、截图观察，并在获得授权后操作鼠标键盘；还提供短时录制与音画采集能力。 |
+| [网页与文档阅读](harness-plugins/扩展/lian-research-reader/使用指南.md) | 1.0.1 | 帮助助手读取公开网页、PDF 文档和图片资料，并整理可回查的来源，适合查资料或核对文章内容。 |
+| [B站视频感知与操作适配](harness-plugins/扩展/bili-perception/使用指南.md) | 1.4.0 | 协助分析 B 站视频：结合可取得的字幕、抽样画面、文字识别及评论等资料，按时间段查找和复看内容。 |
+| [侧栏改进版本](harness-plugins/扩展/dsh-better-sidebar/使用指南.md) | 0.28.0-lian.1 | 给 Harness 增加文件侧栏：查看工作区文件、搜索和编辑；此改进版还为删除、覆盖等操作提供恢复记录。 |
+| [QQ通信改进版本](harness-plugins/扩展/dsh-qq-bridge/使用指南.md) | 0.6.2-lian.1 | 把 Harness 助手接到 QQ：通过已登录的 QQ 后端收发私聊或群消息，并在相关配置下处理语音和消息回执。 |
+| [本地工作区管理](harness-plugins/扩展/lian-workspace-manager/使用指南.md) | 1.0.0 | 管理助手的本地工作目录：查看或切换工作区，修正会话与目录的归属，并提供备份操作。 |
+| [工作区菜单](harness-plugins/扩展/lian-workspace-menu/使用指南.md) | 1.1.0 | 在 Harness 界面提供工作区入口和切换菜单，帮助用户选择当前聊天使用哪个目录。 |
+
+## 上游来源与本地改进
+
+侧栏、QQ桥与部分B站功能使用了第三方 MIT 项目或代码；视频概览参考了上游设计思路。每项的原项目、复用范围、本地改进和许可证见[上游来源与改动](docs/上游来源与改动.md)。
+
+看不懂缩写或术语，可以先查[新手术语表](docs/新手术语表.md)。
 
 ## 从这里开始
 

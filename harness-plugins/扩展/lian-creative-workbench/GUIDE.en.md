@@ -6,7 +6,11 @@ Package: `@local/lian-creative-workbench` · Version: `1.4.0`.
 
 ## Features
 
-Coordinates writing practice, Motion Canvas, Blender, OpenDesign, voice and local music adapters.
+Brings writing, code animation, 3D, design and voice tools into a common workbench so an assistant can move from an idea to the appropriate tool.
+
+## When to use it
+
+For example, after outlining a short film, continue in Motion Canvas (code-based vector animation), Blender (3D creation) or a voice tool. Install each application/service separately; this plugin is not the application or model itself.
 
 ## Requirements and limitations
 

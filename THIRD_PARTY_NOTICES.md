@@ -14,3 +14,5 @@
 许可证与版权声明原样保留。根目录没有为所有组件统一授予MIT许可。部分自定义模块未声明许可证，或声明UNLICENSED；公开可读不等于自动授权任意再分发。需要再分发时按具体文件/模块许可处理。
 
 原有README含历史版本说明与本机验收记录，仓库新使用指南不取代上游版权要求。
+
+逐项原项目、复用范围与本地改进： [中文](docs/上游来源与改动.md) | [English](docs/UPSTREAM.en.md)。视频概览参考 SAOS-3624/dsh-video-storyboard 的设计目标，未复制其运行模块；B站感知还复用了 Sacredbluedragon/dsh-bili-watch 的部分代码，并参考 icyaaaww/dsh-bili-vision 的采样思路，相关许可证分别保存在插件对应目录。

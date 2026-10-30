@@ -6,7 +6,11 @@ Package: `dsh-qq-bridge` · Version: `0.6.2-lian.1`.
 
 ## Features
 
-Connects QQ through OneBot HTTP, including private messages, addressed group routing, receipts and voice follow-up adapters.
+Connects a Harness assistant to QQ through a separately logged-in QQ backend, supporting private/group messages and configured voice and delivery receipts.
+
+## When to use it
+
+For example, mention the assistant in an allowed group. Local rules first check whether a message addresses it, avoiding a model call for every message. OneBot is the interface between the QQ backend and plugin; install and sign in to a backend separately.
 
 ## Requirements and limitations
 
@@ -26,6 +30,6 @@ This is a host plugin, not a standalone desktop app. Original README files may c
 
 ## Provenance
 
-MIT derivative of Yuuyuko-uu/dsh-qq-bridge.
+Modified from [Yuuyuko-uu/dsh-qq-bridge](https://github.com/Yuuyuko-uu/dsh-qq-bridge) (MIT), adding group addressing/provenance, processing receipts and voice-follow-up adapters. The original LICENSE is included. See [upstream sources and changes](../../../docs/UPSTREAM.en.md).
 
 Original third-party licenses and copyright notices are retained.

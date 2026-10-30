@@ -6,7 +6,11 @@ Package: `@local/lian-workspace-manager` · Version: `1.0.0`.
 
 ## Features
 
-Provides directory switching, session-workspace ownership repair, backups and a local management UI.
+Manages local assistant workspaces: inspect or switch directories, repair session/workspace association and create backups.
+
+## When to use it
+
+For example, check or change the project directory associated with a conversation. It can affect real files and session settings, so back up and stop related writers first.
 
 ## Requirements and limitations
 

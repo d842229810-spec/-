@@ -6,7 +6,11 @@ Package: `dsh-better-sidebar` · Version: `0.28.0-lian.1`.
 
 ## Features
 
-Adds a file tree, editing, search and session-workspace UI, with path validation, recovery and write-reliability changes.
+Adds a file sidebar to Harness for browsing, searching and editing workspace files; this modified version also retains recovery records for deletions and overwrites.
+
+## When to use it
+
+For example, find and edit project files alongside a chat, then recover a deletion from a recovery record. Workspace path checks are application-level controls, not a replacement for OS permissions.
 
 ## Requirements and limitations
 
@@ -26,6 +30,6 @@ This is a host plugin, not a standalone desktop app. Original README files may c
 
 ## Provenance
 
-MIT derivative of omdsh-dev/DSH-better-sidebar.
+Modified from [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) (MIT), adding workspace path checks, deletion/overwrite recovery and concurrent-save protection. The original LICENSE is included. See [upstream sources and changes](../../../docs/UPSTREAM.en.md).
 
 Original third-party licenses and copyright notices are retained.
