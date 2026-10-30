@@ -6,7 +6,7 @@
   "description": "涟的自主学习、知识积累、隐私检查、预算和夜间活动管理",
   "license": "UNLICENSED",
   "engines": {
-    "dsh": "0.2.1-rc.3"
+    "dsh": "0.2.1-rc.3 || 0.2.1-rc.5"
   },
   "exports": {
     ".": "./index.js",

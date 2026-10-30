@@ -1,66 +1,40 @@
 {
-  "schemaVersion": 1,
-  "snapshotDate": "2026-10-30",
+  "generatedAt": "2026-10-30T10:42:54.304Z",
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 75,
+      "sha256": "af1ad4049b647e07edb94f680efb7575dd48c0e88c0b388a54cec278ac3f4a3b"
+    },
+    {
       "path": ".gitignore",
-      "bytes": 311,
-      "sha256": "fa6a63c807313fd7a3a4fa4306eedb9824e2b2b8a12fee3228c19b60f0e06666"
+      "bytes": 363,
+      "sha256": "1b7d419e4b718a66168324295630003d41c742cfb374bdee6a7dc7654b69257c"
+    },
+    {
+      "path": "README.en.md",
+      "bytes": 6000,
+      "sha256": "a98198dfd37999aa8c9d6d4ca53ef6a1bd8e7c2628ba30d0a0a1259f01880f4a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5827,
+      "sha256": "67b0e0ce684247a1f56c69adeefda316cc3eca1522b181248a6f40db6d34d834"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1780,
+      "sha256": "c922f2714ad57d852b12116312fa028bb58b3df571c67c5e51fe5a32ace91ca0"
     },
     {
       "path": "catalog.json",
-      "bytes": 2628,
-      "sha256": "b109ad0868ff8da720ca70b6ef2ca246a4f342b4e6d8a897ec121c24beb3d01d"
+      "bytes": 2742,
+      "sha256": "23aebc872dda812bea8f2734fe40567a802d84564c3317aa99cf22d2b3824bdd"
     },
     {
-      "path": "docs/安装指南.md",
-      "bytes": 3732,
-      "sha256": "f4e601a6776154ed5f58d7dca18e5518b294c11807a91d1309006dc6e04b9633"
-    },
-    {
-      "path": "docs/发布检查.md",
-      "bytes": 981,
-      "sha256": "94bf3c42e867744d55bb68fc9663a75ee682d48c25832c04b6183bcd2a09d299"
-    },
-    {
-      "path": "docs/工具调用速查.md",
-      "bytes": 6677,
-      "sha256": "a0ffd0a00b98a22e724e1032a6697ebe58877bb57a982be7f19bd1274920cf19"
-    },
-    {
-      "path": "docs/上游来源与改动.md",
-      "bytes": 4204,
-      "sha256": "36f11345ab602dbd39c074879adc19e5e7e57d5cc456bda0bed34c1c8c5a5b69"
-    },
-    {
-      "path": "docs/使用指南.md",
-      "bytes": 1970,
-      "sha256": "611b63154f81f93d919b1a4e7638a0dc01135f28d87893df3e73c019de173dad"
-    },
-    {
-      "path": "docs/双语索引.md",
-      "bytes": 908,
-      "sha256": "cd74ec3b6c2f69037570303e7f943d6214a19b5de1ecf35264072c566be00289"
-    },
-    {
-      "path": "docs/新手术语表.md",
-      "bytes": 3064,
-      "sha256": "6c079e557690e4fd73b5423d5c6cb65583f390b6a39b1285595002585fe734f3"
-    },
-    {
-      "path": "docs/依赖与运行时.md",
-      "bytes": 2232,
-      "sha256": "6a5e67076829dccc15fafa34fab440f64e6132226522bd189d6733642d630dd3"
-    },
-    {
-      "path": "docs/已知限制.md",
-      "bytes": 1420,
-      "sha256": "5b3cc0d4bb3fb4e334dd8f68ea80e9f256e12126b1af9a3d3177c6ca683d7f52"
-    },
-    {
-      "path": "docs/隐私与配置.md",
-      "bytes": 1650,
-      "sha256": "751ce6a7d951af32b06bb5c9ee569ac5237b75c52ede9f05b180192e79397f94"
+      "path": "docs/CAPABILITY-UPGRADE-20261030.en.md",
+      "bytes": 4312,
+      "sha256": "6eec52a6a9bdb165d806327742b4cb483f2ce1d70dbc64efd09cb9f555146bda"
     },
     {
       "path": "docs/DEPENDENCIES.en.md",
@@ -79,8 +53,8 @@
     },
     {
       "path": "docs/LIMITATIONS.en.md",
-      "bytes": 1364,
-      "sha256": "59e6afdcad3b53c6adf83200bb27dcd182c3d084eb725bd3875948bcf9c458ee"
+      "bytes": 1412,
+      "sha256": "8ec9042735d42ebc7c87defc668ad0992804dc3d34a3a89643af8913938cbed8"
     },
     {
       "path": "docs/PRIVACY.en.md",
@@ -89,8 +63,13 @@
     },
     {
       "path": "docs/RELEASE-CHECKS.en.md",
-      "bytes": 1009,
-      "sha256": "f063475d84b6230a502319d7c32a1dcff6b62982162014814d6c85b57a6a933a"
+      "bytes": 1529,
+      "sha256": "b6470727c050e069f8d8235b924f70aaaebb83f95b702a5d5d4f67df7483ae9d"
+    },
+    {
+      "path": "docs/TASK-OPERATIONS.en.md",
+      "bytes": 2459,
+      "sha256": "709b863c0a9b511e41ed0545a7e2a2be67f2fb574166acce3f9e5413e0b36722"
     },
     {
       "path": "docs/UPSTREAM.en.md",
@@ -103,9 +82,1204 @@
       "sha256": "73773a142cf38a225f581afb293c582c75d2ca2f866ce9f1a77df118f596d5ab"
     },
     {
-      "path": "harness-plugins/扩展/bili-perception/使用指南.md",
-      "bytes": 2075,
-      "sha256": "d595f7a25826e4ae8899318bf861978028399a80fbb411646da62eefe241e2c8"
+      "path": "docs/上游来源与改动.md",
+      "bytes": 4204,
+      "sha256": "36f11345ab602dbd39c074879adc19e5e7e57d5cc456bda0bed34c1c8c5a5b69"
+    },
+    {
+      "path": "docs/任务板操作.md",
+      "bytes": 4089,
+      "sha256": "0a3a75e97ffbc1d43a9fd224c1024c6edd9de961560cc20c0b62c1d9bda45088"
+    },
+    {
+      "path": "docs/使用指南.md",
+      "bytes": 1970,
+      "sha256": "611b63154f81f93d919b1a4e7638a0dc01135f28d87893df3e73c019de173dad"
+    },
+    {
+      "path": "docs/依赖与运行时.md",
+      "bytes": 2232,
+      "sha256": "6a5e67076829dccc15fafa34fab440f64e6132226522bd189d6733642d630dd3"
+    },
+    {
+      "path": "docs/双语索引.md",
+      "bytes": 908,
+      "sha256": "cd74ec3b6c2f69037570303e7f943d6214a19b5de1ecf35264072c566be00289"
+    },
+    {
+      "path": "docs/发布检查.md",
+      "bytes": 1508,
+      "sha256": "0673e4a0545599644eb97452980d5208cb9507aa595eca5141a5472135fe8cbb"
+    },
+    {
+      "path": "docs/安装指南.md",
+      "bytes": 3732,
+      "sha256": "f4e601a6776154ed5f58d7dca18e5518b294c11807a91d1309006dc6e04b9633"
+    },
+    {
+      "path": "docs/工具调用速查.md",
+      "bytes": 6677,
+      "sha256": "a0ffd0a00b98a22e724e1032a6697ebe58877bb57a982be7f19bd1274920cf19"
+    },
+    {
+      "path": "docs/已知限制.md",
+      "bytes": 1444,
+      "sha256": "151fb85f6a07e9de80c876e72ead52b6aa2bf79921a77c0b270f8e34de85b0eb"
+    },
+    {
+      "path": "docs/新手术语表.md",
+      "bytes": 3064,
+      "sha256": "6c079e557690e4fd73b5423d5c6cb65583f390b6a39b1285595002585fe734f3"
+    },
+    {
+      "path": "docs/能力升级-20261030.md",
+      "bytes": 4594,
+      "sha256": "992e58f37899c7395b541e972d05170c640dfb52ec3fe6386792238952a89d82"
+    },
+    {
+      "path": "docs/隐私与配置.md",
+      "bytes": 1650,
+      "sha256": "751ce6a7d951af32b06bb5c9ee569ac5237b75c52ede9f05b180192e79397f94"
+    },
+    {
+      "path": "harness-plugins/audio-understanding-runtime/client.mjs",
+      "bytes": 5806,
+      "sha256": "ab8a9891626cdd56bd80779e601e4302e02e9e6e575b651d606ce11190bc7729"
+    },
+    {
+      "path": "harness-plugins/blender-runtime/bootstrap.py",
+      "bytes": 938,
+      "sha256": "368e8c3716ee5d37717d43ff1d6c120baf50e9b7f3abf3f4c38536fd6946e558"
+    },
+    {
+      "path": "harness-plugins/blender-runtime/demo_character.py",
+      "bytes": 5617,
+      "sha256": "7734f684a85d9f8f3f0562753369a91a3d9822f207a5d818e189e0171eb42f52"
+    },
+    {
+      "path": "harness-plugins/blender-runtime/finish-demo.py",
+      "bytes": 1045,
+      "sha256": "d94bcfed0f62dc7d986e7c1c89685b655c75cc0efe2b170da3a8fbe55539228d"
+    },
+    {
+      "path": "harness-plugins/blender-runtime/hub.py",
+      "bytes": 2175,
+      "sha256": "05cbec3b21505e1e8a30fbb465201cd09a5ddf0550548eab7fab59c81afd3711"
+    },
+    {
+      "path": "harness-plugins/blender-runtime/mcp-proxy.mjs",
+      "bytes": 3027,
+      "sha256": "93786fd76d7dac8f11baf7bf3d17fcf60d00c29feb47c9cda64a6707cb42e1dd"
+    },
+    {
+      "path": "harness-plugins/blender-runtime/prepare.mjs",
+      "bytes": 467,
+      "sha256": "f2e0a833055d3dbd0a38779e450c7be10cbca6193dd1be7798778bf746648a35"
+    },
+    {
+      "path": "harness-plugins/blender-runtime/render-demo.mjs",
+      "bytes": 1267,
+      "sha256": "f5af43843565cad76c5c90cf5ebbbab82ba10d53744bf08bb17536623305bba8"
+    },
+    {
+      "path": "harness-plugins/blender-runtime/requirements.lock.txt",
+      "bytes": 606,
+      "sha256": "e0774d767835f65958729fdd8c3e5e13746c79c6f38c58dd5a501f716c2429e6"
+    },
+    {
+      "path": "harness-plugins/blender-runtime/rigify-template.py",
+      "bytes": 996,
+      "sha256": "712eaf816e3521c2736fb10a269de169483ac8f7936443f270e533c807f91081"
+    },
+    {
+      "path": "harness-plugins/blender-runtime/start-test.mjs",
+      "bytes": 1205,
+      "sha256": "59d1d6b41ae10bf7f161dfc3ee3b87bc8bc407ac260f7bbd525d8c509188a3cd"
+    },
+    {
+      "path": "harness-plugins/blender-runtime/verify-mcp.mjs",
+      "bytes": 1467,
+      "sha256": "451b781d6015f1baa1bf2886d29c1589437be45317b289d34cfbe5be8f870672"
+    },
+    {
+      "path": "harness-plugins/blender-runtime/verify-shared.mjs",
+      "bytes": 1243,
+      "sha256": "34b5cce8206091b2cdb5c3817db032c043189bfb9400789c961292ae62f1634d"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/GUIDE.en.md",
+      "bytes": 2124,
+      "sha256": "743e61e7a35c12bf562ca290a47ae0e0875fcc241ad4d097e15a1d55a829098e"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/README.md",
+      "bytes": 7140,
+      "sha256": "081f79ceebf4d667394c63c8ddc4847da4ef91e520bb16e6a16b92e9cf2d3f62"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/cordis-development.md",
+      "bytes": 8147,
+      "sha256": "83561b4d4fed0dd8051b3e998c6f567a5676a43b7321eecd12c255f4c0478ecf"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-README.md",
+      "bytes": 16666,
+      "sha256": "652a3283721fb5b52f0671c43d458b04c039d5bfe7e900894cc0f64229b68641"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-archive-admission.js",
+      "bytes": 1570,
+      "sha256": "d42fbc10fbf357f1343d4c57eab55d3c7a6bd53fe20a29469cf0b1b67e55c4dd"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-consumed-work.js",
+      "bytes": 4089,
+      "sha256": "e20ac9e88d81db3f5e25908a50ad4532cd1d93f410ad5ec4933ef9aa24da5c2d"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-default-model-built.js",
+      "bytes": 2462,
+      "sha256": "3685a0d4665007cfd377f6555a2a0eeea061cd9e7eb87102430771858ac0bbcb"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-dispatch.js",
+      "bytes": 4736,
+      "sha256": "f29567a8eb2f04aaf34523e597d52e46f0fb5bed273db4bf7fa25bc38e2877da"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-index.js",
+      "bytes": 22357,
+      "sha256": "cc5de4b13b26bc1c5383c7c9300a074f267b69fe129a0bf74d1fd4ab695f1c52"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-loop-README.md",
+      "bytes": 22983,
+      "sha256": "4c9fb8c7bcd7e563e5f24abbb1d9f52479ed7388ffa50e288bc1ec1eca4ab551"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-loop-built.js",
+      "bytes": 74599,
+      "sha256": "cf57e3ecd487ac5c2553455aaa5cef2c6fb41e6bd61be5aa455675d1d7193033"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-model-selection.js",
+      "bytes": 4084,
+      "sha256": "47f758ea21ebf7544b4633d2ef8cbe5afafddf3b4aaf9892276cda9e98af11e7"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-preset-registry-README.md",
+      "bytes": 5845,
+      "sha256": "a8f6e2d1f462ff9566da2ca51ff3207cf994101408c6cac550e21e0a3830593c"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-projection.js",
+      "bytes": 49,
+      "sha256": "43ab89acd14b20b3c2a85c8307f236b38dfa27671dd31b703554777270abc534"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-runtime-types.js",
+      "bytes": 239,
+      "sha256": "72347f43fb79c35cff8565b6428c6d7b96a78267cf8994ea3ffd0830a83a21d2"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-types.js",
+      "bytes": 170,
+      "sha256": "f4ef7228255d5f64ba546ed2a2b6be63601b77c7b58ac3a58a74f4e8f970cb30"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-README.md",
+      "bytes": 26500,
+      "sha256": "d8fdb1e206b0e4edb2e3939a9b85e4f7770fdee037c47475a7ab0e70aad7b73b"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-agent.js",
+      "bytes": 27724,
+      "sha256": "c7574870628f77b4526a1e2cf8071eac55c5d1fbbb4da923b51280ccd71ab989"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-archived-session-gate.js",
+      "bytes": 2271,
+      "sha256": "cec5adf587c03dca75558d7318bec7ba46be7f7fcc949588e8113508382e014b"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-assistant-stream.js",
+      "bytes": 3113,
+      "sha256": "a84d92140a15061c0e227bf9233dba1cd7a56ba6ca2b4211ccebae635123cf82"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-built.js",
+      "bytes": 132150,
+      "sha256": "a9801acb577b03053c5d5a3191ff555c5f1d791d0acddec113bea4511e33b386"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-catalog.js",
+      "bytes": 4939,
+      "sha256": "3f71ebe196d6b6ec6930ed6af81fc00f065e795d5718690d7d2b76bfc98431af"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_contract_events.js",
+      "bytes": 3902,
+      "sha256": "11326d2c2fbde3d070e4100dcfdbe7189b7c516d7864ec3ad66ce310220ece7e"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_contract_session.js",
+      "bytes": 46,
+      "sha256": "ee044e5b21c3aea4359782b5fa8259c30c07887c6e9205796a96a8ba23ea7c82"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_contract_sessions.js",
+      "bytes": 47,
+      "sha256": "7ac43ca48c0c616c458e7a4984ba4f8abf8a1b30e13181e8a9f79167a7e424e6"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_contract_snapshot.js",
+      "bytes": 47,
+      "sha256": "85a67be6f1b8b6754888d1d139c6d70b294df5524ff2a539124be37c53c576ac"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_index.js",
+      "bytes": 2838,
+      "sha256": "bd545a3174508f0cd781a3d3798234109664752d67f5b62c1ef527f24f90137b"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_ordered-baseline.js",
+      "bytes": 1801,
+      "sha256": "0e8b972f2a51a3897d02961212ca43f0f4985680ba6dd5e53991a22ef7350fd7"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_scope.js",
+      "bytes": 1796,
+      "sha256": "5dff532d848c5ccfb14006a52554f62bc7f779a3a52219efad131c1b4bf349a7"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_session-wire-event.js",
+      "bytes": 1978,
+      "sha256": "d32fa6b71dd3ab0c36344e56876c016d0322ec8642f1994cf96d1d6a87f935ca"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_assistant-stream.js",
+      "bytes": 8260,
+      "sha256": "719ece3e9749d395595b55b61534839e3018b358f1fa7bc66e9af6046bc58589"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_history-records.js",
+      "bytes": 880,
+      "sha256": "f79eae6266257545fccb7194810f323490244c57363e66824a321daafa1788e0"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_lineage.js",
+      "bytes": 2036,
+      "sha256": "205e72499f0aba0c1e8906361b6919f7be0b338b1683782fcf96ddd9d115578b"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_manager.js",
+      "bytes": 37910,
+      "sha256": "1791454916544c645cd4d934d0ea97aba3f113bb07df5fec8d4af18dc10e007e"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_notifier.js",
+      "bytes": 3078,
+      "sha256": "fe4983f05f26b4d2efe85747863c38fb4b916e5a79cdaacb7cbe8fdce1c47350"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_projection-store.js",
+      "bytes": 6803,
+      "sha256": "027de778b5f4f95c8c209a1701c8ec17a2f7c52511627d67039045cadf15d00c"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_remotes.js",
+      "bytes": 286,
+      "sha256": "ef976356c0753ebfc986809b4a314b68df2d35fb39bbe81c40cf0cc2e3133cea"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_service.js",
+      "bytes": 24664,
+      "sha256": "d53c5c016915dbc06e4278c5462ab457e305a617c1a55cf7c63c68fe117adfc5"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_session.js",
+      "bytes": 38957,
+      "sha256": "880409eecfdd697076790365558addf879e1fcdfdeeb29c276058233739238b2"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_time-zone.js",
+      "bytes": 557,
+      "sha256": "8747a547c82fc03743179b4194a979762784be9b318efa1d41b5a904d4488c1d"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_transport.js",
+      "bytes": 5627,
+      "sha256": "ee4679f56c57b00ffb624a2a93bd3b7fcecd121a169e5117c661090c9cc92417"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-commands.js",
+      "bytes": 30150,
+      "sha256": "2cbc6ede7bd7211917984b5ef2e2fd598db7a21e493333bc8586c528b17ec25b"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-control.js",
+      "bytes": 3307,
+      "sha256": "41167027c6cbbd04ad0f5b91921a16da883863f0cd8f7da93dc1985e15859969"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-file-references.js",
+      "bytes": 4105,
+      "sha256": "e3d8fb568b8f53c48d11ac2134875a0fe225ebed1f83b20b35051303e00d1571"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-history.js",
+      "bytes": 19450,
+      "sha256": "a58ffb911a14d39ca4131c301b1cea4773540d2acb7e81b3cfa17df51a8f0b78"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-index.js",
+      "bytes": 38199,
+      "sha256": "616ced16623b7448afa908ff65093eb6ef2a478d32e5ef9bc22634bfa9f80472"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-list.js",
+      "bytes": 14670,
+      "sha256": "a85aa9154e6bc1ec5c17ba484c0524c8ac21189cd5c6ac6dd9f0f96e2bf82891"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-media-references.js",
+      "bytes": 3215,
+      "sha256": "7257ba91acb8128179aae28e2c4ecd316c2f9880858ec3feed7a1fa5105b7e61"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-model-selection-projection.js",
+      "bytes": 2544,
+      "sha256": "b299f5d7436dffce6ab0d45197b106ab689cf48ff94ae9a4a11ab902c86400e5"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-remote-events.js",
+      "bytes": 52,
+      "sha256": "4107bd2407269bbf2f531d3284ebb7840a889b1cc364050515e3e3a4a686cd01"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-skill-catalog.js",
+      "bytes": 10974,
+      "sha256": "d86ec460b6d3ef629e621163c6f7a07e9aa237d0bd6dbb4dfd954d6ea17fddc1"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-types.js",
+      "bytes": 258,
+      "sha256": "933fe63cada3bd5126d2a96ca042524dd1b2ada286fc0c49c0967a0927312bd2"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-README.md",
+      "bytes": 19859,
+      "sha256": "9cc8f2c8d30f9ba44afb8d14f3bbf5f31fbdfb01f950a51a49a1322e2a841049"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-adapter-failure.js",
+      "bytes": 4326,
+      "sha256": "f1213f11f11e0f20aae26c09a5e0cf3d72512c1f1519e1b3f107edf64af43c28"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-api-key.js",
+      "bytes": 1518,
+      "sha256": "254b774234c0bd38dd759765c0fd1e60788651a22106f5559ec2760a39935f2d"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-assembler.js",
+      "bytes": 7945,
+      "sha256": "35a4754ab854055942b9142934c595c3e6358a717947daa2d8d89847aef988f7"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-assistant-stream.js",
+      "bytes": 19887,
+      "sha256": "7e0cc96a4d60aed34381b552f9cb4549d70df36dbd28c0630da4cd93fa44b7a1"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-attribution.js",
+      "bytes": 2066,
+      "sha256": "62f546a0434b4ab70860db3d7c768f515b5f4895f41b3b1399afc9d0d02c7add"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-brand.js",
+      "bytes": 1650,
+      "sha256": "6b70219e0478d3307d865309523e7e7be3f169b06c04f4eef0d49b54aaef72a2"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-call-config.js",
+      "bytes": 1944,
+      "sha256": "170f3ce7c7136b93087e2f5d50faa8b69815894ec3ebdf26c36d57e4c7a17a03"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-content.js",
+      "bytes": 16615,
+      "sha256": "79802e2e6bece64114c8f6857943c2cd23742bd2c20b067cd06298d397f9b85e"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-error.js",
+      "bytes": 8459,
+      "sha256": "103b72873eafc3512d717593f802bbf09230c52b7fcd31aa6ec10b5fd147e1cb"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-index.js",
+      "bytes": 53756,
+      "sha256": "03b16dc51a3e6712823d57afaf74a7663d628aefd05ae7768d2cea89d05f7197"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-message.js",
+      "bytes": 3713,
+      "sha256": "c87812f77a2afd284f271af071575edcadfde3daa7b6554d77b96810ce4688e0"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-pi-ai-built.js",
+      "bytes": 125589,
+      "sha256": "99b5c20830a52f69641df8a18a39206079b0c725201958cce2c4a934f1d4f7cd"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-retry-policy.js",
+      "bytes": 5591,
+      "sha256": "f0a8fe075ac24c56ed2aa5d5e359a85539f5ffa237af54b68d3f4fc5124b5d83"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-types.js",
+      "bytes": 284,
+      "sha256": "14106d660103de2db746964fbb5be90c5eb2a7ff736779e2501e9faff956cbf5"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-persona-README.md",
+      "bytes": 7160,
+      "sha256": "214628a5cbaa47adcffe0528ebcf26f5c8db58e51b0dfa5c3c774668d5dc56ba"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-persona-lib_index.js",
+      "bytes": 2163,
+      "sha256": "1e9dd7f0dfd87cbff6486b7ca043d2e1b863a2a56b99106a4bf74831591266d5"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-README.md",
+      "bytes": 22184,
+      "sha256": "f9f43d36c4df64279ca8e1fa1baad1c67cd003c5d79fe26cfe5887057a8ab584"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-fork.js",
+      "bytes": 1321,
+      "sha256": "72ca7ae2cce506eb607e565f2e6b15fc6e3c2663de8403f79e37fc3a469e34cf"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-index.js",
+      "bytes": 61624,
+      "sha256": "59cced30c7ee65813c62f4858c2fc15c8c636df96507b60c15543468178b72f2"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-known-event-types.js",
+      "bytes": 2923,
+      "sha256": "f2adf39f26ecf7cc84bceaef1dcf8210395a13aa02e16828df1038a27a404edd"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-preparation.js",
+      "bytes": 1303,
+      "sha256": "78dea29f5e11a4d220945a572b3eb26cb66460e6a368a423bf597c3ef05a5faa"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-repair.js",
+      "bytes": 9120,
+      "sha256": "ee2e02d4e924bf01af621c38c27e030b89eaa8e0abfdf801a6220eca95aa2038"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-request-header.js",
+      "bytes": 2595,
+      "sha256": "3f73ee59af794df50df159a9c45c606f0fbce364c482b371831d1e8f26b87aea"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-seq-ranges.js",
+      "bytes": 2790,
+      "sha256": "68a127c76affa98edeeb50e302eb43f154f4d24f7d04cb95ba8b323e88f3d09e"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-surface.js",
+      "bytes": 26100,
+      "sha256": "ebe8920a22fca8d987cbacab94c9db92f71df44863f58370a1be559155be734e"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-tool-history.js",
+      "bytes": 3894,
+      "sha256": "2d2c4f4cbb6717aa2f487af52ce6a81e2002ce2c768cb5a4210c867ec49a0e95"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-types.js",
+      "bytes": 2748,
+      "sha256": "91723a2522999e2c8b6c455796ad699794a6f0abfcb44d9cb883edb13142ff9b"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-system-prompt-README.md",
+      "bytes": 13740,
+      "sha256": "e4fda220e3c86bf54b3f20daccd56ebab1a1159499897c9948f8513d81decf1a"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-system-prompt-built.js",
+      "bytes": 19817,
+      "sha256": "7be9f7aafbf345d01ddcc12fd297b16e9a1d41283a6a04073b867becca0bf020"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-system-prompt-lib_index.js",
+      "bytes": 19817,
+      "sha256": "7be9f7aafbf345d01ddcc12fd297b16e9a1d41283a6a04073b867becca0bf020"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-README.md",
+      "bytes": 20476,
+      "sha256": "5617d22947d3b42e2cbb39aac08044d54cf828ff6a4a1569fc1313c37082c946"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-index.js",
+      "bytes": 66231,
+      "sha256": "d8cf8e1400e1b923684324546e46d6408bec140002430150b34099ae95a365c8"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-json-schema.js",
+      "bytes": 25604,
+      "sha256": "912e04e68c2455cbb77651031449574f992720c90311e6cbecb1d35020bc1072"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-presentation.js",
+      "bytes": 347,
+      "sha256": "253894265253e38fa9db12f3696d9dac9fd2bed1363c04ce3f95c0f19a6c16da"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-ptc-calls.js",
+      "bytes": 2487,
+      "sha256": "29a6cc1e141c383294ca28bc2df8eccddd2df18ba3af8bd6f5f29b1390a0ab6f"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-ptc.js",
+      "bytes": 40037,
+      "sha256": "20f9a70b8c794299ab54280cdc96a9cdd2791cc71a2b385e829a591237d01fd7"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-py-types.js",
+      "bytes": 48075,
+      "sha256": "37fe51ab4acc0a8cb971dc7825173e036e9cc1dd26c57f8541bfd1c77d77ec7e"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-schema.js",
+      "bytes": 15573,
+      "sha256": "c3dd33029e3f80e6ab9ad9b0d853ba80b88177c1c2423080a94a2db91e6f33f9"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-testing.js",
+      "bytes": 978,
+      "sha256": "c6784f546e950dc38323baaad4009bb197eb25acf3a16adaa2893a44c7b7a650"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-ts-types.js",
+      "bytes": 15569,
+      "sha256": "f6aea037453c8e42402fabaf5cdaca1f0d299d92a5f4ec20c6329d0e4599c6c7"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-types.js",
+      "bytes": 161,
+      "sha256": "d53c54d32353419ece121f485a5534ee054842b74ebab7b4a4d3325545d0179a"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-workspace-README.md",
+      "bytes": 16737,
+      "sha256": "6c229c0e970346428488724090ba95f35a0b64a251eafeaa29209d487ab60f79"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-workspace-entity.js",
+      "bytes": 7014,
+      "sha256": "028ee3a218f3deb136208256cdee41190c253a018c126225a6414541d15610ee"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-workspace-index.js",
+      "bytes": 35824,
+      "sha256": "ed69989d8286598fddb3a40030723810a1238968e91ccfec05fc84657bb5ec74"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-workspace-paths.js",
+      "bytes": 2246,
+      "sha256": "11538f24f4ce02a68a5b3b733e1be56151a945bd6fea158dd45719f0fafd47cc"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-workspace-spec.js",
+      "bytes": 3262,
+      "sha256": "c13790d2a5b5ec11d2fe24692e0776c120a6ab69546e91cebbe6b50b18ec074a"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-workspace-types.js",
+      "bytes": 319,
+      "sha256": "514059077b0696589f30b96265ec1aa0164192c3fda26ec564d91b65e0d0bc5f"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/host-plugin.md",
+      "bytes": 5300,
+      "sha256": "1d5b6ee648b5dd04462fb29075167a5dc570a8f4fd162b3c94ad40a78f2f627a"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/practices.md",
+      "bytes": 7825,
+      "sha256": "5a61f4e0f754eded6116e55bbf72471fd9b128e138ea3faca120cda76701a042"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/schedule-README.md",
+      "bytes": 24281,
+      "sha256": "96ac30e585a90c3db7def84112e4beeaf3eda99227aed06698c44ff030e12199"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/schedule-lib_index.js",
+      "bytes": 105046,
+      "sha256": "022b9f191b6ca0f4b0f26625afc49f375933068a42712c0a75e94e439d7e6d0e"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/api-reference/user-actions.md",
+      "bytes": 1375,
+      "sha256": "ecc7f1226536584d781af8f1f9dee30d7262943dada67bfd997eb7902b34a9be"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/bilibili-login.mjs",
+      "bytes": 274,
+      "sha256": "a10542cd7ce153a77ce184d7189c66dbd09dd12c2f459da401ed4da0a55a70f8"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/change-window.py",
+      "bytes": 275,
+      "sha256": "3b9cefadbadc893f81278e9b8f5a896bb933e36e43cdf495a0f7b8fe1dd127a5"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/cli.mjs",
+      "bytes": 2524,
+      "sha256": "e9856e5d01e15b093153a3ec01d9bf0f8fe9a297a809532d8010b836d484b092"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/cordis.patch.yml",
+      "bytes": 84,
+      "sha256": "3ba499a2f0c37430c09ac0c53b35b124a7b6ac3dc10a8aa71d8e3f34728ea1c8"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/icon.svg",
+      "bytes": 494,
+      "sha256": "a097650508a8b6fbd2434f091655bfab08b398a81ab9754eac307ee8c4b788d7"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/index.js",
+      "bytes": 16267,
+      "sha256": "28502f8e646e7463043054ae51a91546e7ad5807b635ba8bf0d80139fb483150"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/bili-browser-search.mjs",
+      "bytes": 2003,
+      "sha256": "0443a20315493b66a30aeee897981d2d620cab3062f379ac2a653445a8fcee00"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/bili-network.mjs",
+      "bytes": 5065,
+      "sha256": "83bb33d89672433954d2c960ab8c80cf3a86b84a4d679a8d8798a89aeb8b8c48"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/bilibili-auth.mjs",
+      "bytes": 5685,
+      "sha256": "3d48707746d186b9c43d119e05d58efcce5a0d4f6cb99d3e2b1458944dc95999"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/bilibili-comments.mjs",
+      "bytes": 12206,
+      "sha256": "ee765d510fe39d33bef01492b1df41f04d1556c1dfa2269647ddc5d6ed9f4b3d"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/bilibili.mjs",
+      "bytes": 14103,
+      "sha256": "d9c047fb37cd760e02cfd888fe495e70237e9097e3c0633828d0fa8f1b703262"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/browser.mjs",
+      "bytes": 13717,
+      "sha256": "12598beef08d9b2c6723792c70279641f0582ee3917e84e3cd3958d6fdbac20f"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/budget.mjs",
+      "bytes": 5887,
+      "sha256": "6b2c7acf6cab0706d6e1e6284bcd791ed6b1fcceba48c61d73bea2e19529f0c0"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/engine.mjs",
+      "bytes": 30006,
+      "sha256": "3ae965959c233cd297bd9e691f08070bbc92daede92ae3374f510d28dbe134e7"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/health.mjs",
+      "bytes": 4589,
+      "sha256": "23b0d795b91d1acd82b07f14723e13990b821dbd3d517cef2393eba1201af814"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/knowledge.mjs",
+      "bytes": 1328,
+      "sha256": "4151f894d4d20a1cc26372a6d9edd02f00843630be2fcb16095df29320c7ac6d"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/media.mjs",
+      "bytes": 8850,
+      "sha256": "eec2ec92b6ad77bff4c62959fa258782168b2130ca6f694a2bef382fb6d62269"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/migration.mjs",
+      "bytes": 1306,
+      "sha256": "b6a175762ea2eb455201ce94192f8bb6e44a42dec5f12e9ce29026410e4dcbf5"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/native-budget.mjs",
+      "bytes": 10891,
+      "sha256": "2751b9f80c31a4d9ba29b9583d105f0987b078bba1e366ed9ca741d9426dd607"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/policy.mjs",
+      "bytes": 10635,
+      "sha256": "7e94a373436ee65db0351d1cf3742be46017451c5a7010c635f7368e48c64040"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/sources.mjs",
+      "bytes": 9496,
+      "sha256": "cf9bc57c110e6dcb1dbd6b3c887bd81d32ae87a358302940860f82f692745d94"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/state-lock.mjs",
+      "bytes": 3780,
+      "sha256": "5b3f425a58904ea0019e770f5646ae71c15fcb0b91c9e2667ad53520d8272f21"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/store.mjs",
+      "bytes": 17666,
+      "sha256": "8aabb512e82b09d2e4c785aa86e92cffdf3627bb40fee0207d949b3c913be6c3"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/subtitle-integrity.mjs",
+      "bytes": 2656,
+      "sha256": "3d10b6c4f0b73e637ea058aeca9f3e21c06a7e6f55b2956b1ec05a6dd80bdfcb"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/tariff.mjs",
+      "bytes": 3022,
+      "sha256": "a5547239aa7f63febef859b3675d6222ce9707dbd6b5099c6de1300b3ebe0398"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/trends.mjs",
+      "bytes": 2301,
+      "sha256": "466c42884092fbd9c47c221dc04a52db2c33f54b908729f6089792ea85659704"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/lib/verification.mjs",
+      "bytes": 5701,
+      "sha256": "bd05b5c0d4e485f1053783ad2328ee06544fbb5ef02c3663546eca5e09064ee2"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/locale/en.json",
+      "bytes": 212,
+      "sha256": "4739cb3a81fdaf9f697b5df9b5f4aae14ce930d395b966a0404a6efd25f0ea45"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/locale/zh.json",
+      "bytes": 208,
+      "sha256": "dffcb81803f4b96c024d5f1cd4f45e08b5246e31d614399b7aa366b3e0d39da4"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/package.json",
+      "bytes": 713,
+      "sha256": "9488e580d31f8f4f55c037839e80304ff2094522e5794047bacd1f1a43fd4d61"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/bilibili-comments.test.mjs",
+      "bytes": 11617,
+      "sha256": "0216f3d5461346f26b5045ed65a32e607f2fa675a449178a5c48146d2cd1db70"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/bilibili.test.mjs",
+      "bytes": 7720,
+      "sha256": "a53feae20ab4adae4395bbedeb1cd0fc2cd4f5e1f6e49c0fbfb499af4b41563a"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/budget.test.mjs",
+      "bytes": 8375,
+      "sha256": "0b8e90aefd1ac79d072f156683e6cf5a780e8ae30e3b3acfa54730d578092441"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/engine.test.mjs",
+      "bytes": 8080,
+      "sha256": "ab769e258f56124b032a01190583266ed9c4c713f32326222ea5f06510db053c"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/host-smoke.mjs",
+      "bytes": 2798,
+      "sha256": "fb86060a772a9aa6e71ef063143dfdebff1c497625e7a3d6e442543a575d142a"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/media-smoke.mjs",
+      "bytes": 1643,
+      "sha256": "aa1bb306e09be582f636b0aa2be19e1a43dac42abe434ddd68bb25253e53636e"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/native-budget.test.mjs",
+      "bytes": 8629,
+      "sha256": "da8d849481e8ff18eff0d4cb9c75ff6e2bcd6ae8a195e77fa3fa4ea5454e53b0"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/policy.test.mjs",
+      "bytes": 2638,
+      "sha256": "698fe469a56db3de7d97618d1504603c804ec78428f5feff1e7d0c699920cd44"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/research-media.test.mjs",
+      "bytes": 7829,
+      "sha256": "85e8f82fa7e44e2d1849bb4519d01745cfbd0375e1928a88290f227b2513ab91"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/sources.test.mjs",
+      "bytes": 3457,
+      "sha256": "307102046945d29b4afd60d6e76d0f7f440a9f66abc35a209b9b7f31f277647b"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/subtitle-integrity.test.mjs",
+      "bytes": 3133,
+      "sha256": "ed8a5007f16d13162754674b173a450780ee4b6dfad1fc079b05ed001c779590"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/tariff.test.mjs",
+      "bytes": 1745,
+      "sha256": "609de581cc36236680e6cda8acea33e04d9a1f3198519dbae5c562f9d22e94ad"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/test/verification.test.mjs",
+      "bytes": 2248,
+      "sha256": "8b4c5aa437e3b5e01f711dc1066c391bf4235132828965b691f7577e55ac27f2"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/vendor/moxingovo-bilibili/LICENSE",
+      "bytes": 1103,
+      "sha256": "7a49b7b00620c4349b489d226401f608accdba82c698e01aef25abf068f74c22"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/vendor/moxingovo-bilibili/UPSTREAM.md",
+      "bytes": 1156,
+      "sha256": "f9c220c0d08e8e41b9d003ae6dfebd417d87d0bc950f247a0827b078bf266e71"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/vendor/moxingovo-bilibili/provider.js",
+      "bytes": 28457,
+      "sha256": "d80ea43588b3d60c1f77636fd2a45a98144a4bcc4f8e68c7b8ae6644cb23bf58"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/vendor/moxingovo-bilibili/types.js",
+      "bytes": 934,
+      "sha256": "02316806ec7b1bf985db0c2ab4ecf5ab7ce78acf1d59d2cbdb2c7f1e9f32fc28"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/vendor/moxingovo-bilibili/wbi.js",
+      "bytes": 2477,
+      "sha256": "5d6473413d712014e750b2c82e5f51e663e10e040db1e38b5c841652c64b8dc9"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-life/使用指南.md",
+      "bytes": 2006,
+      "sha256": "8f4a427e60ded53ee9cdfcafc5f1263bc01bbe2141b560d1f0605e475573ff0f"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-toolbox/GUIDE.en.md",
+      "bytes": 1754,
+      "sha256": "35493106870dda970415e5ea17f1b6cc0d2193180a44acac260b9b5f7af91398"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-toolbox/README.md",
+      "bytes": 1017,
+      "sha256": "6d7d2ad90480d1b46c7917212918008ffef8d46ad90eb1e85d852a600f3b8909"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-toolbox/cordis.patch.yml",
+      "bytes": 1561,
+      "sha256": "e55484f375af7118a9f18d04ee50ec23c91b895c4cd91f82bc723957e46467cd"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-toolbox/index.js",
+      "bytes": 103,
+      "sha256": "d30d9986f4525d3c3916a0f5ff9e7d66b5afa4401cef0e9a9c5ac10c5a6433e4"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-toolbox/offline-tts.ps1",
+      "bytes": 1347,
+      "sha256": "00ff17f146d5efbbeabfac48909d73a9aa4d33ae486173514562711b8cdfc8aa"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-toolbox/package-lock.json",
+      "bytes": 1926,
+      "sha256": "7b4fdcd83c6784e5f21d9e477a14cae200cdb845de64d25af3bbbf82701f98d1"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-toolbox/package.json",
+      "bytes": 608,
+      "sha256": "8cfcc2428e27bf1ef175ef7cdc57e560fcd876a3fecbdb7e2d2193b8932c370f"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-toolbox/requirements.lock.txt",
+      "bytes": 1055,
+      "sha256": "9fc353f52c70db8aad1d16cbd2f7f351a1a0fcf21f30cd630e1bdc01c16d3949"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-toolbox/requirements.txt",
+      "bytes": 60,
+      "sha256": "2004d82cc5442171a9564c6928c75138f81b1ce02370b72bfdc53217f1bfd0e7"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-toolbox/tts_launcher.py",
+      "bytes": 9826,
+      "sha256": "64bf22261122d193805569ccbc3ecfff9c8c3d522504620b1f44c808238d62a3"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-toolbox/verify.mjs",
+      "bytes": 2519,
+      "sha256": "1a0655cc5adf3a9cc9d681f9a545ff3e3ef810d14c36ce530200d87173e60390"
+    },
+    {
+      "path": "harness-plugins/dafeiyu-toolbox/使用指南.md",
+      "bytes": 1582,
+      "sha256": "e59cec5ada808fcb1b37dd838e3a667753c3cca7f457dd806fae155217deb8a0"
+    },
+    {
+      "path": "harness-plugins/film-study-runtime/analyse.py",
+      "bytes": 1457,
+      "sha256": "d3bdf2b91f1b2dd9db0ba9df2967f38e034364a6e530fa0d5dcbc5435a499e18"
+    },
+    {
+      "path": "harness-plugins/film-study-runtime/installed-freeze.txt",
+      "bytes": 126,
+      "sha256": "b396ad176ac8bfed12a62e844ab5bb77f1812accab0d381fbbbccd75d25e285f"
+    },
+    {
+      "path": "harness-plugins/index-tts-runtime/client.mjs",
+      "bytes": 1989,
+      "sha256": "c5b55d4343f6a095b15b2211112a9ddca71e1228b3b79973371e029db24bfdf1"
+    },
+    {
+      "path": "harness-plugins/index-tts-runtime/expressive.py",
+      "bytes": 5282,
+      "sha256": "b4679dfd04c0f40fe20633c0b40de53b76a646301080f7d96e28bdeb3baa800d"
+    },
+    {
+      "path": "harness-plugins/lian-video-runtime/atomic-output.mjs",
+      "bytes": 1907,
+      "sha256": "2392bd0a7bb05956f25e9b455f9069c18d8949faecce6fb47ef035341ed91a29"
+    },
+    {
+      "path": "harness-plugins/lian-video-runtime/package-lock.json",
+      "bytes": 146150,
+      "sha256": "fc3ba7ce33dd1c34729c31bef11048f4b7c295641880460637a17b3f11253a3b"
+    },
+    {
+      "path": "harness-plugins/lian-video-runtime/package.json",
+      "bytes": 405,
+      "sha256": "d3a5c3841c737d777a32dc5dfd69c0597ee8243c03429f70ec0677d2e3d4035b"
+    },
+    {
+      "path": "harness-plugins/lian-video-runtime/prepare-library.mjs",
+      "bytes": 2332,
+      "sha256": "723891d4e0b3d3760ea4bedababe57ecd001d14055a1f98742483605445b4e88"
+    },
+    {
+      "path": "harness-plugins/lian-video-runtime/render-job.mjs",
+      "bytes": 2668,
+      "sha256": "eb87505a3094f198777e87aea29b70ef4395315678075aeffb98fd1c4a816c0d"
+    },
+    {
+      "path": "harness-plugins/lian-video-runtime/render.mjs",
+      "bytes": 519,
+      "sha256": "4724eb0cacac5c11f11610acb4153b511f7a1288ce77fab3c32678ad1a6372e3"
+    },
+    {
+      "path": "harness-plugins/lian-video-runtime/template/src/index.jsx",
+      "bytes": 3846,
+      "sha256": "b3bedae9751f95298ad9479abf76ea86ac2dc1e7dbf352a76c07021dc8387ec3"
+    },
+    {
+      "path": "harness-plugins/local-asr/prepare_model.py",
+      "bytes": 811,
+      "sha256": "0df2c9270abc5f267b699ef9d435c510011814cf2568c7168ad17f3c5384ffbc"
+    },
+    {
+      "path": "harness-plugins/local-asr/requirements.txt",
+      "bytes": 72,
+      "sha256": "9a22a97777c88c7b4ca8a4fb68f747dfb34802cc21026664c4225cc0034a4304"
+    },
+    {
+      "path": "harness-plugins/local-asr/transcribe.py",
+      "bytes": 2701,
+      "sha256": "ea9762fdbc947f51b6979f820fbca8a40bd564021a3d971d4ff90c3a2d11e19c"
+    },
+    {
+      "path": "harness-plugins/motion-canvas-runtime/create.mjs",
+      "bytes": 998,
+      "sha256": "c64b8c3b7101ff6818012bf53a4317ba7f359f80da67065ec9ef664ec6cc7acc"
+    },
+    {
+      "path": "harness-plugins/motion-canvas-runtime/package-lock.json",
+      "bytes": 66371,
+      "sha256": "3df1ef4c34c70eb2a1b6e6434348a45cb66ffe55830250ee128b81b99ca2a346"
+    },
+    {
+      "path": "harness-plugins/motion-canvas-runtime/package.json",
+      "bytes": 301,
+      "sha256": "064f7d0320465860933f373dcb4f2eff2a90f7ff7cfc8f5be17dec3641b52c9d"
+    },
+    {
+      "path": "harness-plugins/motion-canvas-runtime/render.mjs",
+      "bytes": 2970,
+      "sha256": "690d24eabb90088fde20c4964135ba20d2fa40c07edb1e882222a1c2d254adec"
+    },
+    {
+      "path": "harness-plugins/motion-canvas-runtime/template/src/project.ts",
+      "bytes": 154,
+      "sha256": "26b9e65a5cf328dfda1af2edb42ca468eb5f5c1a4d5af7eb8bd02c56d9124ab8"
+    },
+    {
+      "path": "harness-plugins/motion-canvas-runtime/template/src/scenes/explanation.tsx",
+      "bytes": 1425,
+      "sha256": "f3e8495c4bd03cf6fb473cc239838c1ea572418771c63632087db3727cd91683"
+    },
+    {
+      "path": "harness-plugins/motion-canvas-runtime/template/tsconfig.json",
+      "bytes": 140,
+      "sha256": "de29b808006c24a22446792e49026aa7b7b9ddc01f17bd69b6ff7970dd035760"
+    },
+    {
+      "path": "harness-plugins/motion-canvas-runtime/template/vite.config.mjs",
+      "bytes": 874,
+      "sha256": "d65f1408eaf0379368e1328b94de55e08c9564f5b6058855f633904c974fbeee"
+    },
+    {
+      "path": "harness-plugins/motion-canvas-runtime/verify-preview.mjs",
+      "bytes": 990,
+      "sha256": "f6e00445654fe9e8f9aa2cf5c04d9c5028fdd194a7f0766ee189d84ba1f07e3a"
+    },
+    {
+      "path": "harness-plugins/music-runtime/client.mjs",
+      "bytes": 3330,
+      "sha256": "f967f338f453845b7311a42d44a1c55d47808901999cb7919e3ea2616b93e780"
+    },
+    {
+      "path": "harness-plugins/music-runtime/music.py",
+      "bytes": 4833,
+      "sha256": "d7f80d198f02a12dc5d9165df06665bc9ed0ffadcf15c9c0f600a5b8e40287f8"
+    },
+    {
+      "path": "harness-plugins/music-runtime/requirements.lock.txt",
+      "bytes": 1389,
+      "sha256": "63c6ed6a32b1f417f630186e2663ade2d525ec5d4d7b154020c7fa1d3c4d6e48"
+    },
+    {
+      "path": "harness-plugins/opendesign-runtime/create-sample.mjs",
+      "bytes": 3855,
+      "sha256": "97a5d5aec330d15c742db176c007611c11f2a170bc002976daf7b249aa2c7598"
+    },
+    {
+      "path": "harness-plugins/opendesign-runtime/mcp-adapter.mjs",
+      "bytes": 4258,
+      "sha256": "82617c6712f6e5f93425e33200a3f2295319f4623a640c28f0913c27e3bb9484"
+    },
+    {
+      "path": "harness-plugins/opendesign-runtime/mcp-launcher.mjs",
+      "bytes": 29,
+      "sha256": "65f14723990e73f5f379087147cb3e85b6d57c0a99c05cda4cbcb60bed5f2f86"
+    },
+    {
+      "path": "harness-plugins/opendesign-runtime/resolve.mjs",
+      "bytes": 2112,
+      "sha256": "00cef2c9aaf4e93e084c705929b0a5443ee7e3c43e3af7d51894937868a9bf7a"
+    },
+    {
+      "path": "harness-plugins/opendesign-runtime/verify.mjs",
+      "bytes": 1803,
+      "sha256": "aa166de195cefc284f5587f4ae1bbfb8344712f7cc19358b31c240aa0b9368ef"
+    },
+    {
+      "path": "harness-plugins/sensory-runtime/gpu-lease.mjs",
+      "bytes": 1019,
+      "sha256": "f943f5b7cc6560c4b71d874251e397e093fcfc7827e847f810279e5494aa2151"
+    },
+    {
+      "path": "harness-plugins/sensory-runtime/gpu_lock.py",
+      "bytes": 922,
+      "sha256": "3f62b4a6ea344f433d3342a0683ccb361110c26a474fc3eec1df9b985081a126"
+    },
+    {
+      "path": "harness-plugins/sensory-runtime/voice-monitor-worker.mjs",
+      "bytes": 541,
+      "sha256": "6ef030550edc27fc23e14befd838aee2dfdbbd22259ed780e5b66d086ff52fb0"
+    },
+    {
+      "path": "harness-plugins/sensory-runtime/voice-monitor.mjs",
+      "bytes": 8013,
+      "sha256": "1376efba043cc222886e5bbc2a2e0c94186fdf89dd65bd6a8691b6b221730f75"
+    },
+    {
+      "path": "harness-plugins/sensory-runtime/voice_metrics.py",
+      "bytes": 819,
+      "sha256": "cf361232f1db478ab8b9548016145cc8892b4d52aae22a698d272ec155ad7118"
+    },
+    {
+      "path": "harness-plugins/shared-mcp-runtime/package.json",
+      "bytes": 120,
+      "sha256": "18f4c1167158b5b9e377a53742d40ccd62228174b7afffed30de773c914e3ae1"
+    },
+    {
+      "path": "harness-plugins/video-perception-runtime/client.mjs",
+      "bytes": 5719,
+      "sha256": "f53f8699cf459e4556b95575a387a2f96e602b1b788826b6d12db70cd182b34d"
+    },
+    {
+      "path": "harness-plugins/video-perception-runtime/prepare_sequence.py",
+      "bytes": 1933,
+      "sha256": "03998e89051bfab237a72303a371167a0b36e18b6bd264c98095bab0bfee2c9b"
+    },
+    {
+      "path": "harness-plugins/video-perception-runtime/track_video.py",
+      "bytes": 5407,
+      "sha256": "ec70f62607d44bc978cef7f44f5c106f254fbc5addf2e1597a1ba49cee3f20d1"
+    },
+    {
+      "path": "harness-plugins/voice-design-runtime/client.mjs",
+      "bytes": 1808,
+      "sha256": "b7262f6ccf2d3896efe63e1bd4c23b12ecc935864e8791f9b34f3e260b3a04a9"
+    },
+    {
+      "path": "harness-plugins/voice-design-runtime/download-model.py",
+      "bytes": 3797,
+      "sha256": "d6a6a51b5e9befdbb37359531e99163044dbae4ecda611c48e490c6aea27ef27"
+    },
+    {
+      "path": "harness-plugins/voice-design-runtime/make-samples.py",
+      "bytes": 4782,
+      "sha256": "08b8b9474025466d9004b82a5ad15e10c80caa506459683f9c060da9c9686d41"
+    },
+    {
+      "path": "harness-plugins/voice-design-runtime/requirements.lock.txt",
+      "bytes": 1621,
+      "sha256": "8f6fb7d30a13bed95472d59fd060c076ae41c5fbb24404465988b40e3eeaa123"
+    },
+    {
+      "path": "harness-plugins/voice-design-runtime/voice.py",
+      "bytes": 4879,
+      "sha256": "25b32914272d0eb358d02dd1cc912ae491e4ce91c7e07ec2640a93ea1ce9b563"
+    },
+    {
+      "path": "harness-plugins/扩展/bili-perception/GUIDE.en.md",
+      "bytes": 2189,
+      "sha256": "16977f7571244ab5601273c87f4a1609b8c79deb9ac6a8f2942b0a6eea130e24"
+    },
+    {
+      "path": "harness-plugins/扩展/bili-perception/INTEGRATION-20261026.md",
+      "bytes": 2195,
+      "sha256": "cbf4d2f902e8ff913f19151da741686b5a0e06a069e7882a5f0ba23e7a67294f"
+    },
+    {
+      "path": "harness-plugins/扩展/bili-perception/LICENSE.upstream",
+      "bytes": 1065,
+      "sha256": "af78ebce8eb7f6202fd3b646b3f742d9991e9cd34c12cf17c0fd0c46539f1419"
+    },
+    {
+      "path": "harness-plugins/扩展/bili-perception/THIRD_PARTY_NOTICES.md",
+      "bytes": 4147,
+      "sha256": "395707e5eb87d613326ada93ae86a7cf4c9f090637ac5e84394d5283067b03f3"
     },
     {
       "path": "harness-plugins/扩展/bili-perception/bili-backup-streams.mjs",
@@ -133,11 +1307,6 @@
       "sha256": "f3d48f602126ecd8193ae6624a598e358c8358a501b61e74358e6fed08166668"
     },
     {
-      "path": "harness-plugins/扩展/bili-perception/GUIDE.en.md",
-      "bytes": 2189,
-      "sha256": "16977f7571244ab5601273c87f4a1609b8c79deb9ac6a8f2942b0a6eea130e24"
-    },
-    {
       "path": "harness-plugins/扩展/bili-perception/handoff.mjs",
       "bytes": 1829,
       "sha256": "380d5588238e0079277a3fe3b32e89c98b61290044ee3d5fb2aa56a4d87ba172"
@@ -151,16 +1320,6 @@
       "path": "harness-plugins/扩展/bili-perception/index.js",
       "bytes": 7300,
       "sha256": "49d65b5f1dbcb90635b4ef0a1d3c9e3b4c8d218b57a40841eb198db13a6eaf39"
-    },
-    {
-      "path": "harness-plugins/扩展/bili-perception/INTEGRATION-20261026.md",
-      "bytes": 2195,
-      "sha256": "cbf4d2f902e8ff913f19151da741686b5a0e06a069e7882a5f0ba23e7a67294f"
-    },
-    {
-      "path": "harness-plugins/扩展/bili-perception/LICENSE.upstream",
-      "bytes": 1065,
-      "sha256": "af78ebce8eb7f6202fd3b646b3f742d9991e9cd34c12cf17c0fd0c46539f1419"
     },
     {
       "path": "harness-plugins/扩展/bili-perception/network.mjs",
@@ -184,8 +1343,8 @@
     },
     {
       "path": "harness-plugins/扩展/bili-perception/package.json",
-      "bytes": 281,
-      "sha256": "e3c42995f0780650f9735440151a8859c3f5488b3b5f003df96645a07fb0d3d0"
+      "bytes": 279,
+      "sha256": "5c11ccecc44862e6666f78329646f8bc4e13d2f9ad6539e59b1a71ea4cb70566"
     },
     {
       "path": "harness-plugins/扩展/bili-perception/perceive.mjs",
@@ -213,24 +1372,19 @@
       "sha256": "0f056ace0273003e7935eaf7f5d2583fbd18fad210c238baa87614801b9fbbf9"
     },
     {
-      "path": "harness-plugins/扩展/bili-perception/THIRD_PARTY_NOTICES.md",
-      "bytes": 4147,
-      "sha256": "395707e5eb87d613326ada93ae86a7cf4c9f090637ac5e84394d5283067b03f3"
-    },
-    {
       "path": "harness-plugins/扩展/bili-perception/vendor-vision/LICENSE",
       "bytes": 1086,
       "sha256": "f90780d785031e1c7cfc05d1d2c76401113bb3b8c9f7b36d646aac42854f2c74"
     },
     {
-      "path": "harness-plugins/扩展/bili-perception/vendor-watch/asr-quality.mjs",
-      "bytes": 1911,
-      "sha256": "57de131d888125f32106aed06ae8d49ced00c25e9adf90d25121ae373910a771"
-    },
-    {
       "path": "harness-plugins/扩展/bili-perception/vendor-watch/LICENSE",
       "bytes": 1073,
       "sha256": "b17e749a393d4c6daa5580158af901a023d2d471b598b7a11d8b01e94eb6577b"
+    },
+    {
+      "path": "harness-plugins/扩展/bili-perception/vendor-watch/asr-quality.mjs",
+      "bytes": 1911,
+      "sha256": "57de131d888125f32106aed06ae8d49ced00c25e9adf90d25121ae373910a771"
     },
     {
       "path": "harness-plugins/扩展/bili-perception/vendor/extractor.js",
@@ -243,19 +1397,39 @@
       "sha256": "bf4dd71d3ed833113842343cfd9fb34c0fc4bdfb81424c07ed583d124a175b48"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/使用指南.md",
-      "bytes": 1799,
-      "sha256": "9d25c65d845880e920074c9987fc491d9d5ef0430a41296bec7fd30d93a2872b"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/cordis.patch.yml",
-      "bytes": 2270,
-      "sha256": "ec25fc02f0d283e913014bb2cbdef92a17ea360c92f2503d5104b4f8f5e7c064"
+      "path": "harness-plugins/扩展/bili-perception/使用指南.md",
+      "bytes": 2075,
+      "sha256": "d595f7a25826e4ae8899318bf861978028399a80fbb411646da62eefe241e2c8"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/GUIDE.en.md",
       "bytes": 1916,
       "sha256": "b58e089c89378133faf02d8c1a5d30e7fcf87779ca88b7dfbdf2b4ec6bf77384"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/LICENSE",
+      "bytes": 1069,
+      "sha256": "f4d265194e0824721af0592462a71fe750c04db3565c23c5d6c65fdee25fb4b0"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/README.md",
+      "bytes": 29089,
+      "sha256": "29b70846cc8b64b369b95e0f1dd587ecb6108e79746014ca35892f83c7b511bc"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/README_ZH.md",
+      "bytes": 28154,
+      "sha256": "80e3118361bded5dc7aa2497a80b2cf0d4fb93143dfb938c7b2ec448a56d1927"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/UPGRADE-LIAN.md",
+      "bytes": 4300,
+      "sha256": "4080bb8eb43a63e035f7e77ad9ac92a7005bdb8a1e0069b9fca8416bd1034b7d"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/cordis.patch.yml",
+      "bytes": 2270,
+      "sha256": "ec25fc02f0d283e913014bb2cbdef92a17ea360c92f2503d5104b4f8f5e7c064"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/icon.svg",
@@ -333,6 +1507,136 @@
       "sha256": "4561b9145955ec99849d0382bcb619806c584a493ed315bfcad04d9fcf6e506d"
     },
     {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/AnchoredPopover.d.ts",
+      "bytes": 1784,
+      "sha256": "b5a3669800a81fa3b25acd46f6368fdd892f0178f9834956bb2de423d7b5a1e7"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/DiffTab.d.ts",
+      "bytes": 202,
+      "sha256": "f6010982efce518f51506e150f6cd2c1dd6f43803b25868d7eca0c8fc4af9074"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/EditorHost.d.ts",
+      "bytes": 658,
+      "sha256": "6b5743d03e9ae690f08b4351e9b122235a1f4103b2d6f03c7a85347f9eb1ce15"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/FileTree.d.ts",
+      "bytes": 5699,
+      "sha256": "d1f17e20f234f13409c43eefa30b1fcd99d32e8c0879cb525556e1756a7a76ee"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/FloatingWindow.d.ts",
+      "bytes": 3687,
+      "sha256": "a8674d2df0a428819d350758e939885e94a1d7a31916fd21ae624ef4e1b1d539"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/JobsDrawer.d.ts",
+      "bytes": 3886,
+      "sha256": "2ef34a48aa060b6b18c1147ad388e33a959e388ff5f7e504477dfe767a7c2a43"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/LargeFileView.d.ts",
+      "bytes": 2641,
+      "sha256": "2f8ae802910cc4477bfa6fa76161fd2c3e2eef06597dfc2fc23ad47bf3369c75"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/MarkdownHtml.d.ts",
+      "bytes": 1567,
+      "sha256": "5d17d2368f797353ac635aa0a2e6958331d446553780848e39617200ffe3c8c4"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/OrphanedTab.d.ts",
+      "bytes": 588,
+      "sha256": "39d8b7b6209d9e6fdfc85f5578642c77187ce06647086a6e588c576a5cda27fc"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/PdfView.d.ts",
+      "bytes": 182,
+      "sha256": "9bbb8a05c49d59b975ddc75c37174a643b91ad5abd5d5f7fe9597239f0a84e8d"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/RenderBoundary.d.ts",
+      "bytes": 1246,
+      "sha256": "6a68fcd5f81f753abaca4d89a1c85e4b12db5b3f5d07cb6a75abd2609380dc77"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/SandboxStatusBar.d.ts",
+      "bytes": 474,
+      "sha256": "fe34363fc2e44ddc555650b30b8a85ead1f8f089d9f67e91a286948ec6013d7a"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/SideCardSection.d.ts",
+      "bytes": 4679,
+      "sha256": "cd0de3997ef18d1e2db5991bb0766e2276dfd44dbf1aa71fa8b4792479713ab3"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/SideChatView.d.ts",
+      "bytes": 803,
+      "sha256": "490a10a5ff8a8240efe242f9d2f4b2448865fa93ce79be2084f2000c1f0bec85"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/Sidebar.d.ts",
+      "bytes": 480,
+      "sha256": "a06b77069d5409b67e9cee94c46b5abebe862770f1bf808f69bdf451980b6a21"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/SubagentView.d.ts",
+      "bytes": 2394,
+      "sha256": "ba98125c9e9197cd7caa8f313d7fbc3b5b908d44e463622c5e27ea48aea4ce57"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TabBar.d.ts",
+      "bytes": 3425,
+      "sha256": "87b95feb3c03f65908d5cf96b603ed0a79e323ef9552812e3fc66ff8c8d0d51e"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TaskWindow.d.ts",
+      "bytes": 2472,
+      "sha256": "e393e09fcd5394d3da05e24a3f3f8eced023e9078219feb5d822be926e04ea93"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TasksGraph.d.ts",
+      "bytes": 3393,
+      "sha256": "b999f3503d68580b0b1f5a3c6ceda5eb9436c0b18628f09df4b53e88463750a6"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TasksPopovers.d.ts",
+      "bytes": 2922,
+      "sha256": "0a79bf4bd2186ca21cad131b3d4df64d40be0adeea6c75906afef73f0c99c6d8"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TasksTree.d.ts",
+      "bytes": 2353,
+      "sha256": "6b355253b1f2254c277c80e8e4c3fdbf6e915a338bebe29f41b6d3b04d71942e"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TeamBoard.d.ts",
+      "bytes": 1774,
+      "sha256": "f609f193cd035dda749fc7293ff9f153d37d826d1cd17e956e34d2b0aad01276"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TerminalView.d.ts",
+      "bytes": 731,
+      "sha256": "18af98493aec4d9b0300ec8d4905e98269807df65a8b9d7b0b0b3288d1dafebd"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TextEditor.d.ts",
+      "bytes": 1240,
+      "sha256": "65fc2f4e48fb79de692d098c033f85d0064f0791197797c931ab0f88ca7fc6bc"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TreePanel.d.ts",
+      "bytes": 2627,
+      "sha256": "1d9b7d533677757f18a27995f62f28b7f6e172000be5e5747bd0fae65aa0ec3f"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/UploadOverlay.d.ts",
+      "bytes": 901,
+      "sha256": "ff23d18da125469e7a1e617823dc3379a29b554e190a1f271b4c274e6fb950e4"
+    },
+    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/activity-icons.d.ts",
       "bytes": 1322,
       "sha256": "13b173a9b5a6e0fd34e274e00689f9f27a756c2d68a11b59e2d1b3e90f2d23dc"
@@ -341,11 +1645,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/add-plugin-modal.d.ts",
       "bytes": 689,
       "sha256": "20792b07bd538bef9e7fb7de971ddd6a071969c537c288c2cb2363473c1b5b4e"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/AnchoredPopover.d.ts",
-      "bytes": 1784,
-      "sha256": "b5a3669800a81fa3b25acd46f6368fdd892f0178f9834956bb2de423d7b5a1e7"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/api.d.ts",
@@ -393,11 +1692,6 @@
       "sha256": "d41332bbf546806697c99e7ed1507c3c1c40e49fef85162082e36d50e77c37ca"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/changes/change-tree.d.ts",
-      "bytes": 3914,
-      "sha256": "c25c6d8d833825450c48f96c9927157b6b9c534099fdac951e9df4e13eb96145"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/changes/ChangesTab.d.ts",
       "bytes": 404,
       "sha256": "0b1156db8e908b537b4bee376d00a428d4b643fee5c6b40f0ec196b18913b588"
@@ -428,6 +1722,16 @@
       "sha256": "9f089cecad432e33ebb14889c88bb7c4c1a9820b22b5a5bde883a27dc4a31e6c"
     },
     {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/changes/SessionLens.d.ts",
+      "bytes": 695,
+      "sha256": "76a1c34668d58647159731f3b7b9959bedd7a0a18685f9b366c3f26ad1fbe27e"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/changes/change-tree.d.ts",
+      "bytes": 3914,
+      "sha256": "c25c6d8d833825450c48f96c9927157b6b9c534099fdac951e9df4e13eb96145"
+    },
+    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/changes/graph-layout.d.ts",
       "bytes": 3527,
       "sha256": "c18f85b42a9dd713877134cb145a7beb816a0f30c12140f134b2cc4b99fc40df"
@@ -436,11 +1740,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/changes/ops.d.ts",
       "bytes": 3474,
       "sha256": "4689f3f3c637e92c03e8ba29770275e434d80cf99ec4f25edb4668786ada7707"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/changes/SessionLens.d.ts",
-      "bytes": 695,
-      "sha256": "76a1c34668d58647159731f3b7b9959bedd7a0a18685f9b366c3f26ad1fbe27e"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/chunk-loader.d.ts",
@@ -523,11 +1822,6 @@
       "sha256": "db1f9b8ba6d5711aa3a8ffe78e8a084cc90bdc8cd55d38f3b3f0d049f6781e06"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/DiffTab.d.ts",
-      "bytes": 202,
-      "sha256": "f6010982efce518f51506e150f6cd2c1dd6f43803b25868d7eca0c8fc4af9074"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/editor-dirty.d.ts",
       "bytes": 3412,
       "sha256": "c5c4f05d7e7ca23481e58deed8a0703829511b0bb7e966da69fbcc2f640ab833"
@@ -543,11 +1837,6 @@
       "sha256": "2fd98779673cd64319a15227cf166c5710f9bc5f1505c97d1f11cad9197c2938"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/EditorHost.d.ts",
-      "bytes": 658,
-      "sha256": "6b5743d03e9ae690f08b4351e9b122235a1f4103b2d6f03c7a85347f9eb1ce15"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/file-icons.d.ts",
       "bytes": 2596,
       "sha256": "fb607b0d2c9c61e2fb18822a2fcb2edb191dda4f5aeaa4e607b6cf6dff43c298"
@@ -561,16 +1850,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/file-tree-sort.d.ts",
       "bytes": 2152,
       "sha256": "c8fe6882538542a2bef32d68f96ee6d2eb8557e0f356cebe0b912f516aec0865"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/FileTree.d.ts",
-      "bytes": 5699,
-      "sha256": "d1f17e20f234f13409c43eefa30b1fcd99d32e8c0879cb525556e1756a7a76ee"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/FloatingWindow.d.ts",
-      "bytes": 3687,
-      "sha256": "a8674d2df0a428819d350758e939885e94a1d7a31916fd21ae624ef4e1b1d539"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/frame-batcher.d.ts",
@@ -613,11 +1892,6 @@
       "sha256": "ee9c9a81066a1f697cc9e53fb21c7dd001f4f3c58affcdc180b0167494d746c7"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/JobsDrawer.d.ts",
-      "bytes": 3886,
-      "sha256": "2ef34a48aa060b6b18c1147ad388e33a959e388ff5f7e504477dfe767a7c2a43"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/jsonl.d.ts",
       "bytes": 1445,
       "sha256": "6f050e7bc3cf8db494615c0f9ac50007986495689fb21912012379d17ae4ad40"
@@ -631,11 +1905,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/lang.d.ts",
       "bytes": 799,
       "sha256": "6df7d5f4cda528082ea7e528afb17aee98584ab9de10aeafa99eada8cb6e22ef"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/LargeFileView.d.ts",
-      "bytes": 2641,
-      "sha256": "2f8ae802910cc4477bfa6fa76161fd2c3e2eef06597dfc2fc23ad47bf3369c75"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/layout-push.d.ts",
@@ -783,11 +2052,6 @@
       "sha256": "73251aeb78276ebbc56a15758169ab28d276960c1488aeaf2fe50663a5d2dad9"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/MarkdownHtml.d.ts",
-      "bytes": 1567,
-      "sha256": "5d17d2368f797353ac635aa0a2e6958331d446553780848e39617200ffe3c8c4"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/md-toc.d.ts",
       "bytes": 207,
       "sha256": "36452f37842ca9f8a1b60a405ba8a9838b6469b0d99afaf7bf52c4e17324185d"
@@ -863,11 +2127,6 @@
       "sha256": "779a9624f98a03c8ea1f927a83cacee27031c22d2fcb947eef126de208c1e5e4"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/OrphanedTab.d.ts",
-      "bytes": 588,
-      "sha256": "39d8b7b6209d9e6fdfc85f5578642c77187ce06647086a6e588c576a5cda27fc"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/path-line.d.ts",
       "bytes": 2408,
       "sha256": "80389e47a7e7f31f74ba122a77c8e66c8fecd18484f3e8e9d5d443c5c0d1b157"
@@ -881,11 +2140,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/pdf-types.d.ts",
       "bytes": 130,
       "sha256": "907790ad2fe16c70a4b003cf703ded622fb53202f6f5e0251e70c0b65d829e35"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/PdfView.d.ts",
-      "bytes": 182,
-      "sha256": "9bbb8a05c49d59b975ddc75c37174a643b91ad5abd5d5f7fe9597239f0a84e8d"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/plugin-settings.d.ts",
@@ -928,19 +2182,9 @@
       "sha256": "8148fff96529e1b24633a01026706a6e6a17be10ebd9301fe31536bbb4c3d108"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/RenderBoundary.d.ts",
-      "bytes": 1246,
-      "sha256": "6a68fcd5f81f753abaca4d89a1c85e4b12db5b3f5d07cb6a75abd2609380dc77"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/resource-address.d.ts",
       "bytes": 4473,
       "sha256": "0d8e89e3d665bb3e9f51accb9e023e836994d780e001a44f09c18307d9c32799"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/SandboxStatusBar.d.ts",
-      "bytes": 474,
-      "sha256": "fe34363fc2e44ddc555650b30b8a85ead1f8f089d9f67e91a286948ec6013d7a"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/selection-payload.d.ts",
@@ -978,9 +2222,9 @@
       "sha256": "df11d3aa2c311f858b759afe7df7d47296493a09ecacdd1ce99a29d364347a5d"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/Sidebar.d.ts",
-      "bytes": 480,
-      "sha256": "a06b77069d5409b67e9cee94c46b5abebe862770f1bf808f69bdf451980b6a21"
+      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/sidebar/TabContent.d.ts",
+      "bytes": 1788,
+      "sha256": "ff391643eb2d7e696d7ae2aef786076cddca9dfe85edaf094319958a85bdcf32"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/sidebar/bottom-toggle.d.ts",
@@ -998,11 +2242,6 @@
       "sha256": "8b5122a687363581477ccb89b9c9d312c7fd14b0ad80b17a818fe4d1e781ab1a"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/sidebar/TabContent.d.ts",
-      "bytes": 1788,
-      "sha256": "ff391643eb2d7e696d7ae2aef786076cddca9dfe85edaf094319958a85bdcf32"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/sidebar/use-center-column.d.ts",
       "bytes": 713,
       "sha256": "eebd121063e10f0c741c778548e29f20dba5c2c8f93873d6d1935205e138b123"
@@ -1013,19 +2252,9 @@
       "sha256": "250797e18dea7a8e27e133bab9a8bfeb449a9b651e28603e029e3f7143ab67e2"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/SideCardSection.d.ts",
-      "bytes": 4679,
-      "sha256": "cd0de3997ef18d1e2db5991bb0766e2276dfd44dbf1aa71fa8b4792479713ab3"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/sidechat-transcript.d.ts",
       "bytes": 6346,
       "sha256": "32739898e30e20900267067c633601fe5d3ac81e69778ded44dc2d1daedf508b"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/SideChatView.d.ts",
-      "bytes": 803,
-      "sha256": "490a10a5ff8a8240efe242f9d2f4b2448865fa93ce79be2084f2000c1f0bec85"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/split-pane.d.ts",
@@ -1063,19 +2292,9 @@
       "sha256": "020dbf6a824de6c46613d126fa2494e3f02541c6441e75712ef07080ef5fa820"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/SubagentView.d.ts",
-      "bytes": 2394,
-      "sha256": "ba98125c9e9197cd7caa8f313d7fbc3b5b908d44e463622c5e27ea48aea4ce57"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/tab-content-memo.d.ts",
       "bytes": 1787,
       "sha256": "b1fdde3c3dd0a3c6ca3a62f8eddd0fe37fd85435cc413bd411ab7edd12a80061"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TabBar.d.ts",
-      "bytes": 3425,
-      "sha256": "87b95feb3c03f65908d5cf96b603ed0a79e323ef9552812e3fc66ff8c8d0d51e"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/tasks-card.d.ts",
@@ -1108,34 +2327,9 @@
       "sha256": "2520786fb68f2561872eec2a13680aedc8f2b0913aced2a5ff0d6dc759605817"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TasksGraph.d.ts",
-      "bytes": 3393,
-      "sha256": "b999f3503d68580b0b1f5a3c6ceda5eb9436c0b18628f09df4b53e88463750a6"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TasksPopovers.d.ts",
-      "bytes": 2922,
-      "sha256": "0a79bf4bd2186ca21cad131b3d4df64d40be0adeea6c75906afef73f0c99c6d8"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TasksTree.d.ts",
-      "bytes": 2353,
-      "sha256": "6b355253b1f2254c277c80e8e4c3fdbf6e915a338bebe29f41b6d3b04d71942e"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TaskWindow.d.ts",
-      "bytes": 2472,
-      "sha256": "e393e09fcd5394d3da05e24a3f3f8eced023e9078219feb5d822be926e04ea93"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/team-projection.d.ts",
       "bytes": 4815,
       "sha256": "575f2e8a100b07cb8920cec93b4b45d98d3610fd5d2589116f2268fc057819ad"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TeamBoard.d.ts",
-      "bytes": 1774,
-      "sha256": "f609f193cd035dda749fc7293ff9f153d37d826d1cd17e956e34d2b0aad01276"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/terminal-client.d.ts",
@@ -1148,19 +2342,9 @@
       "sha256": "285f855c4122fdc72e44676b0d4cf8a3cb54379a7ac437b85e81ae5f0c8cc0d1"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TerminalView.d.ts",
-      "bytes": 731,
-      "sha256": "18af98493aec4d9b0300ec8d4905e98269807df65a8b9d7b0b0b3288d1dafebd"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/text-pages.d.ts",
       "bytes": 2783,
       "sha256": "9261d5dfe63856a620f5b2e0f6439c11a0d53a9d5d08d6fd575ace2641011920"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TextEditor.d.ts",
-      "bytes": 1240,
-      "sha256": "65fc2f4e48fb79de692d098c033f85d0064f0791197797c931ab0f88ca7fc6bc"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/theme.d.ts",
@@ -1171,11 +2355,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/tree-mutations.d.ts",
       "bytes": 3819,
       "sha256": "25930dd3d22e1acba34cf9451bb74e9611c630d503492f6860d9c5e86da13739"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/TreePanel.d.ts",
-      "bytes": 2627,
-      "sha256": "1d9b7d533677757f18a27995f62f28b7f6e172000be5e5747bd0fae65aa0ec3f"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/ui/git-status.d.ts",
@@ -1196,11 +2375,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/upload.d.ts",
       "bytes": 3620,
       "sha256": "acbd3d3ab295fcc25a87bc273a65de150c61014f323de0c8dd407614a159a78e"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/UploadOverlay.d.ts",
-      "bytes": 901,
-      "sha256": "ff23d18da125469e7a1e617823dc3379a29b554e190a1f271b4c274e6fb950e4"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/lib/types/client/use-auto-animate.d.ts",
@@ -1393,11 +2567,6 @@
       "sha256": "b9f4b0dde964fdcda1aed3afccb8000ff878199d4e90f6c49f4b1790e739fea3"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/LICENSE",
-      "bytes": 1069,
-      "sha256": "f4d265194e0824721af0592462a71fe750c04db3565c23c5d6c65fdee25fb4b0"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/locale/en.json",
       "bytes": 195,
       "sha256": "6b9d1ffb3c4cf70436fbe4ae15df7d6ccb1908375602db452573f975176f8b45"
@@ -1411,16 +2580,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/package.json",
       "bytes": 5167,
       "sha256": "13e865be5abd335457429f6276289f572eede67c2d3aa5ec58333f4de460a36e"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/README_ZH.md",
-      "bytes": 28154,
-      "sha256": "80e3118361bded5dc7aa2497a80b2cf0d4fb93143dfb938c7b2ec448a56d1927"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/README.md",
-      "bytes": 29089,
-      "sha256": "29b70846cc8b64b369b95e0f1dd587ecb6108e79746014ca35892f83c7b511bc"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/scripts/build-hardening.mjs",
@@ -1478,6 +2637,156 @@
       "sha256": "ea73d87992597df3cde30f9c6af2969be09a95663d81e649a66dbe4a071e93cd"
     },
     {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/AnchoredPopover.tsx",
+      "bytes": 7796,
+      "sha256": "2683ba953a7e7e14ac1ad33a66aead5e52d070fd8f2bf2303fb39aaa127a131b"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/DiffTab.tsx",
+      "bytes": 2716,
+      "sha256": "1d3ed7b2d481478c6368176c36ca6a0dee215fb615ee1eccd845f44e62605e04"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/EditorHost.tsx",
+      "bytes": 37317,
+      "sha256": "c39692e5fd9558cd14cc00786da8c0891112f0c36942520e456c53e6caa1cc8a"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/FileTree.tsx",
+      "bytes": 113315,
+      "sha256": "bf2c81b24c69525ecef681725630b8b06d6d099e9b7d3ce33a6545e224d0d182"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/FloatingWindow.module.css",
+      "bytes": 3467,
+      "sha256": "7557ba56b0e89d07573b6632da337ca2b93b190c80bb2a0b9d820c5783a8a03f"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/FloatingWindow.tsx",
+      "bytes": 14533,
+      "sha256": "e802c57d2056162dd52efab3e0a0237dd3b7220b65eaaa08f3700877a37943c9"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/JobsDrawer.tsx",
+      "bytes": 18996,
+      "sha256": "30343abb4b9cc9739d9a28395d34ef5446bb7b02b1342424a57f2da1b5a0a6dd"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/LargeFileView.tsx",
+      "bytes": 12843,
+      "sha256": "aabf977669b4cbde2cd2443541a25684b0470ea6ec63f0662f08a936034901f1"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/MarkdownHtml.tsx",
+      "bytes": 17392,
+      "sha256": "9ba79779ac31d886eca410ff162684bb76bbbd1a6f0def4ead4f5776ae66b4fa"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/OrphanedTab.tsx",
+      "bytes": 1033,
+      "sha256": "3f416e20c7e4d754e3ce8072fd2601dade5c66be819cd3892187b0ceacb2d0b3"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/PdfView.tsx",
+      "bytes": 4862,
+      "sha256": "1f14134bf9f9f27bf0001cb1a9cb3007f3fb9d54fd1bd8ea10762f0fc76da620"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/RenderBoundary.tsx",
+      "bytes": 1884,
+      "sha256": "61266c63507b5ad8223ddc06a90eb4221e56d640d6d8091662ff46e55b57671e"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SandboxStatusBar.tsx",
+      "bytes": 2166,
+      "sha256": "1e994eff3ad41c80a66843341da2fb773511ec1c8d567be20e47c13ae26b1012"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SideCardSection.module.css",
+      "bytes": 25861,
+      "sha256": "aab9510276aeea393d561fb169017ba84e9f95b98d7e858248db502e4041460a"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SideCardSection.tsx",
+      "bytes": 44727,
+      "sha256": "f67c20ac64ad25d8cc659865ee7b8af371436825650ae7cc58a25a0a0db0509d"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SideChatView.module.css",
+      "bytes": 14567,
+      "sha256": "aa3871bb7cf2eb5c5c66233a20af95ab9f6044ea16ff0e97b398a718b1de8d22"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SideChatView.tsx",
+      "bytes": 60524,
+      "sha256": "6a24281082f20fee045728deaa6a58b60db85b51670d19b07bc050a174b08b1a"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/Sidebar.tsx",
+      "bytes": 39413,
+      "sha256": "8bc6ff5533cc9a3d20f14c69609295d02d412958cec7485a67270d0b98f72c12"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SubagentView.module.css",
+      "bytes": 4046,
+      "sha256": "14d4e7dca64a654b8defacac2f95e70c671aa22b6e23430debf8802e4e91c161"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SubagentView.tsx",
+      "bytes": 36054,
+      "sha256": "72b8d1770deee1fa944392380a4e56f39cf82c2762062fb47eb27a1b47503a22"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TabBar.tsx",
+      "bytes": 17326,
+      "sha256": "ae7045c320ae81ae17437afe9bf964235fb9f7882518eadc26dc4a4f61edccaa"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TaskWindow.tsx",
+      "bytes": 19283,
+      "sha256": "f98e9011c4ba9b13b10e863d0cb5ab39e868ccb28720de8cce5a1767e8fe5563"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TasksGraph.tsx",
+      "bytes": 32923,
+      "sha256": "5a4ea82377a323e08471d06f7aa3fc40474b7b1d411bbcab6160e99586d4eb71"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TasksPopovers.tsx",
+      "bytes": 16140,
+      "sha256": "525cf6857815a536464a50691d4df99c07d7d5e7898fdb299158d9d98a0e2883"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TasksTree.tsx",
+      "bytes": 15878,
+      "sha256": "71ea4c8950aa4303ca1779c6b75a102cc1005da4c1b3c199a20a5397225d2271"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TeamBoard.tsx",
+      "bytes": 9780,
+      "sha256": "3bc1baee0dc1a8010515e4f246a2f26f0a5b5055384baa302ae621bebf1469fb"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TerminalView.tsx",
+      "bytes": 13972,
+      "sha256": "a3b71e771927df48fabcfc459b80ffde38617696668c2386866a803745b6aad1"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TextEditor.tsx",
+      "bytes": 48327,
+      "sha256": "772e726a3e4cd16b8412f7f3cea4737e9a069f7841a06ac9e33e202f91144703"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TreePanel.tsx",
+      "bytes": 18353,
+      "sha256": "f6231799fffc7498acca74fb981c0260862d249578857f0c54527ed1be45bd7e"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/UploadOverlay.tsx",
+      "bytes": 2597,
+      "sha256": "d9a094ff46041bc8e1333e9124d1ea61bf2193d99d0bd1318d053488dbffdeb2"
+    },
+    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/activity-icons.tsx",
       "bytes": 2643,
       "sha256": "7dd2860b3e9389fc2dac6636e897ba34ac9450b5cbea78dabfcc5216a138c3d6"
@@ -1486,11 +2795,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/add-plugin-modal.tsx",
       "bytes": 8663,
       "sha256": "455bdf32199951f091ea950d80dcbe6c1927fd3e1cc7f752e5b727039a836027"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/AnchoredPopover.tsx",
-      "bytes": 7796,
-      "sha256": "2683ba953a7e7e14ac1ad33a66aead5e52d070fd8f2bf2303fb39aaa127a131b"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/api.ts",
@@ -1543,16 +2847,6 @@
       "sha256": "d518e14df48a20861b45f3155f9ed49e82f6ffb51abe42f7fbb926ae16dfff07"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/changes/change-tree.ts",
-      "bytes": 8415,
-      "sha256": "cb1a1a8f896a392070847f1ad473ac5817ae8b6ea9d9c3b6191b52b7e07345e0"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/changes/changes.module.css",
-      "bytes": 25526,
-      "sha256": "7d0b1cc56dc770423d5cde5ab269b2c4b41cf0c3f01b34481ae931544dff35d7"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/changes/ChangesTab.tsx",
       "bytes": 17451,
       "sha256": "8d43bcfdba1e020d7b60ac8e4a551a20504dd9e3aa17154c90eca95a17c02d48"
@@ -1583,6 +2877,21 @@
       "sha256": "b276816c254920054b6b34858d063ee987d7b4fe73b420a797b3accff54e0411"
     },
     {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/changes/SessionLens.tsx",
+      "bytes": 4649,
+      "sha256": "58b03d77cb201ca9ba82a6eb3befd6a52df9750c1a9e0a58f1ba92d7e67f4b17"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/changes/change-tree.ts",
+      "bytes": 8415,
+      "sha256": "cb1a1a8f896a392070847f1ad473ac5817ae8b6ea9d9c3b6191b52b7e07345e0"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/changes/changes.module.css",
+      "bytes": 25526,
+      "sha256": "7d0b1cc56dc770423d5cde5ab269b2c4b41cf0c3f01b34481ae931544dff35d7"
+    },
+    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/changes/graph-layout.ts",
       "bytes": 8511,
       "sha256": "24bf02a40b50320ea72a492f8ecc18e4a4a29d6cb9c8eb9957da42e02f446c9a"
@@ -1596,11 +2905,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/changes/ops.ts",
       "bytes": 11700,
       "sha256": "92aed23850f7e5b160a719b2464fd809768ef88d25e37f14a62587c66557551c"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/changes/SessionLens.tsx",
-      "bytes": 4649,
-      "sha256": "58b03d77cb201ca9ba82a6eb3befd6a52df9750c1a9e0a58f1ba92d7e67f4b17"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/chunk-loader.ts",
@@ -1668,11 +2972,6 @@
       "sha256": "e0b75f6478877c874d52bfae3f2cfb9870bf8b3b4a21a0c16e251d5c4787981c"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/diff/diff.module.css",
-      "bytes": 6783,
-      "sha256": "7d5cf77790bfb7778e04af8b8638e7a56ea270647ae18e2da2279db177aff87b"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/diff/DiffFiles.tsx",
       "bytes": 7078,
       "sha256": "1ada36326cad99c4c3f5c01859c22fe0646f58cbf9a9bae2fe63749f1c3492f2"
@@ -1681,6 +2980,11 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/diff/DiffRows.tsx",
       "bytes": 13449,
       "sha256": "91c85f97fbfe5d1cbc702db09e855776b07f2912ed83140deef91b7c9871b91a"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/diff/diff.module.css",
+      "bytes": 6783,
+      "sha256": "7d5cf77790bfb7778e04af8b8638e7a56ea270647ae18e2da2279db177aff87b"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/diff/highlight.ts",
@@ -1698,11 +3002,6 @@
       "sha256": "8f5031f2b50d84d68996bf0171a6648df01d2d6494e06c63e674a694c008a483"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/DiffTab.tsx",
-      "bytes": 2716,
-      "sha256": "1d3ed7b2d481478c6368176c36ca6a0dee215fb615ee1eccd845f44e62605e04"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/editor-dirty.ts",
       "bytes": 5077,
       "sha256": "ed9ed97df7bd2283f2523a2ea40331e884b143bb86417c4f8e6db4ffd1d511cc"
@@ -1718,11 +3017,6 @@
       "sha256": "9290531f98c83ef3d6f80940aa1cd1ca145954afad75c19f103f1b1da20ca180"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/EditorHost.tsx",
-      "bytes": 37317,
-      "sha256": "c39692e5fd9558cd14cc00786da8c0891112f0c36942520e456c53e6caa1cc8a"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/file-icons.tsx",
       "bytes": 2805,
       "sha256": "4abf849650a98ed445ce7b520f9a86438ba2576addc87d0318bfa4f475ce3ec8"
@@ -1736,21 +3030,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/file-tree-sort.ts",
       "bytes": 3044,
       "sha256": "6c38e888a507d1abd6754b9d7f99d8ca36cc247f8d0f5515437a36655932dcfd"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/FileTree.tsx",
-      "bytes": 113315,
-      "sha256": "bf2c81b24c69525ecef681725630b8b06d6d099e9b7d3ce33a6545e224d0d182"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/FloatingWindow.module.css",
-      "bytes": 3467,
-      "sha256": "7557ba56b0e89d07573b6632da337ca2b93b190c80bb2a0b9d820c5783a8a03f"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/FloatingWindow.tsx",
-      "bytes": 14533,
-      "sha256": "e802c57d2056162dd52efab3e0a0237dd3b7220b65eaaa08f3700877a37943c9"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/frame-batcher.ts",
@@ -1793,11 +3072,6 @@
       "sha256": "2eefbb3870f181176822f5bdb6f705710891c597327dd83739bf597b0030478a"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/JobsDrawer.tsx",
-      "bytes": 18996,
-      "sha256": "30343abb4b9cc9739d9a28395d34ef5446bb7b02b1342424a57f2da1b5a0a6dd"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/jsonl.ts",
       "bytes": 4069,
       "sha256": "5be0e28f8229a223009c207e45ec74545ba6afeba59e435aa2424b1b008fd5b7"
@@ -1811,11 +3085,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/lang.ts",
       "bytes": 10510,
       "sha256": "3bf924ad177aed13c569a9e1856f25daccdf9ff6aa7c9ce9bb89a758e02c7c8d"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/LargeFileView.tsx",
-      "bytes": 12843,
-      "sha256": "aabf977669b4cbde2cd2443541a25684b0470ea6ec63f0662f08a936034901f1"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/layout-push.ts",
@@ -1968,11 +3237,6 @@
       "sha256": "d5ea391773fd17cce9ec79737359ecac939dccfd67774627f48059785e9969dd"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/MarkdownHtml.tsx",
-      "bytes": 17392,
-      "sha256": "9ba79779ac31d886eca410ff162684bb76bbbd1a6f0def4ead4f5776ae66b4fa"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/md-toc.tsx",
       "bytes": 5696,
       "sha256": "fce24b481ff21a11e63e259315b138033d858d3cccb9b59c68c38f2ba7bbb522"
@@ -2048,11 +3312,6 @@
       "sha256": "affb9bfc2d1fee8f07809d7680569bb2c5082cb2cd5dad5e48ada3835541895d"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/OrphanedTab.tsx",
-      "bytes": 1033,
-      "sha256": "3f416e20c7e4d754e3ce8072fd2601dade5c66be819cd3892187b0ceacb2d0b3"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/path-line.ts",
       "bytes": 3262,
       "sha256": "c866a240371ca9f29f7553f3b93a09a7708deeb34dae8d760a548a945e26b58d"
@@ -2066,11 +3325,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/pdf-types.ts",
       "bytes": 149,
       "sha256": "bed3758346f5ff6f8442e9de343b722c971413df84faa4e5a9c234105f9f5077"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/PdfView.tsx",
-      "bytes": 4862,
-      "sha256": "1f14134bf9f9f27bf0001cb1a9cb3007f3fb9d54fd1bd8ea10762f0fc76da620"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/plugin-settings.ts",
@@ -2113,19 +3367,9 @@
       "sha256": "cf359286c227776471a5b7ea1772f48d77196d6fd94524e52ed5c1611b9b9801"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/RenderBoundary.tsx",
-      "bytes": 1884,
-      "sha256": "61266c63507b5ad8223ddc06a90eb4221e56d640d6d8091662ff46e55b57671e"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/resource-address.ts",
       "bytes": 7205,
       "sha256": "d90c0765203ffec197c44e23c543a2ddb46361b956336fcf1cde97648729631b"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SandboxStatusBar.tsx",
-      "bytes": 2166,
-      "sha256": "1e994eff3ad41c80a66843341da2fb773511ec1c8d567be20e47c13ae26b1012"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/selection-payload.ts",
@@ -2168,9 +3412,9 @@
       "sha256": "fcbf1ab9bbd130b903a7d0caed08d342d5ed8d48fcfcd7e69914404f6fc19c08"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/Sidebar.tsx",
-      "bytes": 39413,
-      "sha256": "8bc6ff5533cc9a3d20f14c69609295d02d412958cec7485a67270d0b98f72c12"
+      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/sidebar/TabContent.tsx",
+      "bytes": 3387,
+      "sha256": "88cd5dc684a5684a07770ed61d56f8588cebb6e368325517f92ec2c7c34b4e8d"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/sidebar/bottom-toggle.tsx",
@@ -2188,11 +3432,6 @@
       "sha256": "749ffb7131a3a4aaa5e8b4b8bdd8b40a9c0ed9f92dff0074bd1a07966d0819cd"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/sidebar/TabContent.tsx",
-      "bytes": 3387,
-      "sha256": "88cd5dc684a5684a07770ed61d56f8588cebb6e368325517f92ec2c7c34b4e8d"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/sidebar/use-center-column.ts",
       "bytes": 10439,
       "sha256": "c98ce8306bc3bde6aefc94e7d364be85ca33f90f3e9329bead1e38e4cf0aaa42"
@@ -2203,29 +3442,9 @@
       "sha256": "bd7e44662ebbec06ef6d6332869736cf93abf4554e5ab82e19ff6bc4d77310fd"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SideCardSection.module.css",
-      "bytes": 25861,
-      "sha256": "aab9510276aeea393d561fb169017ba84e9f95b98d7e858248db502e4041460a"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SideCardSection.tsx",
-      "bytes": 44727,
-      "sha256": "f67c20ac64ad25d8cc659865ee7b8af371436825650ae7cc58a25a0a0db0509d"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/sidechat-transcript.ts",
       "bytes": 31075,
       "sha256": "e6039958e45f67becb258285bb938968463e3b074d8a208da4daad8ffc139b2c"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SideChatView.module.css",
-      "bytes": 14567,
-      "sha256": "aa3871bb7cf2eb5c5c66233a20af95ab9f6044ea16ff0e97b398a718b1de8d22"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SideChatView.tsx",
-      "bytes": 60524,
-      "sha256": "6a24281082f20fee045728deaa6a58b60db85b51670d19b07bc050a174b08b1a"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/split-pane.tsx",
@@ -2263,24 +3482,9 @@
       "sha256": "e9a574da6aaf5e7e0ca0bbf3c74c63179240ae34a171027a15a0d515a7f35be6"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SubagentView.module.css",
-      "bytes": 4046,
-      "sha256": "14d4e7dca64a654b8defacac2f95e70c671aa22b6e23430debf8802e4e91c161"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/SubagentView.tsx",
-      "bytes": 36054,
-      "sha256": "72b8d1770deee1fa944392380a4e56f39cf82c2762062fb47eb27a1b47503a22"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/tab-content-memo.ts",
       "bytes": 2105,
       "sha256": "216946d6ae9c8183e606e037777cafa2a2aea11f67d2f5693d07649e04b66431"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TabBar.tsx",
-      "bytes": 17326,
-      "sha256": "ae7045c320ae81ae17437afe9bf964235fb9f7882518eadc26dc4a4f61edccaa"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/tasks-canvas.module.css",
@@ -2323,34 +3527,9 @@
       "sha256": "c8ff66ca2656d49623a6ed3819c6c33fc21cef339b74ec43a673d4adf75537d6"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TasksGraph.tsx",
-      "bytes": 32923,
-      "sha256": "5a4ea82377a323e08471d06f7aa3fc40474b7b1d411bbcab6160e99586d4eb71"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TasksPopovers.tsx",
-      "bytes": 16140,
-      "sha256": "525cf6857815a536464a50691d4df99c07d7d5e7898fdb299158d9d98a0e2883"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TasksTree.tsx",
-      "bytes": 15878,
-      "sha256": "71ea4c8950aa4303ca1779c6b75a102cc1005da4c1b3c199a20a5397225d2271"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TaskWindow.tsx",
-      "bytes": 19283,
-      "sha256": "f98e9011c4ba9b13b10e863d0cb5ab39e868ccb28720de8cce5a1767e8fe5563"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/team-projection.ts",
       "bytes": 6084,
       "sha256": "85afd965cc3975527bb5b244a765202c186375624d77759b63d70a69cf4a32a3"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TeamBoard.tsx",
-      "bytes": 9780,
-      "sha256": "3bc1baee0dc1a8010515e4f246a2f26f0a5b5055384baa302ae621bebf1469fb"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/terminal-client.ts",
@@ -2368,19 +3547,9 @@
       "sha256": "fe56d70a90185c635f2e0e3264395d86dfd6faac1ca6fa3f74e6b5c9d36b2099"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TerminalView.tsx",
-      "bytes": 13972,
-      "sha256": "a3b71e771927df48fabcfc459b80ffde38617696668c2386866a803745b6aad1"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/text-pages.ts",
       "bytes": 11690,
       "sha256": "bcae24b3a468dd4afef8b5890449f21647ed766e4396ff55e519386d68af8b02"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TextEditor.tsx",
-      "bytes": 48327,
-      "sha256": "772e726a3e4cd16b8412f7f3cea4737e9a069f7841a06ac9e33e202f91144703"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/theme.ts",
@@ -2391,11 +3560,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/tree-mutations.ts",
       "bytes": 10594,
       "sha256": "602d0fc8265d055b0b3560d9236f532d3bb299d1a9986bbd32f9637a3c796706"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/TreePanel.tsx",
-      "bytes": 18353,
-      "sha256": "f6231799fffc7498acca74fb981c0260862d249578857f0c54527ed1be45bd7e"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/ui/git-status.ts",
@@ -2421,11 +3585,6 @@
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/upload.ts",
       "bytes": 7321,
       "sha256": "7f0aa72ee3477a96ecb86b892472bda0daea6259c4ec4a26105a65401144feac"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/UploadOverlay.tsx",
-      "bytes": 2597,
-      "sha256": "d9a094ff46041bc8e1333e9124d1ea61bf2193d99d0bd1318d053488dbffdeb2"
     },
     {
       "path": "harness-plugins/扩展/dsh-better-sidebar/src/client/use-auto-animate.ts",
@@ -2633,14 +3792,24 @@
       "sha256": "04c108af5162401186b60c405831d5443e958eb1b6eb0e9a9cfbc2118c72a8a4"
     },
     {
-      "path": "harness-plugins/扩展/dsh-better-sidebar/UPGRADE-LIAN.md",
-      "bytes": 4300,
-      "sha256": "4080bb8eb43a63e035f7e77ad9ac92a7005bdb8a1e0069b9fca8416bd1034b7d"
+      "path": "harness-plugins/扩展/dsh-better-sidebar/使用指南.md",
+      "bytes": 1799,
+      "sha256": "9d25c65d845880e920074c9987fc491d9d5ef0430a41296bec7fd30d93a2872b"
     },
     {
-      "path": "harness-plugins/扩展/dsh-qq-bridge/使用指南.md",
-      "bytes": 1790,
-      "sha256": "fbb7b136d477f034b7ec88e0a3c45965766cb0760301e8ccb191b6944eb7847a"
+      "path": "harness-plugins/扩展/dsh-qq-bridge/GUIDE.en.md",
+      "bytes": 2189,
+      "sha256": "445cd5d53ea042eda3c79a9a1685207c882b518a006b77cd078dcbe927ee2afc"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-qq-bridge/LICENSE",
+      "bytes": 1068,
+      "sha256": "3115de96057af213e414da3f8063ddc312bcfc5c1e02bc0bc8867a409250657d"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-qq-bridge/README.md",
+      "bytes": 11605,
+      "sha256": "0b2ce3fcfaa3fa0f7e72e9c7098fcd13517defae2bd66bdc0fb1e07cab8f5158"
     },
     {
       "path": "harness-plugins/扩展/dsh-qq-bridge/cordis.patch.yml",
@@ -2648,14 +3817,14 @@
       "sha256": "0b14dbb35e60df734b0139e4278f279db971021689e81b6dfaca1a09ce6bad23"
     },
     {
-      "path": "harness-plugins/扩展/dsh-qq-bridge/GUIDE.en.md",
-      "bytes": 1953,
-      "sha256": "b22afe92d46b3fd0851ff95ea839feec79206a56f72049c1c8100750c947bc06"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-qq-bridge/lib/client.js",
       "bytes": 20458,
       "sha256": "625337f1017301d45353cc342b24994c860b5ac96faa1aea08365d45507037ff"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-qq-bridge/lib/communication-window.mjs",
+      "bytes": 1264,
+      "sha256": "b60a752dab3864710f273b158210f4871d5779d70d8a54d8075f0e0bc891d86b"
     },
     {
       "path": "harness-plugins/扩展/dsh-qq-bridge/lib/community-budget.mjs",
@@ -2668,14 +3837,24 @@
       "sha256": "ab8a3367604c16136a15074ba6f2af23f1841b0596b5d0e0a67fc223db928587"
     },
     {
+      "path": "harness-plugins/扩展/dsh-qq-bridge/lib/holidays.mjs",
+      "bytes": 4835,
+      "sha256": "06062511f3d765881a4bee789ee443d6189f4c4283868468e6f8b626871191ae"
+    },
+    {
       "path": "harness-plugins/扩展/dsh-qq-bridge/lib/host.js",
-      "bytes": 75132,
-      "sha256": "61a6446665cbb5c5765d25b6d9b9d328f70e7ae16ce5cdc5744e786b35879ea7"
+      "bytes": 74442,
+      "sha256": "ba68d6bf49f893499260626530b0019b5538aa18647268152128bc2e6292cdc7"
     },
     {
       "path": "harness-plugins/扩展/dsh-qq-bridge/lib/lian-groups.mjs",
-      "bytes": 1718,
-      "sha256": "951b604132250564bef3e7a1d4d151c2d923bb99e6048c37b9e67539bc960a84"
+      "bytes": 1989,
+      "sha256": "ba83774d506b6e09987d34e66f085d0888385ea6c7262e8206c6d17865a725c8"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-qq-bridge/lib/lian-mail-route.mjs",
+      "bytes": 595,
+      "sha256": "c7426e5fba82f7237b0ec80bbefcf730514f3ec73e19abe993db80e2cb8a7083"
     },
     {
       "path": "harness-plugins/扩展/dsh-qq-bridge/lib/lian-receipts.mjs",
@@ -2713,34 +3892,14 @@
       "sha256": "07f9b83d8b0dec32f35f6902174a667e904cf52ba20d3f5eaa4e6f5a9f2647f9"
     },
     {
-      "path": "harness-plugins/扩展/dsh-qq-bridge/LICENSE",
-      "bytes": 1068,
-      "sha256": "3115de96057af213e414da3f8063ddc312bcfc5c1e02bc0bc8867a409250657d"
-    },
-    {
       "path": "harness-plugins/扩展/dsh-qq-bridge/package.json",
-      "bytes": 1296,
-      "sha256": "4678afc39333bf962be9950f82ea8b1d2b3b17cb89fe8e19981333550e478490"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-qq-bridge/README.md",
-      "bytes": 11605,
-      "sha256": "0b2ce3fcfaa3fa0f7e72e9c7098fcd13517defae2bd66bdc0fb1e07cab8f5158"
+      "bytes": 1244,
+      "sha256": "7c0d815edb382185beb786911779e58038fb165f521e1aad40dab6f30583d99b"
     },
     {
       "path": "harness-plugins/扩展/dsh-qq-bridge/render-meme.py",
       "bytes": 2057,
       "sha256": "594dcfded51b9a9d5c9a9f5b50d024598578a65511183cb2cba4e38284d143d3"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-qq-bridge/tests/宿主半边.mjs",
-      "bytes": 32186,
-      "sha256": "5091ce57fa605fd9a738de8d7c2fb70125cf3ecc7fd7e4a0edc57ef5b07f4ced"
-    },
-    {
-      "path": "harness-plugins/扩展/dsh-qq-bridge/tests/网页半边.mjs",
-      "bytes": 3658,
-      "sha256": "87256a6d6f02df1b8341c0a4ff2086b496a5dfe9b77ba2056c29129076a898f5"
     },
     {
       "path": "harness-plugins/扩展/dsh-qq-bridge/tests/ambient-integration.mjs",
@@ -2778,14 +3937,29 @@
       "sha256": "78d0ba53bb6e163bb70e7ad0a6d5b39b5193a2f8b870d8a16b0b812a7d3b1ba5"
     },
     {
-      "path": "harness-plugins/扩展/lian-codex-liaison/使用指南.md",
-      "bytes": 1599,
-      "sha256": "5f39d203dbbdd88fb698406868c5ea59c383b7e5da760307a6e158a066474722"
+      "path": "harness-plugins/扩展/dsh-qq-bridge/tests/宿主半边.mjs",
+      "bytes": 32186,
+      "sha256": "5091ce57fa605fd9a738de8d7c2fb70125cf3ecc7fd7e4a0edc57ef5b07f4ced"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-qq-bridge/tests/网页半边.mjs",
+      "bytes": 3658,
+      "sha256": "87256a6d6f02df1b8341c0a4ff2086b496a5dfe9b77ba2056c29129076a898f5"
+    },
+    {
+      "path": "harness-plugins/扩展/dsh-qq-bridge/使用指南.md",
+      "bytes": 2015,
+      "sha256": "1adc0b8d28b20d485d3935129bcbc44bf6b2d732e1b423cea0c9677d9763a746"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-codex-liaison/GUIDE.en.md",
+      "bytes": 2223,
+      "sha256": "6c335f230f6573bcaeb6752e08de184af2002df89f4666abee985f8824ccb48e"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/cen-inbound-direct.mjs",
-      "bytes": 2643,
-      "sha256": "3eb618e8f386e728b1c8e4fd1b0fa1d1af84dbf2992c9250a54cfd42a2e3c037"
+      "bytes": 3394,
+      "sha256": "7f4e23c02dec1ee56c16ae9b052c1f483c226f01d9bca85c1ae15d2365c0e1c7"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/cen-inbound-v2.mjs",
@@ -2799,8 +3973,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/cen-mail.mjs",
-      "bytes": 4916,
-      "sha256": "388ae14f1d585069ea5ddba8268f050821c87ba8119962c3cbc037fb3c097e60"
+      "bytes": 5143,
+      "sha256": "ce31d0a0452ea9a3db186d187ac48345b6d340603a6d6c315a02d481c60b6be3"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/codex-runtime.mjs",
@@ -2808,14 +3982,19 @@
       "sha256": "355513680869e353cb9dca985b7d5f903384b7cb4b27fc3c24b0245e492b645e"
     },
     {
-      "path": "harness-plugins/扩展/lian-codex-liaison/compact-wire.mjs",
-      "bytes": 2514,
-      "sha256": "21361ef42e129268b9ae417d68a85ac9fd8c9f6013e987f314eb54197539be54"
+      "path": "harness-plugins/扩展/lian-codex-liaison/communication-window.mjs",
+      "bytes": 1264,
+      "sha256": "b60a752dab3864710f273b158210f4871d5779d70d8a54d8075f0e0bc891d86b"
     },
     {
-      "path": "harness-plugins/扩展/lian-codex-liaison/GUIDE.en.md",
-      "bytes": 1795,
-      "sha256": "7c9fb516d79c02481cb308d1e6348a40e87036a2e665d63e009e09be3b7ec543"
+      "path": "harness-plugins/扩展/lian-codex-liaison/compact-wire.mjs",
+      "bytes": 2597,
+      "sha256": "19ad5f3c1d5d3b457c480112088884f44dbbe148413bd51e89c25262e309c4fb"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-codex-liaison/holidays.mjs",
+      "bytes": 4835,
+      "sha256": "06062511f3d765881a4bee789ee443d6189f4c4283868468e6f8b626871191ae"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/home-mcp.mjs",
@@ -2849,8 +4028,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/index-direct-reply-20261029.mjs",
-      "bytes": 4197,
-      "sha256": "39e1afd1c2860e47c8c80927b6146dafe3ebda4b68b198470bfc59464a1a6739"
+      "bytes": 4303,
+      "sha256": "52b1c621dade9ef821c4390efa8e7ab02a5994714478d6c5c8db238c6941941e"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/index-final-20261029.mjs",
@@ -2878,19 +4057,24 @@
       "sha256": "b8ec8db2d4889865e8bdd8c7f89f227b2aee6983b6d7b9eae615dee7440895e4"
     },
     {
+      "path": "harness-plugins/扩展/lian-codex-liaison/native-reply-capture.mjs",
+      "bytes": 3483,
+      "sha256": "3fccce93760f8d1fcbc9cbd2648050d0841da7fca0b8d14fefcfdd9138562f78"
+    },
+    {
       "path": "harness-plugins/扩展/lian-codex-liaison/package.json",
       "bytes": 148,
-      "sha256": "b2f66fa85960b677884236dc0a2fae7de215179966ee3bd2a054760e5966de5f"
+      "sha256": "a2b7636bff3e4baf3d8101ae260647832d12a72907b59fbd679faa01aff6bb7f"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/reply-forwarder.mjs",
-      "bytes": 3434,
-      "sha256": "acd7da7e773eccf8ee7a314771701b7b122f207e66dfc5544c48b72aa4650e3f"
+      "bytes": 4184,
+      "sha256": "35b6f679172b11452112f86df7e1b8a7867face7ebcfc17ce2bdd98f489af7c5"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/runner.mjs",
-      "bytes": 8200,
-      "sha256": "ea2535fba9866462f44f902aedacb17871eaaebaf3a09ab5955833460135ba88"
+      "bytes": 8328,
+      "sha256": "a57f9f1a29bf830f93af06e2b8abf606f7cb3195879ad3e628aaf17a94b91c6c"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/shared-context.mjs",
@@ -2898,9 +4082,19 @@
       "sha256": "d458a59ee61ae2545fa53024bebb2ad070bc1ec9641b6564ed50bc6faaa790c5"
     },
     {
-      "path": "harness-plugins/扩展/lian-continuity/使用指南.md",
-      "bytes": 1643,
-      "sha256": "40bc312c1f0d4cb755f83198f5a21f2d3bd9080bc2cb0dcd13e62922812d941c"
+      "path": "harness-plugins/扩展/lian-codex-liaison/使用指南.md",
+      "bytes": 2033,
+      "sha256": "83861a064a8a899c49a6093a18ab6d8dbcb0ca2d8a393783886622b36164ca8f"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-continuity/GUIDE.en.md",
+      "bytes": 1969,
+      "sha256": "bed2461ef3de28e85023b90af4584988b485404e9295fdb9a2b36c2b39f47d21"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-continuity/README.md",
+      "bytes": 2130,
+      "sha256": "6b462fa39ac4b4007965cb4eefaf495a86c99da51b60160b589baa3c5570ef9e"
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/accepted-probe.mjs",
@@ -2983,11 +4177,6 @@
       "sha256": "5a5c0202fabec8b1349c884ab959a6c2ea8332a51e886eff71bd1c29dc7f9878"
     },
     {
-      "path": "harness-plugins/扩展/lian-continuity/GUIDE.en.md",
-      "bytes": 1740,
-      "sha256": "7f3808278f435271d6165ee037cdd7151b2c38863358fa2a2033b9f1a5e1ce74"
-    },
-    {
       "path": "harness-plugins/扩展/lian-continuity/handoff.mjs",
       "bytes": 1743,
       "sha256": "4faa32245cb37f57b7974bf0bfc84e71194721d33fe50450dd063f1a8b9838e3"
@@ -3029,8 +4218,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/index.js",
-      "bytes": 21332,
-      "sha256": "6d3347e0a468b4d51cbd8e616cd7f35a23007a7ebfa26c2520b4af0ab9828d43"
+      "bytes": 21589,
+      "sha256": "083561d45b4f07e5298cc02f7a9f47980508b07d3df20c9e0e29e6740116f40c"
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/install.mjs",
@@ -3060,17 +4249,12 @@
     {
       "path": "harness-plugins/扩展/lian-continuity/package.json",
       "bytes": 197,
-      "sha256": "efb32d7e891124eb25778630639768fb433a0b932922de6437c13b935da75d93"
+      "sha256": "636440b04c3700407903e3d786faa8825a010fa814dbbdf8d62805182d41ff41"
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/private-memory.mjs",
       "bytes": 16097,
       "sha256": "660257d62acb4addcc77140d884b727c19b41079dce3895d3afa20d0c98f85ab"
-    },
-    {
-      "path": "harness-plugins/扩展/lian-continuity/README.md",
-      "bytes": 2130,
-      "sha256": "6b462fa39ac4b4007965cb4eefaf495a86c99da51b60160b589baa3c5570ef9e"
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/recovery.mjs",
@@ -3083,19 +4267,39 @@
       "sha256": "384b16380ecffc6b2370835555cca1704b8385be32f14ef8186ba73c5546354f"
     },
     {
+      "path": "harness-plugins/扩展/lian-continuity/retrieval-support.mjs",
+      "bytes": 1558,
+      "sha256": "73b6dbc23eac4e04867fe147619caa33f2243cd18e68c1a687a354d7e4ab50a1"
+    },
+    {
       "path": "harness-plugins/扩展/lian-continuity/retrieval.mjs",
-      "bytes": 8925,
-      "sha256": "dfb6f366cc1e83bcb88c21fea2bc31abc94c07c078da15bc9fee111971f4b489"
+      "bytes": 9177,
+      "sha256": "0e864ef81eb2a85948927e36d1e16a122ec335c84c97672dc6902fe1a81479f2"
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/skills/lian-continuity/SKILL.md",
-      "bytes": 9290,
-      "sha256": "834b889ad973061b3ae4a4f6d17a17dfbc7866ed64a7daed1ea994441cd75d58"
+      "bytes": 1918,
+      "sha256": "7835598933fbf3f899b7ab6a40ad95b82005bfcf1f7dfa25ae989eeb076e952b"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-continuity/skills/lian-continuity/references/previous-guide.md",
+      "bytes": 9237,
+      "sha256": "a30cd8d91cf00ac905a849160e6677d1b1619fa67f8fb210b7f3cc4a94311af9"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-continuity/skills/lian-continuity/references/task-ledger.md",
+      "bytes": 4089,
+      "sha256": "0a3a75e97ffbc1d43a9fd224c1024c6edd9de961560cc20c0b62c1d9bda45088"
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/store.mjs",
-      "bytes": 12031,
-      "sha256": "564673a89803fbd18362de04bbcaad1cfaae49424709e77dab24028b76101098"
+      "bytes": 10427,
+      "sha256": "397b94e1dca01743eb91acc79eedb2e34f1f042a745cc943cad93d984195e8af"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-continuity/task-ledger.mjs",
+      "bytes": 13906,
+      "sha256": "e8a50b3ec30ebe73218bec7290e4fac34920201912bf3720d97d622ca712dd12"
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/test.mjs",
@@ -3118,9 +4322,14 @@
       "sha256": "6246eb374d51727bedcd53553ee7a34d1ed32a3dfef485a9c289a4021e57d9c4"
     },
     {
-      "path": "harness-plugins/扩展/lian-creation-handbooks/使用指南.md",
-      "bytes": 1655,
-      "sha256": "0da9bd27bc5a3aa0773fb18fb354d65786f0816307fd68090ac1ac068500daa7"
+      "path": "harness-plugins/扩展/lian-continuity/使用指南.md",
+      "bytes": 1869,
+      "sha256": "cb1f10cf477016d1a7d0643459cf1c60bfb84773c4763c5e6f3d27be43f16e8c"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-creation-handbooks/GUIDE.en.md",
+      "bytes": 2030,
+      "sha256": "7c01baa7e46a777eccc33c007562d69613c59d2f13678f4831de4e30387fad88"
     },
     {
       "path": "harness-plugins/扩展/lian-creation-handbooks/cordis.patch.yml",
@@ -3133,24 +4342,24 @@
       "sha256": "eba5a9512d1b685889e1e419f3d77a64ebd8350e86e44e19d599444d182348ff"
     },
     {
-      "path": "harness-plugins/扩展/lian-creation-handbooks/GUIDE.en.md",
-      "bytes": 1853,
-      "sha256": "26d3254a7c4a9d658fd23ed4eb6d643348b530a18a063f0923b8ea07420c5c7d"
-    },
-    {
       "path": "harness-plugins/扩展/lian-creation-handbooks/index.js",
-      "bytes": 3823,
-      "sha256": "521d218f92a3d05355b94d7a27e67845da99c8b321627244c22029c068151d2c"
+      "bytes": 3877,
+      "sha256": "99b0762f37f112efb06653b9477733d6374834dea53ff9ade87690c713f79dff"
     },
     {
       "path": "harness-plugins/扩展/lian-creation-handbooks/knowledge.mjs",
-      "bytes": 1937,
-      "sha256": "a3bd1506a1fb25d9b8a1dd6f29f269e371de89f5c1373d3d5a0736fab0d38963"
+      "bytes": 1995,
+      "sha256": "e317dcf3b70f05e05fd9dfa9f81f78a3123947a2fab499d603f8077beb8d120c"
     },
     {
       "path": "harness-plugins/扩展/lian-creation-handbooks/package.json",
-      "bytes": 464,
-      "sha256": "ec23a473907a21f89562ac88ab8b8fcd48627482f727d00939e32d0fbe137976"
+      "bytes": 520,
+      "sha256": "3cba6ceb54ccfa582610633026a362e8182eafa16ae8efd7d30065862ac48c93"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-creation-handbooks/skills/creation-handbooks/SKILL.md",
+      "bytes": 3812,
+      "sha256": "bd1fc6ea721569a26f6f2de37bceab03d946d4a9cc9a5011f873a40727fa26d1"
     },
     {
       "path": "harness-plugins/扩展/lian-creation-handbooks/skills/creation-handbooks/references/harness-notes.md",
@@ -3161,6 +4370,16 @@
       "path": "harness-plugins/扩展/lian-creation-handbooks/skills/creation-handbooks/references/literary-creation.md",
       "bytes": 16732,
       "sha256": "a56b98d1f5bbb068cacca33a4fcc51dbb4a991fff07c5853f6e569d47d6dca6b"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-creation-handbooks/skills/creation-handbooks/references/real-sharing.md",
+      "bytes": 887,
+      "sha256": "02efb8b907c972b65889805f9948708e1354c1102ac21a4e72b123b28c9bbc26"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-creation-handbooks/skills/creation-handbooks/references/revision-workshop.md",
+      "bytes": 2060,
+      "sha256": "29569a5fdde7bbaee7e4f4081fcdfd5f8e421d9aa5e6de3882aea92bca9fa521"
     },
     {
       "path": "harness-plugins/扩展/lian-creation-handbooks/skills/creation-handbooks/references/video-direction.md",
@@ -3178,19 +4397,19 @@
       "sha256": "b6d0e423f8e673f0b204fd0daed63e1acff43bb3cc920460fef5a59af672816b"
     },
     {
-      "path": "harness-plugins/扩展/lian-creation-handbooks/skills/creation-handbooks/SKILL.md",
-      "bytes": 3659,
-      "sha256": "3f7e35f52cf430aca97e46c42c4c3355fc8ab4f81c8388ed0b914f491ee02366"
-    },
-    {
       "path": "harness-plugins/扩展/lian-creation-handbooks/test/knowledge.test.mjs",
       "bytes": 1743,
       "sha256": "4a8fe33b6657a2da0bc6dea0371a81d635d84eef92304a7faffb78a4e9c750c7"
     },
     {
-      "path": "harness-plugins/扩展/lian-creative-workbench/使用指南.md",
-      "bytes": 1618,
-      "sha256": "eb2814b345904ae089e85ca744efb9c7f51122ca6a9d19028c3ca03db9c3709f"
+      "path": "harness-plugins/扩展/lian-creation-handbooks/使用指南.md",
+      "bytes": 1833,
+      "sha256": "d1fa6d835592c8c223496f1d90c458b7c67a1769905196896d9ebf457cc0bede"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-creative-workbench/GUIDE.en.md",
+      "bytes": 1761,
+      "sha256": "c3bfc92169fc76f865bb4f64f5e8360e7df17ac057e158204cc3eb07b6fc3ff3"
     },
     {
       "path": "harness-plugins/扩展/lian-creative-workbench/comments.mjs",
@@ -3216,11 +4435,6 @@
       "path": "harness-plugins/扩展/lian-creative-workbench/economy-tools.mjs",
       "bytes": 1725,
       "sha256": "17694d2154071e831fc01efd90116cc6fed83089fe27c26ed89921c31b2c53ee"
-    },
-    {
-      "path": "harness-plugins/扩展/lian-creative-workbench/GUIDE.en.md",
-      "bytes": 1761,
-      "sha256": "c3bfc92169fc76f865bb4f64f5e8360e7df17ac057e158204cc3eb07b6fc3ff3"
     },
     {
       "path": "harness-plugins/扩展/lian-creative-workbench/history-probe.mjs",
@@ -3249,8 +4463,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-creative-workbench/package.json",
-      "bytes": 263,
-      "sha256": "3c1b4980760dfc4e6dcbfc736cf20edb1cd7c7220576a205220dc2102f65f87b"
+      "bytes": 262,
+      "sha256": "eecff812c6cc8a4d8697eeb4099d273b574b5d0dfb15fbfa89973c10bfe55610"
     },
     {
       "path": "harness-plugins/扩展/lian-creative-workbench/probe.mjs",
@@ -3323,19 +4537,24 @@
       "sha256": "abc7f10e123cc8d9a93ba6ce1b91354da844473a84759473ccff3b63c8c841f7"
     },
     {
-      "path": "harness-plugins/扩展/lian-desktop-control/使用指南.md",
-      "bytes": 1553,
-      "sha256": "3a2a50e5f004a853b4ecc2d48d3dd4154ee95f7700df94c1d4f8741706e18f70"
+      "path": "harness-plugins/扩展/lian-creative-workbench/使用指南.md",
+      "bytes": 1618,
+      "sha256": "eb2814b345904ae089e85ca744efb9c7f51122ca6a9d19028c3ca03db9c3709f"
     },
     {
-      "path": "harness-plugins/扩展/lian-desktop-control/audio_capture.py",
-      "bytes": 3014,
-      "sha256": "c8edea80d5033ddb640493b5c5bf185c6a99b579e58f9f3d8b63ef7f211ae887"
+      "path": "harness-plugins/扩展/lian-desktop-control/GUIDE.en.md",
+      "bytes": 1718,
+      "sha256": "1f071c4fa03a6490528e2969d45a27982eefc95866d12f38ad4541a4dafd430a"
     },
     {
       "path": "harness-plugins/扩展/lian-desktop-control/audio-capture.mjs",
       "bytes": 2337,
       "sha256": "59f4939364d910fa5c0cbb45a5dfc586b2b49f905ca5e1526585fdb7a7bdcdbb"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-desktop-control/audio_capture.py",
+      "bytes": 3014,
+      "sha256": "c8edea80d5033ddb640493b5c5bf185c6a99b579e58f9f3d8b63ef7f211ae887"
     },
     {
       "path": "harness-plugins/扩展/lian-desktop-control/av-sync.mjs",
@@ -3376,11 +4595,6 @@
       "path": "harness-plugins/扩展/lian-desktop-control/fast_capture.py",
       "bytes": 978,
       "sha256": "14849d5ee2c51848b17c021e0df2fff46ace202a254eba7b7c1e6acbed78a614"
-    },
-    {
-      "path": "harness-plugins/扩展/lian-desktop-control/GUIDE.en.md",
-      "bytes": 1718,
-      "sha256": "1f071c4fa03a6490528e2969d45a27982eefc95866d12f38ad4541a4dafd430a"
     },
     {
       "path": "harness-plugins/扩展/lian-desktop-control/index-cursor-20261029.mjs",
@@ -3473,9 +4687,19 @@
       "sha256": "6dca6e44ec0835e0432ac30b04edf34e37a1bb06c9799b0872f0be1dfe6bf86f"
     },
     {
-      "path": "harness-plugins/扩展/lian-extension-bridge/使用指南.md",
-      "bytes": 1515,
-      "sha256": "2d544a8f113206605d3e2bf9d27a77ec4f17734f23bda45a4c59b12351ee7712"
+      "path": "harness-plugins/扩展/lian-desktop-control/使用指南.md",
+      "bytes": 1553,
+      "sha256": "3a2a50e5f004a853b4ecc2d48d3dd4154ee95f7700df94c1d4f8741706e18f70"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-extension-bridge/GUIDE.en.md",
+      "bytes": 1847,
+      "sha256": "39ea5f25db4067634fbb81ae0ffa0bf772f2749255e282c7e3f3ff5a2bd6bbe4"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-extension-bridge/capability-navigator.mjs",
+      "bytes": 4972,
+      "sha256": "6da529318e53cff3bc28fc5e8243190b3b00aee4d621aada30259593f3885ec0"
     },
     {
       "path": "harness-plugins/扩展/lian-extension-bridge/cordis.patch.yml",
@@ -3483,14 +4707,9 @@
       "sha256": "828c398e08c243273f9ff708151f090eb25cd95019e1a4d904e6237ad0a404c9"
     },
     {
-      "path": "harness-plugins/扩展/lian-extension-bridge/GUIDE.en.md",
-      "bytes": 1622,
-      "sha256": "73ea39fadeeac93315ba419d7c051846bf5a29a99fa11ad7f56bb7f2bc7fae2b"
-    },
-    {
       "path": "harness-plugins/扩展/lian-extension-bridge/index.js",
-      "bytes": 5240,
-      "sha256": "c80c36b53883d7b5a6dab16bef145cde65e7134407078c19543e8c3121ab6921"
+      "bytes": 5562,
+      "sha256": "ac1a2ac41cf0dc6653fe3c84de60870fac46f9e16d16d57128d9a4de1b7450f1"
     },
     {
       "path": "harness-plugins/扩展/lian-extension-bridge/memory.mjs",
@@ -3499,23 +4718,28 @@
     },
     {
       "path": "harness-plugins/扩展/lian-extension-bridge/package.json",
-      "bytes": 397,
-      "sha256": "160bc318be0015092d44dce236b72a172b863f166de3fdf88742892a60bac160"
+      "bytes": 411,
+      "sha256": "d5f152fdc6e3ac9a73eb3600298f92fa1915f76f6cdfcdb601826a1324aa259b"
     },
     {
-      "path": "harness-plugins/扩展/lian-research-reader/使用指南.md",
-      "bytes": 1513,
-      "sha256": "84ba8b5335e2106da7e90ebf8115baed7c32cdf7bbb831c08047baac5688a68c"
+      "path": "harness-plugins/扩展/lian-extension-bridge/retrieval-support.mjs",
+      "bytes": 1558,
+      "sha256": "73b6dbc23eac4e04867fe147619caa33f2243cd18e68c1a687a354d7e4ab50a1"
     },
     {
-      "path": "harness-plugins/扩展/lian-research-reader/cordis.patch.yml",
-      "bytes": 83,
-      "sha256": "f2e0ed8dc8f56517c89ae133bfbe6a47d1447e8f95f9080e40cb9316cc6fcfcc"
+      "path": "harness-plugins/扩展/lian-extension-bridge/使用指南.md",
+      "bytes": 1713,
+      "sha256": "3cca064ade64537112da5681dced63344a9b4720cf97d315b689793ee38af14c"
     },
     {
       "path": "harness-plugins/扩展/lian-research-reader/GUIDE.en.md",
       "bytes": 1640,
       "sha256": "4895a6bc0af97b3d7b780debdc37ad616472373c67519d14349ff5b86c543ce8"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-research-reader/cordis.patch.yml",
+      "bytes": 83,
+      "sha256": "f2e0ed8dc8f56517c89ae133bfbe6a47d1447e8f95f9080e40cb9316cc6fcfcc"
     },
     {
       "path": "harness-plugins/扩展/lian-research-reader/index.js",
@@ -3548,19 +4772,24 @@
       "sha256": "5fc3e22dff3f02d6f0e7bd3b6f5630858fbcb56f262768049d6b317facbfc097"
     },
     {
-      "path": "harness-plugins/扩展/lian-video-studio/使用指南.md",
-      "bytes": 2024,
-      "sha256": "9c8905b2d97c40f7b1a5ed5473ca50782888b468950cf9406922e1f3e00c98a1"
+      "path": "harness-plugins/扩展/lian-research-reader/使用指南.md",
+      "bytes": 1513,
+      "sha256": "84ba8b5335e2106da7e90ebf8115baed7c32cdf7bbb831c08047baac5688a68c"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-video-studio/GUIDE.en.md",
+      "bytes": 2155,
+      "sha256": "5760c815a54697bf33f66213bc1e5d7c32d28619599bbbcc4291872b3442ab6d"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-video-studio/OVERVIEW-ADAPTATION.md",
+      "bytes": 5656,
+      "sha256": "a40b05a3d74f089a4c9f08172165512a1ebc413cf6f07980559e0ceb0e78c48a"
     },
     {
       "path": "harness-plugins/扩展/lian-video-studio/acoustic_metrics.py",
       "bytes": 2394,
       "sha256": "012342923b9224ff3198806688414dcd78eb46ee0ec9c51563b41ab6d32aceda"
-    },
-    {
-      "path": "harness-plugins/扩展/lian-video-studio/audio_alignment.py",
-      "bytes": 3233,
-      "sha256": "0f16db12db1f21af3e119f765399bfbd831864b5dc3fb6243c5491be7099b7fc"
     },
     {
       "path": "harness-plugins/扩展/lian-video-studio/audio-compare.py",
@@ -3576,6 +4805,11 @@
       "path": "harness-plugins/扩展/lian-video-studio/audio-proof.mjs",
       "bytes": 6950,
       "sha256": "0b9e36e076b5fc0f189cb9d855470ba9ee4613befd120975d6f2077fcf6cccfb"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-video-studio/audio_alignment.py",
+      "bytes": 3233,
+      "sha256": "0f16db12db1f21af3e119f765399bfbd831864b5dc3fb6243c5491be7099b7fc"
     },
     {
       "path": "harness-plugins/扩展/lian-video-studio/cordis.patch.yml",
@@ -3596,11 +4830,6 @@
       "path": "harness-plugins/扩展/lian-video-studio/finalize.mjs",
       "bytes": 3875,
       "sha256": "67f91dda1120f0a9027a9afcac09c73a88f23504a5139273a03fd661067f0ee1"
-    },
-    {
-      "path": "harness-plugins/扩展/lian-video-studio/GUIDE.en.md",
-      "bytes": 2155,
-      "sha256": "5760c815a54697bf33f66213bc1e5d7c32d28619599bbbcc4291872b3442ab6d"
     },
     {
       "path": "harness-plugins/扩展/lian-video-studio/handoff.mjs",
@@ -3653,11 +4882,6 @@
       "sha256": "6bf488a6ca4d9256bda8aa5152b8c340e75c3a2a7a6528f49ce97c9958e17e87"
     },
     {
-      "path": "harness-plugins/扩展/lian-video-studio/OVERVIEW-ADAPTATION.md",
-      "bytes": 5656,
-      "sha256": "a40b05a3d74f089a4c9f08172165512a1ebc413cf6f07980559e0ceb0e78c48a"
-    },
-    {
       "path": "harness-plugins/扩展/lian-video-studio/overview-tool.mjs",
       "bytes": 3852,
       "sha256": "43719ac60e7ea9d6d37f00e3d2bd9d990c3c41ffaba381f879797926c71d3610"
@@ -3669,8 +4893,8 @@
     },
     {
       "path": "harness-plugins/扩展/lian-video-studio/package.json",
-      "bytes": 249,
-      "sha256": "ee2f6bdb49b5e47156b568ad047fbd14b0737e5530455bf96ada8b6c8833957b"
+      "bytes": 263,
+      "sha256": "4c540bf4b31baf88834c9ce8ae3fa9cbafd549ab594945106e02871d6a9882dc"
     },
     {
       "path": "harness-plugins/扩展/lian-video-studio/preview.mjs",
@@ -3758,9 +4982,9 @@
       "sha256": "ecbadfbc5bdc07b5f99b05a59c3a52fa46fc5d0b4f8f1da53754553a302859d7"
     },
     {
-      "path": "harness-plugins/扩展/lian-workspace-manager/使用指南.md",
-      "bytes": 1558,
-      "sha256": "3e60eb3cb36966a3c5a544fe82011dbbde0f42a02df08049ba5dcbe5487d912e"
+      "path": "harness-plugins/扩展/lian-video-studio/使用指南.md",
+      "bytes": 2024,
+      "sha256": "9c8905b2d97c40f7b1a5ed5473ca50782888b468950cf9406922e1f3e00c98a1"
     },
     {
       "path": "harness-plugins/扩展/lian-workspace-manager/GUIDE.en.md",
@@ -3818,19 +5042,19 @@
       "sha256": "f8ec3e216207bbf71982446c37be996c4f5f3717c4347ffbc22945c870adf9b6"
     },
     {
-      "path": "harness-plugins/扩展/lian-workspace-menu/使用指南.md",
-      "bytes": 1481,
-      "sha256": "fc5958bb94c3b72da3181d6d7b792ec5e85bf66d587f744621b8c4322977ae66"
-    },
-    {
-      "path": "harness-plugins/扩展/lian-workspace-menu/client.js",
-      "bytes": 6722,
-      "sha256": "ad644522a5ca66060bf1c8838b5d3ea812f3a3cd69ccb1e1471d675496988b54"
+      "path": "harness-plugins/扩展/lian-workspace-manager/使用指南.md",
+      "bytes": 1558,
+      "sha256": "3e60eb3cb36966a3c5a544fe82011dbbde0f42a02df08049ba5dcbe5487d912e"
     },
     {
       "path": "harness-plugins/扩展/lian-workspace-menu/GUIDE.en.md",
       "bytes": 1602,
       "sha256": "fea69b96ad3f51119384698bb878b42c032f836beb7f507fa778922fef33d45e"
+    },
+    {
+      "path": "harness-plugins/扩展/lian-workspace-menu/client.js",
+      "bytes": 6722,
+      "sha256": "ad644522a5ca66060bf1c8838b5d3ea812f3a3cd69ccb1e1471d675496988b54"
     },
     {
       "path": "harness-plugins/扩展/lian-workspace-menu/index.mjs",
@@ -3848,1139 +5072,9 @@
       "sha256": "a282e5760684a8d36f5439139c050c4a40374d42029addf78739844a512d8155"
     },
     {
-      "path": "harness-plugins/audio-understanding-runtime/client.mjs",
-      "bytes": 5806,
-      "sha256": "ab8a9891626cdd56bd80779e601e4302e02e9e6e575b651d606ce11190bc7729"
-    },
-    {
-      "path": "harness-plugins/blender-runtime/bootstrap.py",
-      "bytes": 938,
-      "sha256": "368e8c3716ee5d37717d43ff1d6c120baf50e9b7f3abf3f4c38536fd6946e558"
-    },
-    {
-      "path": "harness-plugins/blender-runtime/demo_character.py",
-      "bytes": 5617,
-      "sha256": "7734f684a85d9f8f3f0562753369a91a3d9822f207a5d818e189e0171eb42f52"
-    },
-    {
-      "path": "harness-plugins/blender-runtime/finish-demo.py",
-      "bytes": 1045,
-      "sha256": "d94bcfed0f62dc7d986e7c1c89685b655c75cc0efe2b170da3a8fbe55539228d"
-    },
-    {
-      "path": "harness-plugins/blender-runtime/hub.py",
-      "bytes": 2175,
-      "sha256": "05cbec3b21505e1e8a30fbb465201cd09a5ddf0550548eab7fab59c81afd3711"
-    },
-    {
-      "path": "harness-plugins/blender-runtime/mcp-proxy.mjs",
-      "bytes": 3027,
-      "sha256": "93786fd76d7dac8f11baf7bf3d17fcf60d00c29feb47c9cda64a6707cb42e1dd"
-    },
-    {
-      "path": "harness-plugins/blender-runtime/prepare.mjs",
-      "bytes": 467,
-      "sha256": "f2e0a833055d3dbd0a38779e450c7be10cbca6193dd1be7798778bf746648a35"
-    },
-    {
-      "path": "harness-plugins/blender-runtime/render-demo.mjs",
-      "bytes": 1267,
-      "sha256": "f5af43843565cad76c5c90cf5ebbbab82ba10d53744bf08bb17536623305bba8"
-    },
-    {
-      "path": "harness-plugins/blender-runtime/requirements.lock.txt",
-      "bytes": 606,
-      "sha256": "e0774d767835f65958729fdd8c3e5e13746c79c6f38c58dd5a501f716c2429e6"
-    },
-    {
-      "path": "harness-plugins/blender-runtime/rigify-template.py",
-      "bytes": 996,
-      "sha256": "712eaf816e3521c2736fb10a269de169483ac8f7936443f270e533c807f91081"
-    },
-    {
-      "path": "harness-plugins/blender-runtime/start-test.mjs",
-      "bytes": 1205,
-      "sha256": "59d1d6b41ae10bf7f161dfc3ee3b87bc8bc407ac260f7bbd525d8c509188a3cd"
-    },
-    {
-      "path": "harness-plugins/blender-runtime/verify-mcp.mjs",
-      "bytes": 1467,
-      "sha256": "451b781d6015f1baa1bf2886d29c1589437be45317b289d34cfbe5be8f870672"
-    },
-    {
-      "path": "harness-plugins/blender-runtime/verify-shared.mjs",
-      "bytes": 1243,
-      "sha256": "34b5cce8206091b2cdb5c3817db032c043189bfb9400789c961292ae62f1634d"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/使用指南.md",
-      "bytes": 2006,
-      "sha256": "8f4a427e60ded53ee9cdfcafc5f1263bc01bbe2141b560d1f0605e475573ff0f"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/cordis-development.md",
-      "bytes": 8147,
-      "sha256": "83561b4d4fed0dd8051b3e998c6f567a5676a43b7321eecd12c255f4c0478ecf"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-archive-admission.js",
-      "bytes": 1570,
-      "sha256": "d42fbc10fbf357f1343d4c57eab55d3c7a6bd53fe20a29469cf0b1b67e55c4dd"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-consumed-work.js",
-      "bytes": 4089,
-      "sha256": "e20ac9e88d81db3f5e25908a50ad4532cd1d93f410ad5ec4933ef9aa24da5c2d"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-default-model-built.js",
-      "bytes": 2462,
-      "sha256": "3685a0d4665007cfd377f6555a2a0eeea061cd9e7eb87102430771858ac0bbcb"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-dispatch.js",
-      "bytes": 4736,
-      "sha256": "f29567a8eb2f04aaf34523e597d52e46f0fb5bed273db4bf7fa25bc38e2877da"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-index.js",
-      "bytes": 22357,
-      "sha256": "cc5de4b13b26bc1c5383c7c9300a074f267b69fe129a0bf74d1fd4ab695f1c52"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-loop-built.js",
-      "bytes": 74599,
-      "sha256": "cf57e3ecd487ac5c2553455aaa5cef2c6fb41e6bd61be5aa455675d1d7193033"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-loop-README.md",
-      "bytes": 22983,
-      "sha256": "4c9fb8c7bcd7e563e5f24abbb1d9f52479ed7388ffa50e288bc1ec1eca4ab551"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-model-selection.js",
-      "bytes": 4084,
-      "sha256": "47f758ea21ebf7544b4633d2ef8cbe5afafddf3b4aaf9892276cda9e98af11e7"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-preset-registry-README.md",
-      "bytes": 5845,
-      "sha256": "a8f6e2d1f462ff9566da2ca51ff3207cf994101408c6cac550e21e0a3830593c"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-projection.js",
-      "bytes": 49,
-      "sha256": "43ab89acd14b20b3c2a85c8307f236b38dfa27671dd31b703554777270abc534"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-README.md",
-      "bytes": 16666,
-      "sha256": "652a3283721fb5b52f0671c43d458b04c039d5bfe7e900894cc0f64229b68641"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-runtime-types.js",
-      "bytes": 239,
-      "sha256": "72347f43fb79c35cff8565b6428c6d7b96a78267cf8994ea3ffd0830a83a21d2"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-agent-types.js",
-      "bytes": 170,
-      "sha256": "f4ef7228255d5f64ba546ed2a2b6be63601b77c7b58ac3a58a74f4e8f970cb30"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-agent.js",
-      "bytes": 27724,
-      "sha256": "c7574870628f77b4526a1e2cf8071eac55c5d1fbbb4da923b51280ccd71ab989"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-archived-session-gate.js",
-      "bytes": 2271,
-      "sha256": "cec5adf587c03dca75558d7318bec7ba46be7f7fcc949588e8113508382e014b"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-assistant-stream.js",
-      "bytes": 3113,
-      "sha256": "a84d92140a15061c0e227bf9233dba1cd7a56ba6ca2b4211ccebae635123cf82"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-built.js",
-      "bytes": 132150,
-      "sha256": "a9801acb577b03053c5d5a3191ff555c5f1d791d0acddec113bea4511e33b386"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-catalog.js",
-      "bytes": 4939,
-      "sha256": "3f71ebe196d6b6ec6930ed6af81fc00f065e795d5718690d7d2b76bfc98431af"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_contract_events.js",
-      "bytes": 3902,
-      "sha256": "11326d2c2fbde3d070e4100dcfdbe7189b7c516d7864ec3ad66ce310220ece7e"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_contract_session.js",
-      "bytes": 46,
-      "sha256": "ee044e5b21c3aea4359782b5fa8259c30c07887c6e9205796a96a8ba23ea7c82"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_contract_sessions.js",
-      "bytes": 47,
-      "sha256": "7ac43ca48c0c616c458e7a4984ba4f8abf8a1b30e13181e8a9f79167a7e424e6"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_contract_snapshot.js",
-      "bytes": 47,
-      "sha256": "85a67be6f1b8b6754888d1d139c6d70b294df5524ff2a539124be37c53c576ac"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_index.js",
-      "bytes": 2838,
-      "sha256": "bd545a3174508f0cd781a3d3798234109664752d67f5b62c1ef527f24f90137b"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_ordered-baseline.js",
-      "bytes": 1801,
-      "sha256": "0e8b972f2a51a3897d02961212ca43f0f4985680ba6dd5e53991a22ef7350fd7"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_scope.js",
-      "bytes": 1796,
-      "sha256": "5dff532d848c5ccfb14006a52554f62bc7f779a3a52219efad131c1b4bf349a7"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_session-wire-event.js",
-      "bytes": 1978,
-      "sha256": "d32fa6b71dd3ab0c36344e56876c016d0322ec8642f1994cf96d1d6a87f935ca"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_assistant-stream.js",
-      "bytes": 8260,
-      "sha256": "719ece3e9749d395595b55b61534839e3018b358f1fa7bc66e9af6046bc58589"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_history-records.js",
-      "bytes": 880,
-      "sha256": "f79eae6266257545fccb7194810f323490244c57363e66824a321daafa1788e0"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_lineage.js",
-      "bytes": 2036,
-      "sha256": "205e72499f0aba0c1e8906361b6919f7be0b338b1683782fcf96ddd9d115578b"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_manager.js",
-      "bytes": 37910,
-      "sha256": "1791454916544c645cd4d934d0ea97aba3f113bb07df5fec8d4af18dc10e007e"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_notifier.js",
-      "bytes": 3078,
-      "sha256": "fe4983f05f26b4d2efe85747863c38fb4b916e5a79cdaacb7cbe8fdce1c47350"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_projection-store.js",
-      "bytes": 6803,
-      "sha256": "027de778b5f4f95c8c209a1701c8ec17a2f7c52511627d67039045cadf15d00c"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_remotes.js",
-      "bytes": 286,
-      "sha256": "ef976356c0753ebfc986809b4a314b68df2d35fb39bbe81c40cf0cc2e3133cea"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_service.js",
-      "bytes": 24664,
-      "sha256": "d53c5c016915dbc06e4278c5462ab457e305a617c1a55cf7c63c68fe117adfc5"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_sessions_session.js",
-      "bytes": 38957,
-      "sha256": "880409eecfdd697076790365558addf879e1fcdfdeeb29c276058233739238b2"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_time-zone.js",
-      "bytes": 557,
-      "sha256": "8747a547c82fc03743179b4194a979762784be9b318efa1d41b5a904d4488c1d"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-client_transport.js",
-      "bytes": 5627,
-      "sha256": "ee4679f56c57b00ffb624a2a93bd3b7fcecd121a169e5117c661090c9cc92417"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-commands.js",
-      "bytes": 30150,
-      "sha256": "2cbc6ede7bd7211917984b5ef2e2fd598db7a21e493333bc8586c528b17ec25b"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-control.js",
-      "bytes": 3307,
-      "sha256": "41167027c6cbbd04ad0f5b91921a16da883863f0cd8f7da93dc1985e15859969"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-file-references.js",
-      "bytes": 4105,
-      "sha256": "e3d8fb568b8f53c48d11ac2134875a0fe225ebed1f83b20b35051303e00d1571"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-history.js",
-      "bytes": 19450,
-      "sha256": "a58ffb911a14d39ca4131c301b1cea4773540d2acb7e81b3cfa17df51a8f0b78"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-index.js",
-      "bytes": 38199,
-      "sha256": "616ced16623b7448afa908ff65093eb6ef2a478d32e5ef9bc22634bfa9f80472"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-list.js",
-      "bytes": 14670,
-      "sha256": "a85aa9154e6bc1ec5c17ba484c0524c8ac21189cd5c6ac6dd9f0f96e2bf82891"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-media-references.js",
-      "bytes": 3215,
-      "sha256": "7257ba91acb8128179aae28e2c4ecd316c2f9880858ec3feed7a1fa5105b7e61"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-model-selection-projection.js",
-      "bytes": 2544,
-      "sha256": "b299f5d7436dffce6ab0d45197b106ab689cf48ff94ae9a4a11ab902c86400e5"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-README.md",
-      "bytes": 26500,
-      "sha256": "d8fdb1e206b0e4edb2e3939a9b85e4f7770fdee037c47475a7ab0e70aad7b73b"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-remote-events.js",
-      "bytes": 52,
-      "sha256": "4107bd2407269bbf2f531d3284ebb7840a889b1cc364050515e3e3a4a686cd01"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-skill-catalog.js",
-      "bytes": 10974,
-      "sha256": "d86ec460b6d3ef629e621163c6f7a07e9aa237d0bd6dbb4dfd954d6ea17fddc1"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-api-session-controller-types.js",
-      "bytes": 258,
-      "sha256": "933fe63cada3bd5126d2a96ca042524dd1b2ada286fc0c49c0967a0927312bd2"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-adapter-failure.js",
-      "bytes": 4326,
-      "sha256": "f1213f11f11e0f20aae26c09a5e0cf3d72512c1f1519e1b3f107edf64af43c28"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-api-key.js",
-      "bytes": 1518,
-      "sha256": "254b774234c0bd38dd759765c0fd1e60788651a22106f5559ec2760a39935f2d"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-assembler.js",
-      "bytes": 7945,
-      "sha256": "35a4754ab854055942b9142934c595c3e6358a717947daa2d8d89847aef988f7"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-assistant-stream.js",
-      "bytes": 19887,
-      "sha256": "7e0cc96a4d60aed34381b552f9cb4549d70df36dbd28c0630da4cd93fa44b7a1"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-attribution.js",
-      "bytes": 2066,
-      "sha256": "62f546a0434b4ab70860db3d7c768f515b5f4895f41b3b1399afc9d0d02c7add"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-brand.js",
-      "bytes": 1650,
-      "sha256": "6b70219e0478d3307d865309523e7e7be3f169b06c04f4eef0d49b54aaef72a2"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-call-config.js",
-      "bytes": 1944,
-      "sha256": "170f3ce7c7136b93087e2f5d50faa8b69815894ec3ebdf26c36d57e4c7a17a03"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-content.js",
-      "bytes": 16615,
-      "sha256": "79802e2e6bece64114c8f6857943c2cd23742bd2c20b067cd06298d397f9b85e"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-error.js",
-      "bytes": 8459,
-      "sha256": "103b72873eafc3512d717593f802bbf09230c52b7fcd31aa6ec10b5fd147e1cb"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-index.js",
-      "bytes": 53756,
-      "sha256": "03b16dc51a3e6712823d57afaf74a7663d628aefd05ae7768d2cea89d05f7197"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-message.js",
-      "bytes": 3713,
-      "sha256": "c87812f77a2afd284f271af071575edcadfde3daa7b6554d77b96810ce4688e0"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-pi-ai-built.js",
-      "bytes": 125589,
-      "sha256": "99b5c20830a52f69641df8a18a39206079b0c725201958cce2c4a934f1d4f7cd"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-README.md",
-      "bytes": 19859,
-      "sha256": "9cc8f2c8d30f9ba44afb8d14f3bbf5f31fbdfb01f950a51a49a1322e2a841049"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-retry-policy.js",
-      "bytes": 5591,
-      "sha256": "f0a8fe075ac24c56ed2aa5d5e359a85539f5ffa237af54b68d3f4fc5124b5d83"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-llm-types.js",
-      "bytes": 284,
-      "sha256": "14106d660103de2db746964fbb5be90c5eb2a7ff736779e2501e9faff956cbf5"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-persona-lib_index.js",
-      "bytes": 2163,
-      "sha256": "1e9dd7f0dfd87cbff6486b7ca043d2e1b863a2a56b99106a4bf74831591266d5"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-persona-README.md",
-      "bytes": 7160,
-      "sha256": "214628a5cbaa47adcffe0528ebcf26f5c8db58e51b0dfa5c3c774668d5dc56ba"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-fork.js",
-      "bytes": 1321,
-      "sha256": "72ca7ae2cce506eb607e565f2e6b15fc6e3c2663de8403f79e37fc3a469e34cf"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-index.js",
-      "bytes": 61624,
-      "sha256": "59cced30c7ee65813c62f4858c2fc15c8c636df96507b60c15543468178b72f2"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-known-event-types.js",
-      "bytes": 2923,
-      "sha256": "f2adf39f26ecf7cc84bceaef1dcf8210395a13aa02e16828df1038a27a404edd"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-preparation.js",
-      "bytes": 1303,
-      "sha256": "78dea29f5e11a4d220945a572b3eb26cb66460e6a368a423bf597c3ef05a5faa"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-README.md",
-      "bytes": 22184,
-      "sha256": "f9f43d36c4df64279ca8e1fa1baad1c67cd003c5d79fe26cfe5887057a8ab584"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-repair.js",
-      "bytes": 9120,
-      "sha256": "ee2e02d4e924bf01af621c38c27e030b89eaa8e0abfdf801a6220eca95aa2038"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-request-header.js",
-      "bytes": 2595,
-      "sha256": "3f73ee59af794df50df159a9c45c606f0fbce364c482b371831d1e8f26b87aea"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-seq-ranges.js",
-      "bytes": 2790,
-      "sha256": "68a127c76affa98edeeb50e302eb43f154f4d24f7d04cb95ba8b323e88f3d09e"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-surface.js",
-      "bytes": 26100,
-      "sha256": "ebe8920a22fca8d987cbacab94c9db92f71df44863f58370a1be559155be734e"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-tool-history.js",
-      "bytes": 3894,
-      "sha256": "2d2c4f4cbb6717aa2f487af52ce6a81e2002ce2c768cb5a4210c867ec49a0e95"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-session-types.js",
-      "bytes": 2748,
-      "sha256": "91723a2522999e2c8b6c455796ad699794a6f0abfcb44d9cb883edb13142ff9b"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-system-prompt-built.js",
-      "bytes": 19817,
-      "sha256": "7be9f7aafbf345d01ddcc12fd297b16e9a1d41283a6a04073b867becca0bf020"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-system-prompt-lib_index.js",
-      "bytes": 19817,
-      "sha256": "7be9f7aafbf345d01ddcc12fd297b16e9a1d41283a6a04073b867becca0bf020"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-system-prompt-README.md",
-      "bytes": 13740,
-      "sha256": "e4fda220e3c86bf54b3f20daccd56ebab1a1159499897c9948f8513d81decf1a"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-index.js",
-      "bytes": 66231,
-      "sha256": "d8cf8e1400e1b923684324546e46d6408bec140002430150b34099ae95a365c8"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-json-schema.js",
-      "bytes": 25604,
-      "sha256": "912e04e68c2455cbb77651031449574f992720c90311e6cbecb1d35020bc1072"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-presentation.js",
-      "bytes": 347,
-      "sha256": "253894265253e38fa9db12f3696d9dac9fd2bed1363c04ce3f95c0f19a6c16da"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-ptc-calls.js",
-      "bytes": 2487,
-      "sha256": "29a6cc1e141c383294ca28bc2df8eccddd2df18ba3af8bd6f5f29b1390a0ab6f"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-ptc.js",
-      "bytes": 40037,
-      "sha256": "20f9a70b8c794299ab54280cdc96a9cdd2791cc71a2b385e829a591237d01fd7"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-py-types.js",
-      "bytes": 48075,
-      "sha256": "37fe51ab4acc0a8cb971dc7825173e036e9cc1dd26c57f8541bfd1c77d77ec7e"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-README.md",
-      "bytes": 20476,
-      "sha256": "5617d22947d3b42e2cbb39aac08044d54cf828ff6a4a1569fc1313c37082c946"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-schema.js",
-      "bytes": 15573,
-      "sha256": "c3dd33029e3f80e6ab9ad9b0d853ba80b88177c1c2423080a94a2db91e6f33f9"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-testing.js",
-      "bytes": 978,
-      "sha256": "c6784f546e950dc38323baaad4009bb197eb25acf3a16adaa2893a44c7b7a650"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-ts-types.js",
-      "bytes": 15569,
-      "sha256": "f6aea037453c8e42402fabaf5cdaca1f0d299d92a5f4ec20c6329d0e4599c6c7"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-tools-types.js",
-      "bytes": 161,
-      "sha256": "d53c54d32353419ece121f485a5534ee054842b74ebab7b4a4d3325545d0179a"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-workspace-entity.js",
-      "bytes": 7014,
-      "sha256": "028ee3a218f3deb136208256cdee41190c253a018c126225a6414541d15610ee"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-workspace-index.js",
-      "bytes": 35824,
-      "sha256": "ed69989d8286598fddb3a40030723810a1238968e91ccfec05fc84657bb5ec74"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-workspace-paths.js",
-      "bytes": 2246,
-      "sha256": "11538f24f4ce02a68a5b3b733e1be56151a945bd6fea158dd45719f0fafd47cc"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-workspace-README.md",
-      "bytes": 16737,
-      "sha256": "6c229c0e970346428488724090ba95f35a0b64a251eafeaa29209d487ab60f79"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-workspace-spec.js",
-      "bytes": 3262,
-      "sha256": "c13790d2a5b5ec11d2fe24692e0776c120a6ab69546e91cebbe6b50b18ec074a"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/dsh-workspace-types.js",
-      "bytes": 319,
-      "sha256": "514059077b0696589f30b96265ec1aa0164192c3fda26ec564d91b65e0d0bc5f"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/host-plugin.md",
-      "bytes": 5300,
-      "sha256": "1d5b6ee648b5dd04462fb29075167a5dc570a8f4fd162b3c94ad40a78f2f627a"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/practices.md",
-      "bytes": 7825,
-      "sha256": "5a61f4e0f754eded6116e55bbf72471fd9b128e138ea3faca120cda76701a042"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/schedule-lib_index.js",
-      "bytes": 105046,
-      "sha256": "022b9f191b6ca0f4b0f26625afc49f375933068a42712c0a75e94e439d7e6d0e"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/schedule-README.md",
-      "bytes": 24281,
-      "sha256": "96ac30e585a90c3db7def84112e4beeaf3eda99227aed06698c44ff030e12199"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/api-reference/user-actions.md",
-      "bytes": 1375,
-      "sha256": "ecc7f1226536584d781af8f1f9dee30d7262943dada67bfd997eb7902b34a9be"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/bilibili-login.mjs",
-      "bytes": 274,
-      "sha256": "a10542cd7ce153a77ce184d7189c66dbd09dd12c2f459da401ed4da0a55a70f8"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/change-window.py",
-      "bytes": 275,
-      "sha256": "3b9cefadbadc893f81278e9b8f5a896bb933e36e43cdf495a0f7b8fe1dd127a5"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/cli.mjs",
-      "bytes": 2524,
-      "sha256": "e9856e5d01e15b093153a3ec01d9bf0f8fe9a297a809532d8010b836d484b092"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/cordis.patch.yml",
-      "bytes": 84,
-      "sha256": "3ba499a2f0c37430c09ac0c53b35b124a7b6ac3dc10a8aa71d8e3f34728ea1c8"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/GUIDE.en.md",
-      "bytes": 2124,
-      "sha256": "743e61e7a35c12bf562ca290a47ae0e0875fcc241ad4d097e15a1d55a829098e"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/icon.svg",
-      "bytes": 494,
-      "sha256": "a097650508a8b6fbd2434f091655bfab08b398a81ab9754eac307ee8c4b788d7"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/index.js",
-      "bytes": 16267,
-      "sha256": "28502f8e646e7463043054ae51a91546e7ad5807b635ba8bf0d80139fb483150"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/bili-browser-search.mjs",
-      "bytes": 2003,
-      "sha256": "0443a20315493b66a30aeee897981d2d620cab3062f379ac2a653445a8fcee00"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/bili-network.mjs",
-      "bytes": 5065,
-      "sha256": "83bb33d89672433954d2c960ab8c80cf3a86b84a4d679a8d8798a89aeb8b8c48"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/bilibili-auth.mjs",
-      "bytes": 5685,
-      "sha256": "3d48707746d186b9c43d119e05d58efcce5a0d4f6cb99d3e2b1458944dc95999"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/bilibili-comments.mjs",
-      "bytes": 12206,
-      "sha256": "ee765d510fe39d33bef01492b1df41f04d1556c1dfa2269647ddc5d6ed9f4b3d"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/bilibili.mjs",
-      "bytes": 14103,
-      "sha256": "d9c047fb37cd760e02cfd888fe495e70237e9097e3c0633828d0fa8f1b703262"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/browser.mjs",
-      "bytes": 13717,
-      "sha256": "12598beef08d9b2c6723792c70279641f0582ee3917e84e3cd3958d6fdbac20f"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/budget.mjs",
-      "bytes": 5887,
-      "sha256": "6b2c7acf6cab0706d6e1e6284bcd791ed6b1fcceba48c61d73bea2e19529f0c0"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/engine.mjs",
-      "bytes": 30006,
-      "sha256": "3ae965959c233cd297bd9e691f08070bbc92daede92ae3374f510d28dbe134e7"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/health.mjs",
-      "bytes": 4589,
-      "sha256": "23b0d795b91d1acd82b07f14723e13990b821dbd3d517cef2393eba1201af814"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/knowledge.mjs",
-      "bytes": 1328,
-      "sha256": "4151f894d4d20a1cc26372a6d9edd02f00843630be2fcb16095df29320c7ac6d"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/media.mjs",
-      "bytes": 8850,
-      "sha256": "eec2ec92b6ad77bff4c62959fa258782168b2130ca6f694a2bef382fb6d62269"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/migration.mjs",
-      "bytes": 1306,
-      "sha256": "b6a175762ea2eb455201ce94192f8bb6e44a42dec5f12e9ce29026410e4dcbf5"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/native-budget.mjs",
-      "bytes": 10891,
-      "sha256": "2751b9f80c31a4d9ba29b9583d105f0987b078bba1e366ed9ca741d9426dd607"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/policy.mjs",
-      "bytes": 10635,
-      "sha256": "7e94a373436ee65db0351d1cf3742be46017451c5a7010c635f7368e48c64040"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/sources.mjs",
-      "bytes": 9496,
-      "sha256": "cf9bc57c110e6dcb1dbd6b3c887bd81d32ae87a358302940860f82f692745d94"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/state-lock.mjs",
-      "bytes": 3780,
-      "sha256": "5b3f425a58904ea0019e770f5646ae71c15fcb0b91c9e2667ad53520d8272f21"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/store.mjs",
-      "bytes": 17666,
-      "sha256": "8aabb512e82b09d2e4c785aa86e92cffdf3627bb40fee0207d949b3c913be6c3"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/subtitle-integrity.mjs",
-      "bytes": 2656,
-      "sha256": "3d10b6c4f0b73e637ea058aeca9f3e21c06a7e6f55b2956b1ec05a6dd80bdfcb"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/tariff.mjs",
-      "bytes": 3022,
-      "sha256": "a5547239aa7f63febef859b3675d6222ce9707dbd6b5099c6de1300b3ebe0398"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/trends.mjs",
-      "bytes": 2301,
-      "sha256": "466c42884092fbd9c47c221dc04a52db2c33f54b908729f6089792ea85659704"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/lib/verification.mjs",
-      "bytes": 5701,
-      "sha256": "bd05b5c0d4e485f1053783ad2328ee06544fbb5ef02c3663546eca5e09064ee2"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/locale/en.json",
-      "bytes": 212,
-      "sha256": "4739cb3a81fdaf9f697b5df9b5f4aae14ce930d395b966a0404a6efd25f0ea45"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/locale/zh.json",
-      "bytes": 208,
-      "sha256": "dffcb81803f4b96c024d5f1cd4f45e08b5246e31d614399b7aa366b3e0d39da4"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/package.json",
-      "bytes": 699,
-      "sha256": "15255353c9bf999ba02e6357b4588b4fc6ac4cdb18720888ed53add8c1f617cd"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/README.md",
-      "bytes": 7140,
-      "sha256": "081f79ceebf4d667394c63c8ddc4847da4ef91e520bb16e6a16b92e9cf2d3f62"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/bilibili-comments.test.mjs",
-      "bytes": 11617,
-      "sha256": "0216f3d5461346f26b5045ed65a32e607f2fa675a449178a5c48146d2cd1db70"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/bilibili.test.mjs",
-      "bytes": 7720,
-      "sha256": "a53feae20ab4adae4395bbedeb1cd0fc2cd4f5e1f6e49c0fbfb499af4b41563a"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/budget.test.mjs",
-      "bytes": 8375,
-      "sha256": "0b8e90aefd1ac79d072f156683e6cf5a780e8ae30e3b3acfa54730d578092441"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/engine.test.mjs",
-      "bytes": 8080,
-      "sha256": "ab769e258f56124b032a01190583266ed9c4c713f32326222ea5f06510db053c"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/host-smoke.mjs",
-      "bytes": 2798,
-      "sha256": "fb86060a772a9aa6e71ef063143dfdebff1c497625e7a3d6e442543a575d142a"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/media-smoke.mjs",
-      "bytes": 1643,
-      "sha256": "aa1bb306e09be582f636b0aa2be19e1a43dac42abe434ddd68bb25253e53636e"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/native-budget.test.mjs",
-      "bytes": 8629,
-      "sha256": "da8d849481e8ff18eff0d4cb9c75ff6e2bcd6ae8a195e77fa3fa4ea5454e53b0"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/policy.test.mjs",
-      "bytes": 2638,
-      "sha256": "698fe469a56db3de7d97618d1504603c804ec78428f5feff1e7d0c699920cd44"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/research-media.test.mjs",
-      "bytes": 7829,
-      "sha256": "85e8f82fa7e44e2d1849bb4519d01745cfbd0375e1928a88290f227b2513ab91"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/sources.test.mjs",
-      "bytes": 3457,
-      "sha256": "307102046945d29b4afd60d6e76d0f7f440a9f66abc35a209b9b7f31f277647b"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/subtitle-integrity.test.mjs",
-      "bytes": 3133,
-      "sha256": "ed8a5007f16d13162754674b173a450780ee4b6dfad1fc079b05ed001c779590"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/tariff.test.mjs",
-      "bytes": 1745,
-      "sha256": "609de581cc36236680e6cda8acea33e04d9a1f3198519dbae5c562f9d22e94ad"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/test/verification.test.mjs",
-      "bytes": 2248,
-      "sha256": "8b4c5aa437e3b5e01f711dc1066c391bf4235132828965b691f7577e55ac27f2"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/vendor/moxingovo-bilibili/LICENSE",
-      "bytes": 1103,
-      "sha256": "7a49b7b00620c4349b489d226401f608accdba82c698e01aef25abf068f74c22"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/vendor/moxingovo-bilibili/provider.js",
-      "bytes": 28457,
-      "sha256": "d80ea43588b3d60c1f77636fd2a45a98144a4bcc4f8e68c7b8ae6644cb23bf58"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/vendor/moxingovo-bilibili/types.js",
-      "bytes": 934,
-      "sha256": "02316806ec7b1bf985db0c2ab4ecf5ab7ce78acf1d59d2cbdb2c7f1e9f32fc28"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/vendor/moxingovo-bilibili/UPSTREAM.md",
-      "bytes": 1156,
-      "sha256": "f9c220c0d08e8e41b9d003ae6dfebd417d87d0bc950f247a0827b078bf266e71"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-life/vendor/moxingovo-bilibili/wbi.js",
-      "bytes": 2477,
-      "sha256": "5d6473413d712014e750b2c82e5f51e663e10e040db1e38b5c841652c64b8dc9"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-toolbox/使用指南.md",
-      "bytes": 1582,
-      "sha256": "e59cec5ada808fcb1b37dd838e3a667753c3cca7f457dd806fae155217deb8a0"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-toolbox/cordis.patch.yml",
-      "bytes": 1561,
-      "sha256": "e55484f375af7118a9f18d04ee50ec23c91b895c4cd91f82bc723957e46467cd"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-toolbox/GUIDE.en.md",
-      "bytes": 1754,
-      "sha256": "35493106870dda970415e5ea17f1b6cc0d2193180a44acac260b9b5f7af91398"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-toolbox/index.js",
-      "bytes": 103,
-      "sha256": "d30d9986f4525d3c3916a0f5ff9e7d66b5afa4401cef0e9a9c5ac10c5a6433e4"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-toolbox/offline-tts.ps1",
-      "bytes": 1347,
-      "sha256": "00ff17f146d5efbbeabfac48909d73a9aa4d33ae486173514562711b8cdfc8aa"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-toolbox/package-lock.json",
-      "bytes": 1926,
-      "sha256": "7b4fdcd83c6784e5f21d9e477a14cae200cdb845de64d25af3bbbf82701f98d1"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-toolbox/package.json",
-      "bytes": 622,
-      "sha256": "897171fc96dcb5f891af75534294cea06fb5992acbf26f4c7c15a5eb66d6d21f"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-toolbox/README.md",
-      "bytes": 1017,
-      "sha256": "6d7d2ad90480d1b46c7917212918008ffef8d46ad90eb1e85d852a600f3b8909"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-toolbox/requirements.lock.txt",
-      "bytes": 1055,
-      "sha256": "9fc353f52c70db8aad1d16cbd2f7f351a1a0fcf21f30cd630e1bdc01c16d3949"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-toolbox/requirements.txt",
-      "bytes": 60,
-      "sha256": "2004d82cc5442171a9564c6928c75138f81b1ce02370b72bfdc53217f1bfd0e7"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-toolbox/tts_launcher.py",
-      "bytes": 9826,
-      "sha256": "64bf22261122d193805569ccbc3ecfff9c8c3d522504620b1f44c808238d62a3"
-    },
-    {
-      "path": "harness-plugins/dafeiyu-toolbox/verify.mjs",
-      "bytes": 2519,
-      "sha256": "1a0655cc5adf3a9cc9d681f9a545ff3e3ef810d14c36ce530200d87173e60390"
-    },
-    {
-      "path": "harness-plugins/film-study-runtime/analyse.py",
-      "bytes": 1457,
-      "sha256": "d3bdf2b91f1b2dd9db0ba9df2967f38e034364a6e530fa0d5dcbc5435a499e18"
-    },
-    {
-      "path": "harness-plugins/film-study-runtime/installed-freeze.txt",
-      "bytes": 126,
-      "sha256": "b396ad176ac8bfed12a62e844ab5bb77f1812accab0d381fbbbccd75d25e285f"
-    },
-    {
-      "path": "harness-plugins/index-tts-runtime/client.mjs",
-      "bytes": 1989,
-      "sha256": "c5b55d4343f6a095b15b2211112a9ddca71e1228b3b79973371e029db24bfdf1"
-    },
-    {
-      "path": "harness-plugins/index-tts-runtime/expressive.py",
-      "bytes": 5282,
-      "sha256": "b4679dfd04c0f40fe20633c0b40de53b76a646301080f7d96e28bdeb3baa800d"
-    },
-    {
-      "path": "harness-plugins/lian-video-runtime/atomic-output.mjs",
-      "bytes": 1907,
-      "sha256": "2392bd0a7bb05956f25e9b455f9069c18d8949faecce6fb47ef035341ed91a29"
-    },
-    {
-      "path": "harness-plugins/lian-video-runtime/package-lock.json",
-      "bytes": 146150,
-      "sha256": "fc3ba7ce33dd1c34729c31bef11048f4b7c295641880460637a17b3f11253a3b"
-    },
-    {
-      "path": "harness-plugins/lian-video-runtime/package.json",
-      "bytes": 405,
-      "sha256": "d3a5c3841c737d777a32dc5dfd69c0597ee8243c03429f70ec0677d2e3d4035b"
-    },
-    {
-      "path": "harness-plugins/lian-video-runtime/prepare-library.mjs",
-      "bytes": 2332,
-      "sha256": "723891d4e0b3d3760ea4bedababe57ecd001d14055a1f98742483605445b4e88"
-    },
-    {
-      "path": "harness-plugins/lian-video-runtime/render-job.mjs",
-      "bytes": 2668,
-      "sha256": "eb87505a3094f198777e87aea29b70ef4395315678075aeffb98fd1c4a816c0d"
-    },
-    {
-      "path": "harness-plugins/lian-video-runtime/render.mjs",
-      "bytes": 519,
-      "sha256": "4724eb0cacac5c11f11610acb4153b511f7a1288ce77fab3c32678ad1a6372e3"
-    },
-    {
-      "path": "harness-plugins/lian-video-runtime/template/src/index.jsx",
-      "bytes": 3846,
-      "sha256": "b3bedae9751f95298ad9479abf76ea86ac2dc1e7dbf352a76c07021dc8387ec3"
-    },
-    {
-      "path": "harness-plugins/local-asr/prepare_model.py",
-      "bytes": 811,
-      "sha256": "0df2c9270abc5f267b699ef9d435c510011814cf2568c7168ad17f3c5384ffbc"
-    },
-    {
-      "path": "harness-plugins/local-asr/requirements.txt",
-      "bytes": 72,
-      "sha256": "9a22a97777c88c7b4ca8a4fb68f747dfb34802cc21026664c4225cc0034a4304"
-    },
-    {
-      "path": "harness-plugins/local-asr/transcribe.py",
-      "bytes": 2701,
-      "sha256": "ea9762fdbc947f51b6979f820fbca8a40bd564021a3d971d4ff90c3a2d11e19c"
-    },
-    {
-      "path": "harness-plugins/motion-canvas-runtime/create.mjs",
-      "bytes": 998,
-      "sha256": "c64b8c3b7101ff6818012bf53a4317ba7f359f80da67065ec9ef664ec6cc7acc"
-    },
-    {
-      "path": "harness-plugins/motion-canvas-runtime/package-lock.json",
-      "bytes": 66371,
-      "sha256": "3df1ef4c34c70eb2a1b6e6434348a45cb66ffe55830250ee128b81b99ca2a346"
-    },
-    {
-      "path": "harness-plugins/motion-canvas-runtime/package.json",
-      "bytes": 301,
-      "sha256": "064f7d0320465860933f373dcb4f2eff2a90f7ff7cfc8f5be17dec3641b52c9d"
-    },
-    {
-      "path": "harness-plugins/motion-canvas-runtime/render.mjs",
-      "bytes": 2970,
-      "sha256": "690d24eabb90088fde20c4964135ba20d2fa40c07edb1e882222a1c2d254adec"
-    },
-    {
-      "path": "harness-plugins/motion-canvas-runtime/template/src/project.ts",
-      "bytes": 154,
-      "sha256": "26b9e65a5cf328dfda1af2edb42ca468eb5f5c1a4d5af7eb8bd02c56d9124ab8"
-    },
-    {
-      "path": "harness-plugins/motion-canvas-runtime/template/src/scenes/explanation.tsx",
-      "bytes": 1425,
-      "sha256": "f3e8495c4bd03cf6fb473cc239838c1ea572418771c63632087db3727cd91683"
-    },
-    {
-      "path": "harness-plugins/motion-canvas-runtime/template/tsconfig.json",
-      "bytes": 140,
-      "sha256": "de29b808006c24a22446792e49026aa7b7b9ddc01f17bd69b6ff7970dd035760"
-    },
-    {
-      "path": "harness-plugins/motion-canvas-runtime/template/vite.config.mjs",
-      "bytes": 874,
-      "sha256": "d65f1408eaf0379368e1328b94de55e08c9564f5b6058855f633904c974fbeee"
-    },
-    {
-      "path": "harness-plugins/motion-canvas-runtime/verify-preview.mjs",
-      "bytes": 990,
-      "sha256": "f6e00445654fe9e8f9aa2cf5c04d9c5028fdd194a7f0766ee189d84ba1f07e3a"
-    },
-    {
-      "path": "harness-plugins/music-runtime/client.mjs",
-      "bytes": 3330,
-      "sha256": "f967f338f453845b7311a42d44a1c55d47808901999cb7919e3ea2616b93e780"
-    },
-    {
-      "path": "harness-plugins/music-runtime/music.py",
-      "bytes": 4833,
-      "sha256": "d7f80d198f02a12dc5d9165df06665bc9ed0ffadcf15c9c0f600a5b8e40287f8"
-    },
-    {
-      "path": "harness-plugins/music-runtime/requirements.lock.txt",
-      "bytes": 1389,
-      "sha256": "63c6ed6a32b1f417f630186e2663ade2d525ec5d4d7b154020c7fa1d3c4d6e48"
-    },
-    {
-      "path": "harness-plugins/opendesign-runtime/create-sample.mjs",
-      "bytes": 3855,
-      "sha256": "97a5d5aec330d15c742db176c007611c11f2a170bc002976daf7b249aa2c7598"
-    },
-    {
-      "path": "harness-plugins/opendesign-runtime/mcp-adapter.mjs",
-      "bytes": 4258,
-      "sha256": "82617c6712f6e5f93425e33200a3f2295319f4623a640c28f0913c27e3bb9484"
-    },
-    {
-      "path": "harness-plugins/opendesign-runtime/mcp-launcher.mjs",
-      "bytes": 29,
-      "sha256": "65f14723990e73f5f379087147cb3e85b6d57c0a99c05cda4cbcb60bed5f2f86"
-    },
-    {
-      "path": "harness-plugins/opendesign-runtime/resolve.mjs",
-      "bytes": 2112,
-      "sha256": "00cef2c9aaf4e93e084c705929b0a5443ee7e3c43e3af7d51894937868a9bf7a"
-    },
-    {
-      "path": "harness-plugins/opendesign-runtime/verify.mjs",
-      "bytes": 1803,
-      "sha256": "aa166de195cefc284f5587f4ae1bbfb8344712f7cc19358b31c240aa0b9368ef"
-    },
-    {
-      "path": "harness-plugins/sensory-runtime/gpu_lock.py",
-      "bytes": 922,
-      "sha256": "3f62b4a6ea344f433d3342a0683ccb361110c26a474fc3eec1df9b985081a126"
-    },
-    {
-      "path": "harness-plugins/sensory-runtime/gpu-lease.mjs",
-      "bytes": 1019,
-      "sha256": "f943f5b7cc6560c4b71d874251e397e093fcfc7827e847f810279e5494aa2151"
-    },
-    {
-      "path": "harness-plugins/sensory-runtime/voice_metrics.py",
-      "bytes": 819,
-      "sha256": "cf361232f1db478ab8b9548016145cc8892b4d52aae22a698d272ec155ad7118"
-    },
-    {
-      "path": "harness-plugins/sensory-runtime/voice-monitor-worker.mjs",
-      "bytes": 541,
-      "sha256": "6ef030550edc27fc23e14befd838aee2dfdbbd22259ed780e5b66d086ff52fb0"
-    },
-    {
-      "path": "harness-plugins/sensory-runtime/voice-monitor.mjs",
-      "bytes": 8013,
-      "sha256": "1376efba043cc222886e5bbc2a2e0c94186fdf89dd65bd6a8691b6b221730f75"
-    },
-    {
-      "path": "harness-plugins/shared-mcp-runtime/package.json",
-      "bytes": 120,
-      "sha256": "18f4c1167158b5b9e377a53742d40ccd62228174b7afffed30de773c914e3ae1"
-    },
-    {
-      "path": "harness-plugins/video-perception-runtime/client.mjs",
-      "bytes": 5719,
-      "sha256": "f53f8699cf459e4556b95575a387a2f96e602b1b788826b6d12db70cd182b34d"
-    },
-    {
-      "path": "harness-plugins/video-perception-runtime/prepare_sequence.py",
-      "bytes": 1933,
-      "sha256": "03998e89051bfab237a72303a371167a0b36e18b6bd264c98095bab0bfee2c9b"
-    },
-    {
-      "path": "harness-plugins/video-perception-runtime/track_video.py",
-      "bytes": 5407,
-      "sha256": "ec70f62607d44bc978cef7f44f5c106f254fbc5addf2e1597a1ba49cee3f20d1"
-    },
-    {
-      "path": "harness-plugins/voice-design-runtime/client.mjs",
-      "bytes": 1808,
-      "sha256": "b7262f6ccf2d3896efe63e1bd4c23b12ecc935864e8791f9b34f3e260b3a04a9"
-    },
-    {
-      "path": "harness-plugins/voice-design-runtime/download-model.py",
-      "bytes": 3797,
-      "sha256": "d6a6a51b5e9befdbb37359531e99163044dbae4ecda611c48e490c6aea27ef27"
-    },
-    {
-      "path": "harness-plugins/voice-design-runtime/make-samples.py",
-      "bytes": 4782,
-      "sha256": "08b8b9474025466d9004b82a5ad15e10c80caa506459683f9c060da9c9686d41"
-    },
-    {
-      "path": "harness-plugins/voice-design-runtime/requirements.lock.txt",
-      "bytes": 1621,
-      "sha256": "8f6fb7d30a13bed95472d59fd060c076ae41c5fbb24404465988b40e3eeaa123"
-    },
-    {
-      "path": "harness-plugins/voice-design-runtime/voice.py",
-      "bytes": 4879,
-      "sha256": "25b32914272d0eb358d02dd1cc912ae491e4ce91c7e07ec2640a93ea1ce9b563"
-    },
-    {
-      "path": "README.en.md",
-      "bytes": 5774,
-      "sha256": "cb758679d15a9df538cd036d0ab1760fd1e5f61aa2fcf97185cc3ddaf627e602"
-    },
-    {
-      "path": "README.md",
-      "bytes": 5585,
-      "sha256": "2309ca8588565899f264c8135ea70a489fde9471396212928ce44d5f02b9a769"
-    },
-    {
-      "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 1780,
-      "sha256": "c922f2714ad57d852b12116312fa028bb58b3df571c67c5e51fe5a32ace91ca0"
+      "path": "harness-plugins/扩展/lian-workspace-menu/使用指南.md",
+      "bytes": 1481,
+      "sha256": "fc5958bb94c3b72da3181d6d7b792ec5e85bf66d587f744621b8c4322977ae66"
     },
     {
       "path": "tools/configure.mjs",

@@ -1,3 +1,4 @@
+import {assertOffPeak} from './communication-window.mjs';
 import {buildPrompt,LIAISON_RULES} from './compact-wire.mjs';
 import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {spawn} from 'node:child_process';import {createInterface} from 'node:readline';
 import {createStore} from './message-store.mjs?revision=direct-reply-v1';
@@ -5,7 +6,7 @@ export const ROOT='E:/CenHome/通信';
 export const WORK='E:/CenHome';
 import {resolveCodexExecutable} from './codex-runtime.mjs';
 export const EXE=resolveCodexExecutable();
-export function createLiaison({root=ROOT,work=WORK,exe,spawnProcess=spawn}={}){
+export function createLiaison({root=ROOT,work=WORK,exe,spawnProcess=spawn,clock=()=>new Date()}={}){
  const currentExe=()=>exe??resolveCodexExecutable();
  const store=createStore(root),stateFile=path.join(root,'connection.json'),lockFile=path.join(root,'active.lock');let queue=Promise.resolve(),closed=false,child;
  const load=()=>{try{return JSON.parse(fs.readFileSync(stateFile,'utf8'))}catch(e){if(e.code==='ENOENT')return {threadId:null};throw e}};
@@ -21,6 +22,7 @@ export function createLiaison({root=ROOT,work=WORK,exe,spawnProcess=spawn}={}){
   const resolvedExe=currentExe();if(!resolvedExe||!fs.existsSync(resolvedExe))throw Error('Codex executable unavailable; no model request started');
   if(v.attempt && v.attempt.state!=='not-delivered') return v; // Delivery uncertain/failed is never silently resubmitted.
   if(closed)throw Error('Plugin closed');
+  assertOffPeak(clock());
   const connection=load(); // Validate state before taking the process lock.
   let fd;
   try{fd=fs.openSync(lockFile,'wx')}catch(e){if(e.code==='EEXIST')throw Error('Codex联络正在处理其他消息；稍后用同一requestKey再提交，不重复生成问题。');throw e}
@@ -39,7 +41,7 @@ export function createLiaison({root=ROOT,work=WORK,exe,spawnProcess=spawn}={}){
     '-c','model_providers.liaison_http.requires_openai_auth=true','-c','model_providers.liaison_http.stream_max_retries=0','-c','model_providers.liaison_http.request_max_retries=0',
     '-c','mcp_servers.dragon_home.command='+JSON.stringify('E:/DSH/本体/resources/runtime/primary-runtime/dependencies/node/bin/node.exe'),
     '-c','mcp_servers.dragon_home.args='+JSON.stringify([path.join(path.dirname(fileURLToPath(import.meta.url)),'home-mcp.mjs').replaceAll('\\','/')]));
-   args.push('-c','mcp_servers.cen_memory.tools.memory.approval_mode="approve"','-c','mcp_servers.cen_media.tools.video_read.approval_mode="approve"','-c','mcp_servers.cen_media.tools.review_notes.approval_mode="approve"');
+   args.push('-c','mcp_servers.cen_memory.tools.memory.approval_mode="approve"','-c','mcp_servers.cen_memory.tools.workbench.approval_mode="approve"','-c','mcp_servers.cen_media.tools.video_read.approval_mode="approve"','-c','mcp_servers.cen_media.tools.review_notes.approval_mode="approve"');
    args.push('-c','mcp_servers.cen_memory.command='+JSON.stringify('C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe'),'-c','mcp_servers.cen_memory.args='+JSON.stringify(['E:/CenHome/项目/岑的记忆与通信精简-20261029/plugin/server.mjs']));
    args.push('-c','mcp_servers.cen_media.command='+JSON.stringify('C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe'),'-c','mcp_servers.cen_media.args='+JSON.stringify(['E:/CenHome/项目/岑的视频阅读与协作-20261029/plugin/server.mjs']),'-c','mcp_servers.cen_media.tool_timeout_sec=600');
    if(actualThread)args.push('resume',actualThread,'-');else args.push('-');
@@ -75,7 +77,7 @@ export function createLiaison({root=ROOT,work=WORK,exe,spawnProcess=spawn}={}){
   }catch(e){persistAttempt(id,{state:(!turnStarted&&/already has an active writer|thread-store conflict/.test(e.message))?'not-delivered':'delivery-unknown',at:begun,threadId:actualThread,error:e.message,usage,requestId:id});return get(id)}
   finally{clearTimeout(deadline);events?.end();child=null;if(fd!==undefined){fs.closeSync(fd);if(fs.existsSync(lockFile))fs.unlinkSync(lockFile)}}
  }
- function ask(a){const request=store.send(a);const pending=queue.then(()=>run(request.id));queue=pending.catch(()=>{});return pending}
+ function ask(a){assertOffPeak(clock());const request=store.send(a);const pending=queue.then(()=>run(request.id));queue=pending.catch(()=>{});return pending}
  function retry(id){const v=get(id);if(v.reply)return Promise.resolve(v);if(v.attempt?.state!=='not-delivered')throw Error('仅可恢复已确认未投递的信件；未知投递不重发。');const p=queue.then(()=>run(id));queue=p.catch(()=>{});return p}
  return {ask,retry,get,status,pending:store.pending,close(){closed=true;child?.kill()}};
 }

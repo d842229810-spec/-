@@ -1,3 +1,4 @@
+import {createMailTurnRoute} from './lian-mail-route.mjs';
 import {receivePrivateVoice} from './voice-receive.mjs?revision=20261027-audio1';
 import {VoiceFollowup} from './voice-followup.mjs';
 // DSH「通到 QQ」· 宿主半边
@@ -18,7 +19,7 @@ import { randomUUID } from 'node:crypto'
 import { spawn } from 'node:child_process'
 import { createSelfUpdate } from './selfupdate.mjs'
 import { openReceipts } from './lian-receipts.mjs'
-import {groupAddressed,groupToolReason,groupProvenance} from './lian-groups.mjs?revision=20261026-voiceC'
+import {groupAddressed,groupToolReason,groupProvenance,peerPeakBlocked} from './lian-groups.mjs?revision=20261026-voiceC'
 import {installCommunity} from './community.mjs?revision=20261027-growth1'
 import {localRequestReason} from './local-http.mjs'
 import {scheduleVoiceProbe} from './voice-probe.mjs'
@@ -617,7 +618,9 @@ export function apply(ctx, pluginConfig = {}) {
   }
 
   /** 盯会话事件：记住这一轮最后一句，在 turn/end 时落地。 */
+  const mailTurnRoute=createMailTurnRoute();
   function 收到事件(session, event) {
+    if(mailTurnRoute(session?.id,event))return;
     const 配置 = 读配置()
     if (!(配置.绑定 || []).length) return
     const 键 = 会话键(session && session.id)
@@ -938,6 +941,7 @@ export function apply(ctx, pluginConfig = {}) {
     const 配置 = 读配置()
     // ⭐ 2026-10-25（0.6.0）：传「绑定行」进来 —— 每一行自带类型 / 号码 / 会话 / 称呼
     const 这条 = 行 || (配置.绑定 || [])[0] || null
+    if(这条?.类型==='群'&&peerPeakBlocked({user_id:来源.senderQQ},{groupId:这条.号码,...pluginConfig.peerCommunication}))return {ok:true,说:'峰时不唤醒岑涟互聊'}
     const 这间 = String((这条 && 这条.会话) || 配置.私聊会话 || '')
     if (!这间) return { ok: false, 说: '还没绑任何聊天（私聊或群）' }
     if (!配置.总开关) return { ok: false, 说: '总开关关着，先打开' }
@@ -1020,6 +1024,7 @@ export function apply(ctx, pluginConfig = {}) {
       // ⚠⚠ 必须 await：followup 返回 Promise。不接住的话，它 reject 时（会话半死 / agent 已释放）
       //   catch 根本看不到（try 早就退出了）⇒ 未处理的 rejection ⇒ **整个 DSH 宿主退出**
       //   （2026-10-21：speak-up 同一个坑已经被用户报成"装了鱼就死了"，这里一并修）
+      if(这条?.类型==='群'&&peerPeakBlocked({user_id:来源.senderQQ},{groupId:这条.号码,...pluginConfig.peerCommunication}))return {ok:true,说:'峰时不唤醒岑涟互聊'}
       const receiptKey = 消息id ? `${这条?.类型}:${这条?.号码}:${消息id}` : ''
       if (receiptKey && receipts.has(receiptKey)) return {ok:true,说:'已处理，不重复执行'}
       if (receiptKey) receipts.claim(receiptKey)
@@ -1244,6 +1249,7 @@ export function apply(ctx, pluginConfig = {}) {
         if ((条.time || 0) < 上次) continue           // 旧的，跳过
         const 消息键=`${行.类型}:${行.号码}:${条.message_id}`
         if (已转消息.has(消息键)) continue     // 转过了
+        if(是群&&peerPeakBlocked(条,{groupId:行.号码,...pluginConfig.peerCommunication})){已转消息.add(消息键);上次=Math.max(上次,条.time||0);continue}
         let ambient=false
         if(是群){
           let quotedBot=false

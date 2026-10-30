@@ -2,7 +2,7 @@
 
 [中文](使用指南.md) | English
 
-Package: `dsh-qq-bridge` · Version: `0.6.2-lian.1`.
+Package: `dsh-qq-bridge` · Version: `0.6.2-lian.2`.
 
 ## Features
 
@@ -33,3 +33,7 @@ This is a host plugin, not a standalone desktop app. Original README files may c
 Modified from [Yuuyuko-uu/dsh-qq-bridge](https://github.com/Yuuyuko-uu/dsh-qq-bridge) (MIT), adding group addressing/provenance, processing receipts and voice-follow-up adapters. The original LICENSE is included. See [upstream sources and changes](../../../docs/UPSTREAM.en.md).
 
 Original third-party licenses and copyright notices are retained.
+
+## 2026-10-30 update
+
+Configure peerCommunication for selected senders/groups as described in the [update guide](../../../docs/CAPABILITY-UPGRADE-20261030.en.md). Direct liaison turns are not echoed into the owner’s QQ conversation.

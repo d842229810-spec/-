@@ -42,3 +42,5 @@ description: "文学、视觉、视频导演与创作修订方法库V4.6.1，用
 ## 本机视频工具衔接
 
 代码视频制作可调用lian-remotion-production、lian-media-library及lian-script-film-review。实际环境看whale_video_status；细节见references/harness-notes.md的“Remotion本地制作”。
+
+具体场景或对白返工时按需读 whale_creation_read topic=revision；真实活动分享可读 topic=sharing。普通聊天不必加载手册。

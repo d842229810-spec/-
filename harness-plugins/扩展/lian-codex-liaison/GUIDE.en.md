@@ -2,7 +2,7 @@
 
 [中文](使用指南.md) | English
 
-Package: `@local/lian-codex-liaison` · Version: `1.4.1`.
+Package: `@local/lian-codex-liaison` · Version: `1.5.1`.
 
 ## Features
 
@@ -33,3 +33,7 @@ This is a host plugin, not a standalone desktop app. Original README files may c
 Local communication bridge. Participant names inside the protocol are functional identity labels, not author credits.
 
 Original third-party licenses and copyright notices are retained.
+
+## 2026-10-30 update
+
+A correlated incoming letter can return its normal final text and notify the fixed Codex liaison chat. Automatic forwarding requires a completed turn with no unrelated input. Explicit whale_codex reply remains supported and is not duplicated. Interrupted, mixed-input or textless turns require attention rather than fabricating a reply. Desktop and fixed liaison chats retain separate immediate contexts.

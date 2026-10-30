@@ -1,3 +1,5 @@
+import {communicationWindow} from './communication-window.mjs';
+export function peerPeakBlocked(message,{groupId,peerQQ,groups=[],now=new Date()}={}){return !!peerQQ&&String(message?.user_id)===String(peerQQ)&&groups.map(String).includes(String(groupId))&&!communicationWindow(now).allowed;}
 export function groupAddressed(message,{botQQ,quotedBot=false}={}){
   if(String(message.user_id)===String(botQQ))return false;
   const segments=Array.isArray(message.message)?message.message:[];

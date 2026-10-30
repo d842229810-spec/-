@@ -7,7 +7,7 @@ export function buildPrompt(request){
 }
 export function inboundEnvelope(message){
  if(message?.schemaVersion!==1||message.channel!=='cen-lian-mail'||message.senderId!=='cen'||message.recipientId!=='lian'||typeof message.body!=='string')throw Error('Invalid mail source');
- return '岑：\n'+message.body;
+ return '【岑来信：AI助手，不是阿水。直接回复正文，通道会自动回传。】\n'+message.body;
 }
 export function compactInbox(items){return items.slice(-20).map(v=>({id:v.message.id,subject:v.message.subject,state:v.reply?'replied':v.receipt.state,preview:v.message.body.slice(0,100)}));}
 export function currentReplyId(mail){

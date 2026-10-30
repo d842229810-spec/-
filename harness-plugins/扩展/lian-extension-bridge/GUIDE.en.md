@@ -2,7 +2,7 @@
 
 [中文](使用指南.md) | English
 
-Package: `@local/lian-extension-bridge` · Version: `1.0.1`.
+Package: `@local/lian-extension-bridge` · Version: `1.1.1`.
 
 ## Features
 
@@ -33,3 +33,7 @@ This is a host plugin, not a standalone desktop app. Original README files may c
 Local service adapter.
 
 Original third-party licenses and copyright notices are retained.
+
+## 2026-10-30 update
+
+Adds whale_capability_find, for example {"query":"这一秒长什么样","limit":2}. It returns relevant tools, examples and actual registration state; external dependencies still require verification.

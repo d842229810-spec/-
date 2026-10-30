@@ -2,7 +2,7 @@
 
 [中文](使用指南.md) | English
 
-Package: `@local/lian-creation-handbooks` · Version: `4.6.1`.
+Package: `@local/lian-creation-handbooks` · Version: `4.7.0`.
 
 ## Features
 
@@ -33,3 +33,7 @@ This is a host plugin, not a standalone desktop app. Original README files may c
 The creative methods are adapted from the maintainer-supplied Meiyi V4.6.1 project; the maintainer confirmed that they previously created the agent. This plugin adapts that material into a Harness chapter-reading tool.
 
 Original third-party licenses and copyright notices are retained.
+
+## 2026-10-30 update
+
+whale_creation_read adds topic=revision for scenes/dialogue and topic=sharing for real activities. Read on demand; these methods are not a fixed persona.

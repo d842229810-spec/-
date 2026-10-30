@@ -2,7 +2,7 @@
 
 [中文](使用指南.md) | English
 
-Package: `@local/lian-continuity` · Version: `1.3.1`.
+Package: `@local/lian-continuity` · Version: `1.4.0`.
 
 ## Features
 
@@ -33,3 +33,7 @@ This is a host plugin, not a standalone desktop app. Original README files may c
 Local continuity plugin.
 
 Original third-party licenses and copyright notices are retained.
+
+## 2026-10-30 update
+
+New task actions include verify, operation, costs, project, plan, render, feedback and handoff. Read the current version with get before writing. See [task operations](../../../docs/TASK-OPERATIONS.en.md).

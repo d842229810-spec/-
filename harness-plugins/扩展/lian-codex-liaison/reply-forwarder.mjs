@@ -1,3 +1,4 @@
+import {communicationWindow} from './communication-window.mjs';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 
@@ -9,14 +10,15 @@ export function replyRequestId(mailId){
 // A tool reply invokes Codex directly. The watcher only retries requests known
 // not to have started when another process releases the existing bridge lock.
 // Old, unmarked historical replies are never replayed on startup.
-export function createReplyForwarder({mail,liaison,watch=true,logger=console}){
- const running=new Map();let closed=false,watcher;
+export function createReplyForwarder({mail,liaison,watch=true,logger=console,clock=()=>new Date()}){
+ const running=new Map();let closed=false,watcher,wakeTimer;
  const root=liaison.status().root;
  function receipt(id,value){mail.replyDelivery(id,{...value,requestId:replyRequestId(id),at:new Date().toISOString()});}
  async function perform(id){
   const letter=mail.get(id);if(!letter.reply)throw Error('信件尚无小涟回信');
   const requestId=replyRequestId(id);
   if(closed){receipt(id,{state:'queued',reason:'bridge-stopped'});return {mailId:id,replyStored:true,deliveryState:'queued',requestId};}
+  const window=communicationWindow(clock());if(!window.allowed){receipt(id,{state:'queued',reason:'peak-hours',nextAllowedAt:window.nextAllowedAt});if(watch&&!wakeTimer){wakeTimer=setTimeout(()=>{wakeTimer=null;void recover().catch(e=>logger.warn?.(e.message));},Math.max(1000,new Date(window.nextAllowedAt).getTime()-Date.now()+100));wakeTimer.unref?.();}return {mailId:id,replyStored:true,deliveryState:'queued',requestId,notice:'峰时暂停通信，已保存，空闲时段再投递。',nextAllowedAt:window.nextAllowedAt};}
   receipt(id,{state:'processing'});
   let value;
   try{
@@ -42,11 +44,11 @@ export function createReplyForwarder({mail,liaison,watch=true,logger=console}){
   if(closed)return;
   for(const item of mail.list()){
    if(closed)return;
-   if(item.reply&&['queued','processing'].includes(item.replyDelivery?.state)){
+   if(item.reply&&(['queued','processing'].includes(item.replyDelivery?.state)||(!item.replyDelivery&&item.reply.producer?.kind==='harness-completed-turn'))){
     try{await dispatch(item.message.id);}catch(e){logger.warn?.('Direct reply recovery: '+e.message);}
    }
   }
  }
  if(watch){watcher=fs.watch(root,(_event,name)=>{if(String(name)==='active.lock'&&!fs.existsSync(root+'/active.lock'))void recover().catch(e=>logger.warn?.('Direct reply recovery: '+e.message));});watcher.on('error',e=>logger.warn?.('Direct reply lock watch: '+e.message));}
- return {reply(id,body){mail.reply(id,body);return dispatch(id);},recover,close(){closed=true;watcher?.close();},running:()=>running.size};
+ return {deliverStored:dispatch,reply(id,body){mail.reply(id,body);return dispatch(id);},recover,close(){closed=true;watcher?.close();clearTimeout(wakeTimer);},running:()=>running.size};
 }

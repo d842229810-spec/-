@@ -2,7 +2,7 @@
 
 [中文](已知限制.md) | English
 
-1. This is a 2026-10-30 Windows / Harness 0.2.1-rc.3 source snapshot, not a cross-platform one-click installer.
+1. This is a 2026-10-30 Windows / Harness source snapshot with an rc.3 baseline and locally checked rc.5 adaptations, not a cross-platform one-click installer.
 2. Example paths, SDK layout, workspaces, sessions, accounts and external software need local configuration. configure.mjs only generates a text-substituted copy.
 3. Some historical integration entry files remain. package.json selects the packaged entry, while actual profiles may need their own compatible registration. Do not load every historical entry simultaneously.
 4. Retrieval receipts describe returned coverage, not comprehension. Overview sampling is not full continuous viewing.
