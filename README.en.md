@@ -41,9 +41,3 @@ This is a **Windows / DeepSeek Harness 0.2.1-rc.3 source snapshot**, not a unive
 - tools/: local configuration and file-integrity utilities.
 - catalog.json: versions of 15 components.
 - SHA256SUMS.json: integrity manifest.
-
-## Distribution scope
-
-Includes 15 plugin/configuration components and related runtime adapters. Model weights, third-party application installations, node_modules, Python environments, credentials, QQ bindings, chat histories and personal memory are excluded. Complete upstream music/TTS/Blender projects must be installed separately. Unmodified third-party plugins are not represented as original work in this collection.
-
-Frame sampling and model recognition require judgment. Budget safeguards cover only integrated paths. Historical local tests are not proof that every feature works on every machine. Original licenses apply per component; publishing does not automatically grant an MIT license to files without an explicit license.
