@@ -1,0 +1,15 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {VoyageStore} from '../lib/store.mjs';
+import {ROOT} from '../lib/policy.mjs';
+import {mediaBinary,runProcess,preflightVideo,readCaptions} from '../lib/media.mjs';
+const root='E:/DSH/大肥鱼创作室/内容/插件验收';await fs.mkdir(root,{recursive:true});
+const video=path.join(root,'技术检查样片-1秒.mp4'),subtitle=path.join(root,'技术检查样片-字幕.srt');
+await runProcess(mediaBinary('ffmpeg'),['-nostdin','-hide_banner','-loglevel','error','-f','lavfi','-i','color=c=blue:s=360x640:r=25','-f','lavfi','-i','sine=frequency=440:sample_rate=48000','-t','1.2','-c:v','libx264','-pix_fmt','yuv420p','-c:a','aac','-y',video]);
+await fs.writeFile(subtitle,'1\n00:00:00,000 --> 00:00:00,500\n涟的字幕检查\n\n2\n00:00:00,600 --> 00:00:02,500\n此句故意晚于成片结束，用于检验。\n');
+const store=new VoyageStore(ROOT),result=await preflightVideo(video,store,{target:'vertical',subtitlePath:subtitle,measureAudio:true});
+assert.equal(result.video.width,360);assert.ok(result.audio);assert.ok(result.issues.some(i=>i.code==='subtitle-overrun'));assert.ok(Number.isFinite(result.audioSample.integratedLufs));
+assert.equal((await readCaptions(subtitle,store,{query:'故意'})).matchedCues,1);
+await fs.writeFile(path.join(root,'验收结果.json'),JSON.stringify(result,null,2));
+console.log(JSON.stringify({mediaInspectionPassed:true,captionSearchPassed:true,subtitleOverrunDetected:true,audioLoudnessMeasured:true,video,report:path.join(root,'验收结果.json'),publications:0,realShutdowns:0}));

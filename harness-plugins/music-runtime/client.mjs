@@ -1,0 +1,15 @@
+import fs from 'node:fs';import {spawn} from 'node:child_process';
+import path from 'node:path';import {createHash} from 'node:crypto';
+const ROOT='E:/DSH/插件/music-runtime';
+const jobs=new Map(),hash=x=>createHash('sha256').update(x).digest('hex');
+export function musicStatus(){return {engine:'ACE-Step-1.5-2B-turbo',weightsReady:fs.existsSync(ROOT+'/verified-model.json')&&fs.existsSync(ROOT+'/verified-lm.json'),verifiedEndToEnd:fs.existsSync(ROOT+'/accepted-generation.json'),productionReady:false,lyricsVerified:false,local:true,paidModelCalls:0,maximumSeconds:30,CVoiceVerified:false,musicLM:'0.6B-pt-for-vocals',training:false,notice:'短曲已能生成并回听；整段歌词逐字准确与C音色尚未验收，作为试听能力使用，用后退出释放显存。'}}
+async function generate(args,signal){return new Promise((resolve,reject)=>{const env={...process.env,PYTHONUTF8:'1',HF_HUB_OFFLINE:'1',TRANSFORMERS_OFFLINE:'1'};delete env.ELECTRON_RUN_AS_NODE;const child=spawn(ROOT+'/.venv/Scripts/python.exe',['-X','utf8','-u',ROOT+'/music.py'],{signal,windowsHide:true,env,stdio:['pipe','pipe','pipe']});let out='',err='',done=false;const finish=(e,v)=>{if(done)return;done=true;clearTimeout(timer);e?reject(e):resolve(v)};const timer=setTimeout(()=>{child.kill();finish(Error('本地短曲生成超时，未自动重试'))},600000);child.on('error',finish);child.stdin.on('error',finish);child.stdout.on('data',b=>{out+=b;if(out.length>200000){child.kill();finish(Error('歌曲结果超过上限'))}});child.stderr.on('data',b=>{err=(err+b).slice(-8000);fs.writeFileSync(ROOT+'/last-generation.log',err)});child.on('exit',code=>{try{if(code!==0)throw Error('本地短曲生成失败：'+err.slice(-1000));finish(null,JSON.parse(out.trim().split('\n').at(-1)))}catch(e){finish(e)}});child.stdin.end(JSON.stringify(args))})}
+export async function createSong(input,signal){
+ if(!musicStatus().weightsReady)throw Error('本地歌曲模型尚未校验完成');
+ const a={caption:input.caption,lyrics:input.lyrics??'',seconds:input.seconds??24,bpm:input.bpm??90,seed:input.seed??20261027,useMusicLM:input.useMusicLM!==false};
+ if(typeof a.caption!=='string'||!a.caption.trim()||a.caption.length>1500||typeof a.lyrics!=='string'||a.lyrics.length>3000||!Number.isFinite(a.seconds)||a.seconds<10||a.seconds>30||!Number.isInteger(a.bpm)||a.bpm<40||a.bpm>200||!Number.isInteger(a.seed)||a.seed<0||a.seed>2147483647)throw Error('请提供风格、3000字以内歌词、10至30秒时长、40至200BPM和有效非负seed');
+ const key=hash(JSON.stringify({args:a,manifest:hash(fs.readFileSync(ROOT+'/verified-model.json')),lm:hash(fs.readFileSync(ROOT+'/verified-lm.json')),worker:hash(fs.readFileSync(ROOT+'/music.py')),version:1})),dir=ROOT+'/cache',file=dir+'/'+key+'.json';fs.mkdirSync(dir,{recursive:true});
+ try{const v=JSON.parse(fs.readFileSync(file,'utf8')),p=fs.realpathSync(v.file),root=fs.realpathSync('E:/LianHome/工作室/声音设计/原创歌曲试听');if(p.toLowerCase().startsWith(root.toLowerCase()+path.sep)&&v.sha256===hash(fs.readFileSync(p)))return {...v,cached:true}}catch{}
+ if(jobs.has(key))return jobs.get(key);
+ const job=generate(a,signal).then(v=>{fs.writeFileSync(file,JSON.stringify(v,null,2));return {...v,cached:false}});jobs.set(key,job);try{return await job}finally{jobs.delete(key)}
+}

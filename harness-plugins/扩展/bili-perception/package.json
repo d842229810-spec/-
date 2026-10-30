@@ -1,0 +1,16 @@
+{
+  "name": "@local/lian-bili-perception",
+  "version": "1.4.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "dsh": "0.2.1-rc.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

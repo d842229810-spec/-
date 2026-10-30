@@ -1,0 +1,17 @@
+{
+  "name":"lian-video-runtime",
+  "version":"1.0.0",
+  "private":true,
+  "type":"module",
+  "dependencies":{
+    "remotion":"4.0.538",
+    "@remotion/cli":"4.0.538",
+    "@remotion/bundler":"4.0.538",
+    "@remotion/renderer":"4.0.538",
+    "@remotion/captions":"4.0.538",
+    "@remotion/transitions":"4.0.538",
+    "@remotion/media-utils":"4.0.538",
+    "react":"19.3.1",
+    "react-dom":"19.3.1"
+  }
+}

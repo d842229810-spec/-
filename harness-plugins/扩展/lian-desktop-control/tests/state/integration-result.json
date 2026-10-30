@@ -1,0 +1,92 @@
+{
+  "pass": true,
+  "passed": [
+    "discover exact test window",
+    "capture real window with matching coordinates",
+    "Unicode text reaches actual edit control",
+    "Ctrl+A keyboard chord",
+    "physical mouse click reaches button",
+    "held game key moves visible object",
+    "mouse drag reaches canvas",
+    "mouse wheel reaches canvas",
+    "out-of-image click rejected",
+    "stale coordinates rejected",
+    "F8 pauses and releases held input",
+    "pause persists until explicit resume",
+    "focus loss interrupts held key and releases it",
+    "cancelled tool pauses and releases held key"
+  ],
+  "fixtureState": {
+    "clicks": 1,
+    "moves": 3,
+    "drags": 17,
+    "scrolls": 1,
+    "lastKey": "Right",
+    "text": "鼠标、键盘、屏幕联动通过"
+  },
+  "status": {
+    "backend": "win32-stdio",
+    "pid": 17692,
+    "paused": false,
+    "stopReason": null,
+    "heldKeys": 0,
+    "heldButtons": 0,
+    "actions": 9,
+    "emergencyPause": "F8",
+    "networkListeners": 0,
+    "capabilities": {
+      "capture": true,
+      "realMouseKeyboard": true,
+      "foregroundIdentity": "HWND-root-with-PID-revalidation",
+      "explicitActivation": true,
+      "backgroundInput": false,
+      "secureDesktop": false,
+      "higherIntegrityWindows": "may-be-denied-by-Windows",
+      "note": "截图成功不证明激活或输入成功；输入仅对经复核的实际前台目标。",
+      "dxgiTaskCapture": true,
+      "smoothBatch": true,
+      "relativeMouse": true,
+      "localTemplateController": true,
+      "windowVideoCapture": true,
+      "physicalTakeoverDetection": true,
+      "idleCursorSampler": true,
+      "cursorReadWhilePaused": true,
+      "regionObservation": true,
+      "precisionDrag": true
+    },
+    "inputStructureBytes": 40,
+    "uptimeSeconds": 8,
+    "cursor": {
+      "valid": true,
+      "screenX": 431,
+      "screenY": 425,
+      "visible": true,
+      "sampledAtUnix": 1793231111.8168766,
+      "monotonicSeconds": 133680.125,
+      "error": null,
+      "ageMs": 0,
+      "stale": false,
+      "sampler": {
+        "running": true,
+        "requestedHz": 10,
+        "samplesTaken": 82,
+        "bufferedSamples": 82,
+        "lastBackgroundSample": {
+          "valid": true,
+          "screenX": 431,
+          "screenY": 425,
+          "visible": true,
+          "sampledAtUnix": 1793231111.8082502,
+          "monotonicSeconds": 133680.125,
+          "error": null,
+          "ageMs": 0,
+          "stale": false
+        },
+        "retention": "latest 100 samples in process memory; no idle trajectory file",
+        "modelCalls": 0,
+        "lifetime": "desktop backend process only; does not wake a model"
+      }
+    }
+  },
+  "checkedAt": "2026-10-28T23:45:12.005Z"
+}

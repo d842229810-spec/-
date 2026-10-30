@@ -1,0 +1,10 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {createHash} from 'node:crypto';
+import {runProcess,mediaBinary} from '../dafeiyu-life/lib/media.mjs';
+const dir='E:/LianHome/工作室/创作素材库',source='E:/LianHome/工作室/形象/鲸鱼娘_20261024';fs.mkdirSync(dir,{recursive:true});
+const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex'),assets=[];
+for(const [folder,style]of [['Q萌','q'],['3DCG','cg']])for(const name of fs.readdirSync(path.join(source,folder)).filter(n=>/^\d+.*\.png$/i.test(n))){const p=path.join(source,folder,name),number=name.slice(0,2),label=name.replace(/\.png$/i,'');assets.push({id:'lian-'+style+'-'+number,kind:'image',style,label,path:p,sha256:sha(p),tags:[label.slice(3),folder,'鲸鱼娘','蓝白女仆'],purpose:Number(number)<=5?'character-reference':Number(number)<=12?'expression-reference':'action-reference',visualReview:number==='01'&&style==='q'?'viewed-for-installation':'indexed-not-individually-reviewed'});}
+const video='E:/LianHome/工作室/作品/2026-10-24_涟的打工日记_Day1_v2.mp4',audio=path.join(dir,'首期日记_声音参考.wav');
+await runProcess(mediaBinary('ffmpeg'),['-nostdin','-v','error','-y','-i',video,'-t','12','-vn','-ac','1','-ar','48000','-c:a','pcm_s16le',audio]);
+const id='lian-voice-day1';assets.push({id,kind:'audio',style:'voice',label:'已有Day1_v2声音样本',path:audio,sha256:sha(audio),tags:['声音参考','首期日记'],purpose:'voice-reference',source:{video,sha256:sha(video),start:0,end:12},visualReview:'audio-extracted-not-voice-cloned'});
+const registry={version:1,createdAt:new Date().toISOString(),characterProfile:'blue-white-whale-maid-20261024',defaults:{character:'lian-q-01',face:'lian-q-06',voice:id},voiceProfile:{reference:id,sourceBasis:'按现有Day1_v2选作可更换默认参考；未核对它是否为账号首发版本。',narrationProviderHint:'现有声音记录记载zh-CN-XiaoxiaoNeural,+8%；此处未调用新TTS或克隆声音。'},assets};
+const file=path.join(dir,'assets.json');if(fs.existsSync(file))throw new Error('资产索引已存在，避免覆盖用户编辑');fs.writeFileSync(file,JSON.stringify(registry,null,2));console.log(JSON.stringify({images:assets.filter(a=>a.kind==='image').length,voices:1,registry:file}));

@@ -1,0 +1,23 @@
+{
+  "name": "@local/lian-research-reader",
+  "version": "1.0.1",
+  "description": "小涟的公开网页、PDF与核验图片阅读工具",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "reader.py",
+    "skills",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

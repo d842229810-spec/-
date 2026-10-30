@@ -1,0 +1,43 @@
+{
+  "plugin": "lian-desktop-control",
+  "version": "1.0.0",
+  "checkedAt": "2026-10-25T10:11:01.490Z",
+  "harnessPid": 1512,
+  "registered": true,
+  "tools": [
+    "whale_desktop_windows",
+    "whale_desktop_observe",
+    "whale_desktop_act",
+    "whale_desktop_control",
+    "whale_desktop_status"
+  ],
+  "skill": "lian-desktop-control",
+  "skillActive": true,
+  "backend": {
+    "backend": "win32-stdio",
+    "pid": 33404,
+    "paused": false,
+    "stopReason": null,
+    "heldKeys": 0,
+    "heldButtons": 0,
+    "actions": 0,
+    "emergencyPause": "F8",
+    "networkListeners": 0,
+    "inputStructureBytes": 40,
+    "uptimeSeconds": 0
+  },
+  "nativeProbe": {
+    "pass": true,
+    "tool": "whale_desktop_windows",
+    "windowCount": 20,
+    "modelCalls": 0,
+    "imageAttachment": {
+      "pass": true,
+      "tool": "whale_desktop_observe",
+      "windowId": "3b071c:13756",
+      "width": 682,
+      "height": 486,
+      "modelCalls": 0
+    }
+  }
+}

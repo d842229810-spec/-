@@ -1,0 +1,8 @@
+{
+  "name": "@local/lian-workspace-manager",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "workspace-manager.mjs",
+  "private": true,
+  "description": "本地工作区归属修复、目录切换与备份；不调用模型"
+}

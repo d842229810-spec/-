@@ -1,0 +1,4 @@
+- insert:
+    - id: dafeiyu-life
+      name: '@local/dafeiyu-life'
+      config: {}

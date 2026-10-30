@@ -1,0 +1,41 @@
+{
+  "dataVersion": "4.6.1",
+  "adapterVersion": 2,
+  "sourceArchive": "E:\\尘与星\\薪火相传\\智能体\\芽衣正式版-已完成\\芽衣 V4.6.1.zip",
+  "sourceSha256": "f76ec7224d510ba496e7069293e948d2d653a96173e950ca6acd75a397a14506",
+  "sourceManifestFilesVerified": 10,
+  "personaIncluded": false,
+  "outputRulesModified": false,
+  "files": [
+    {
+      "path": "skills/creation-handbooks/SKILL.md",
+      "sha256": "8d7069e4f1d6c30cef1bc94d78acc05039d2be230939d753266d686c5432d4f2",
+      "bytes": 3657
+    },
+    {
+      "path": "skills/creation-handbooks/references/harness-notes.md",
+      "sha256": "a7a4708fa7481e9df709ddaa6128e638ed2dcbe2a1693c912864a4d13f1ab93c",
+      "bytes": 2857
+    },
+    {
+      "path": "skills/creation-handbooks/references/literary-creation.md",
+      "sha256": "a56b98d1f5bbb068cacca33a4fcc51dbb4a991fff07c5853f6e569d47d6dca6b",
+      "bytes": 16732
+    },
+    {
+      "path": "skills/creation-handbooks/references/video-direction.md",
+      "sha256": "fa9b46b48c8657e8f20daa3c2cf170fbe6f4b3bce7611c647721c98dd1d8e400",
+      "bytes": 13299
+    },
+    {
+      "path": "skills/creation-handbooks/references/visual-creation.md",
+      "sha256": "ef0ea209cfb414d03cbad0bca32ba321ceb7ad68fd2861cc128abb57b15c3f89",
+      "bytes": 13072
+    },
+    {
+      "path": "skills/creation-handbooks/references/workflow.md",
+      "sha256": "b6d0e423f8e673f0b204fd0daed63e1acff43bb3cc920460fef5a59af672816b",
+      "bytes": 5788
+    }
+  ]
+}

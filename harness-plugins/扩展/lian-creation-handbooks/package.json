@@ -1,0 +1,11 @@
+{
+  "name": "@local/lian-creation-handbooks",
+  "version": "4.6.1",
+  "description": "涟的创作方法库：V4.6.1文学、视觉、视频导演与项目续接知识，不含人格。",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "exports": {".": "./index.js", "./package.json": "./package.json"},
+  "files": ["index.js", "knowledge.mjs", "skills", "dataset.json", "cordis.patch.yml"],
+  "dsh": {"bundle": {"patch": "./cordis.patch.yml"}}
+}

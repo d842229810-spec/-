@@ -1,0 +1,28 @@
+{
+  "name": "dafeiyu-creator-toolbox",
+  "version": "1.0.2",
+  "private": true,
+  "description": "大肥鱼创作与账号运营：已有浏览器、剪辑；视频生成沿用授权浏览器账号",
+  "type": "module",
+  "license": "UNLICENSED",
+  "files": [
+    "cordis.patch.yml",
+    "index.js",
+    "tts_launcher.py",
+    "offline-tts.ps1",
+    "requirements.lock.txt",
+    "README.md"
+  ],
+  "main": "index.js",
+  "engines": {
+    "dsh": "0.2.1-rc.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@playwright/mcp": "0.0.83"
+  }
+}

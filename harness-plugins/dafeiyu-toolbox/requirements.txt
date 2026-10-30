@@ -1,0 +1,4 @@
+edge-tts==7.3.1
+ff-toolkit==0.1.0
+mcp==1.30.0
+PyYAML==6.0.3

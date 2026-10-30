@@ -1,0 +1,3 @@
+- insert:
+    - id: lian-extension-bridge
+      name: '@local/lian-extension-bridge'

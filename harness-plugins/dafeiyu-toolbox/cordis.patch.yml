@@ -1,0 +1,41 @@
+- insert:
+    - id: dafeiyu-browser
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: dafeiyu_browser
+        transport: stdio
+        command: 'E:/AI/codex/node.exe'
+        cwd: 'E:/DSH/大肥鱼创作室'
+        args:
+          - 'E:/DSH/插件/dafeiyu-toolbox/node_modules/@playwright/mcp/cli.js'
+          - --browser
+          - chrome
+          - --user-data-dir
+          - 'E:/DSH/大肥鱼创作室/browser-profile'
+          - --output-dir
+          - 'E:/DSH/大肥鱼创作室/browser-output'
+        toolCallTimeoutMs: 180000
+        failOnStartupError: false
+    - id: dafeiyu-ffkit
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: dafeiyu_ffkit
+        transport: stdio
+        command: 'E:/DSH/插件/dafeiyu-toolbox/.venv/Scripts/python.exe'
+        args: ['-m', 'ff_kit.mcp.server']
+        env:
+          PYTHONUTF8: '1'
+          PATH: !!js '"C:/Users/USER/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.2-full_build/bin;" + process.env.PATH'
+        toolCallTimeoutMs: 600000
+        failOnStartupError: false
+    - id: dafeiyu-tts
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: dafeiyu_tts
+        transport: stdio
+        command: 'E:/DSH/插件/dafeiyu-toolbox/.venv/Scripts/python.exe'
+        args: ['E:/DSH/插件/dafeiyu-toolbox/tts_launcher.py']
+        env:
+          PYTHONUTF8: '1'
+        toolCallTimeoutMs: 180000
+        failOnStartupError: false

@@ -1,0 +1,3 @@
+- insert:
+    - id: lian-bili-perception
+      name: '@local/lian-bili-perception'

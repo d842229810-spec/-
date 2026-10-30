@@ -1,0 +1,35 @@
+{
+  "name": "@local/dafeiyu-life",
+  "version": "1.4.5-lian.1",
+  "private": true,
+  "type": "module",
+  "description": "涟的自主学习、知识积累、隐私检查、预算和夜间活动管理",
+  "license": "UNLICENSED",
+  "engines": {
+    "dsh": "0.2.1-rc.3"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "vendor",
+    "cli.mjs",
+    "bilibili-login.mjs",
+    "change-window.py",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}

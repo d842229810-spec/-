@@ -1,0 +1,41 @@
+[
+  {
+    "insert": [
+      {
+        "id": "lian-creative-workbench",
+        "name": "@local/lian-creative-workbench"
+      },
+      {
+        "id": "lian-opendesign-mcp",
+        "name": "@deepseek-ai/dsh-mcp-client",
+        "config": {
+          "serverName": "lian_opendesign",
+          "transport": "stdio",
+          "command": "E:/DSH/本体/resources/runtime/primary-runtime/dependencies/node/bin/node.exe",
+          "args": [
+            "E:/DSH/插件/opendesign-runtime/mcp-launcher.mjs"
+          ],
+          "env": {},
+          "cwd": "E:/LianHome",
+          "toolCallTimeoutMs": 600000,
+          "failOnStartupError": false
+        }
+      },
+      {
+        "id": "lian-blender-mcp",
+        "name": "@deepseek-ai/dsh-mcp-client",
+        "config": {
+          "serverName": "lian_blender",
+          "transport": "stdio",
+          "command": "E:/DSH/本体/resources/runtime/primary-runtime/dependencies/node/bin/node.exe",
+          "args": [
+            "E:/DSH/插件/blender-runtime/mcp-proxy.mjs"
+          ],
+          "cwd": "E:/LianHome",
+          "toolCallTimeoutMs": 600000,
+          "failOnStartupError": false
+        }
+      }
+    ]
+  }
+]

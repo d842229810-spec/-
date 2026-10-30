@@ -1,0 +1,3 @@
+import fs from 'node:fs';import {previewProject,closePreview} from './preview.mjs';
+const project='E:/LianHome/工作室/Remotion影片/制作环境验收_20261026';
+try{const preview=await previewProject(project);const response=await fetch(preview.url,{signal:AbortSignal.timeout(5000)}),text=await response.text();const value={...preview,httpStatus:response.status,htmlReceived:/<html|<!doctype/i.test(text),checkedAt:new Date().toISOString()};fs.writeFileSync(project+'/out/studio-verification.json',JSON.stringify(value,null,2));console.log(JSON.stringify(value));if(!value.htmlReceived)process.exitCode=1;}finally{closePreview();}

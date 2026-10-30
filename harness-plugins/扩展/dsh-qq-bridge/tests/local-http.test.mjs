@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {localRequestReason} from '../lib/local-http.mjs';
+const req=(headers={},method='POST')=>({method,headers:{host:'127.0.0.1:51662','content-type':'application/json',...headers}});
+test('本机同源界面与本机维护请求保持可用',()=>{assert.equal(localRequestReason(req()),undefined);assert.equal(localRequestReason(req({origin:'http://127.0.0.1:51662','sec-fetch-site':'same-origin'})),undefined);assert.equal(localRequestReason(req({},'GET'),{readOnly:true}),undefined)});
+test('外站、null来源、DNS重绑定Host和跨端口都不能读写配置',()=>{for(const headers of [{origin:'https://untrusted.invalid'},{origin:'null'},{host:'evil.invalid',origin:'http://evil.invalid'},{origin:'http://127.0.0.1:9999'},{'sec-fetch-site':'cross-site'}])assert.ok(localRequestReason(req(headers),{readOnly:true}));});
+test('变更不接受GET或表单/文本请求，避免跨站表单写入',()=>{assert.ok(localRequestReason(req({},'GET')));assert.ok(localRequestReason(req({'content-type':'text/plain'})));assert.ok(localRequestReason(req({'content-type':'application/x-www-form-urlencoded'})));});
