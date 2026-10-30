@@ -3,6 +3,8 @@ const sid=x=>String(x??'').replace(/^session-/,'');
 const textOf=m=>Array.isArray(m?.content)?m.content.filter(b=>b?.type==='text'&&typeof b.text==='string').map(b=>b.text).join('\n').trim():'';
 export function createNativeReplyCapture({mail,owner,logger=console,onCaptured=()=>{},contextSources=['lian-memory-bootstrap']}={}){
  const pending=new Map(),turns=new Map();let currentTurn=null;
+ // Audited host/plugin context: these are not additional user or QQ requests.
+ const isContext=m=>{const s=m.source??{};return contextSources.includes(s.kind)||(s.kind==='reme-memory'&&s.form==='instructions')||(['runtime-context','time-context'].includes(s.kind)&&s.form==='snapshot')||(s.kind==='runtime-context'&&textOf(m)==='Current runtime context: none. Earlier runtime-context snapshots no longer apply.');};
  for(const v of mail.list())if(!v.reply&&v.receipt?.messageId&&['accepted','delivery-unknown'].includes(v.receipt.state)&&!['replied','needs-attention'].includes(v.receipt.responseState))pending.set(v.receipt.messageId,v.message.id);
  const update=(id,patch)=>{const v=mail.get(id);mail.receipt(id,{...v.receipt,...patch});};
  function register(id,messageId){if(typeof messageId!=='string'||!messageId)throw Error('MISSING_BRIDGE_MESSAGE_ID');if([...pending].some(([mid,lid])=>lid===id&&mid!==messageId))throw Error('AMBIGUOUS_BRIDGE_MESSAGE_ID');pending.set(messageId,id);}
@@ -14,7 +16,7 @@ export function createNativeReplyCapture({mail,owner,logger=console,onCaptured=(
     const t=turns.get(turn)??{letters:new Set(),other:false,otherSources:[],text:'',assistantMessageId:null};turns.set(turn,t);
     const id=message.source?.kind==='cen-lian-mail'?pending.get(message.id):null;
     if(id){t.letters.add(id);update(id,{responseState:'processing',turn});}
-    else if(!contextSources.includes(message.source?.kind)){t.other=true;t.otherSources.push(message.source?.kind??'unattributed');}
+    else if(!isContext(message)){t.other=true;t.otherSources.push(message.source?.kind??'unattributed');}
     return;
    }
    const t=turns.get(turn);if(!t)return;if(!t.letters.size){if(event.type==='turn/end')turns.delete(turn);return;}

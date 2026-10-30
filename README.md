@@ -16,7 +16,7 @@
 | [外部工具连接配置](harness-plugins/dafeiyu-toolbox/使用指南.md) | 1.0.2 | 把助手连接到浏览器、视频处理等外部工具。MCP 是让助手调用外部工具的连接协议；这个模块主要保存连接方式，不会替你安装所有外部软件。 |
 | [记忆、任务与上下文续接](harness-plugins/扩展/lian-continuity/使用指南.md) | 1.4.0 | 保存记忆、任务和产物版本，核对文件变化与未知投递；关联代码视频镜头、版本反馈和操作费用，便于可靠续接。 |
 | [扩展状态与记忆服务桥](harness-plugins/扩展/lian-extension-bridge/使用指南.md) | 1.1.1 | 按目的找工具和少量用法，查看真实注册状态，并连接 ReMe 等另行配置的本地记忆服务。 |
-| [Harness与Codex双向通信](harness-plugins/扩展/lian-codex-liaison/使用指南.md) | 1.5.1 | 让 Harness 与独立 Codex 会话双向通信；正常最终正文按消息和回合自动回传，保留回执与空闲时段检查。 |
+| [Harness与Codex双向通信](harness-plugins/扩展/lian-codex-liaison/使用指南.md) | 1.5.2 | 让 Harness 与独立 Codex 会话双向通信；正常最终正文按消息和回合自动回传，保留回执与空闲时段检查。 |
 | [视频项目、渲染与成片核对](harness-plugins/扩展/lian-video-studio/使用指南.md) | 1.5.2-lian.1 | 用代码创建、预览和导出视频，并检查导出的成片；可把一段视频抽成带时间标记的画面宫格，再点回某一张原帧。 |
 | [创作工作台](harness-plugins/扩展/lian-creative-workbench/使用指南.md) | 1.4.0 | 把写作、代码动画、三维制作、设计和声音工具放到统一工作台，方便助手从构思进入不同创作工具。 |
 | [创作方法库](harness-plugins/扩展/lian-creation-handbooks/使用指南.md) | 4.7.0 | 按主题和章节读取故事、对白、视觉、导演方法；新增场景修订和真实日常分享参考。 |

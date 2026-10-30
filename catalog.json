@@ -29,7 +29,7 @@
     {
       "path": "扩展/lian-codex-liaison",
       "name": "@local/lian-codex-liaison",
-      "version": "1.5.1",
+      "version": "1.5.2",
       "title": "Harness与Codex双向通信"
     },
     {

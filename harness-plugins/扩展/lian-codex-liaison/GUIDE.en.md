@@ -2,7 +2,7 @@
 
 [中文](使用指南.md) | English
 
-Package: `@local/lian-codex-liaison` · Version: `1.5.1`.
+Package: `@local/lian-codex-liaison` · Version: `1.5.2`.
 
 ## Features
 

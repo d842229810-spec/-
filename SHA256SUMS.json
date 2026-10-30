@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T10:42:54.304Z",
+  "generatedAt": "2026-10-30T10:53:47.822Z",
   "files": [
     {
       "path": ".gitattributes",
@@ -14,12 +14,12 @@
     {
       "path": "README.en.md",
       "bytes": 6000,
-      "sha256": "a98198dfd37999aa8c9d6d4ca53ef6a1bd8e7c2628ba30d0a0a1259f01880f4a"
+      "sha256": "c3b03d0cf35216f37118b0d8b329f80fbb58d63b38a71b417b8b65c408c2865a"
     },
     {
       "path": "README.md",
       "bytes": 5827,
-      "sha256": "67b0e0ce684247a1f56c69adeefda316cc3eca1522b181248a6f40db6d34d834"
+      "sha256": "987decdcf607271e8fec691a3fe3584d61feb632b086d20578c1aaccb1c691eb"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -29,12 +29,12 @@
     {
       "path": "catalog.json",
       "bytes": 2742,
-      "sha256": "23aebc872dda812bea8f2734fe40567a802d84564c3317aa99cf22d2b3824bdd"
+      "sha256": "8ed313cd46ce1d1f1abc4504073f8994930cb510529312ca18e8a64d65faf1af"
     },
     {
       "path": "docs/CAPABILITY-UPGRADE-20261030.en.md",
-      "bytes": 4312,
-      "sha256": "6eec52a6a9bdb165d806327742b4cb483f2ce1d70dbc64efd09cb9f555146bda"
+      "bytes": 4535,
+      "sha256": "e42d2abc05d074a959dd736609917a0a38b28317cb029ea784ae7f5d46d23390"
     },
     {
       "path": "docs/DEPENDENCIES.en.md",
@@ -133,8 +133,8 @@
     },
     {
       "path": "docs/能力升级-20261030.md",
-      "bytes": 4594,
-      "sha256": "992e58f37899c7395b541e972d05170c640dfb52ec3fe6386792238952a89d82"
+      "bytes": 4862,
+      "sha256": "89f713045745973b292b7eea5518f72c46a3ede403ee6a9ad65a37283998af8e"
     },
     {
       "path": "docs/隐私与配置.md",
@@ -3954,7 +3954,7 @@
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/GUIDE.en.md",
       "bytes": 2223,
-      "sha256": "6c335f230f6573bcaeb6752e08de184af2002df89f4666abee985f8824ccb48e"
+      "sha256": "d480115708915f94295e3f3e2ee8df95e76a49f24c9831669a6b5db1dc53f9eb"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/cen-inbound-direct.mjs",
@@ -4029,7 +4029,7 @@
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/index-direct-reply-20261029.mjs",
       "bytes": 4303,
-      "sha256": "52b1c621dade9ef821c4390efa8e7ab02a5994714478d6c5c8db238c6941941e"
+      "sha256": "0eaacdbd9b9c2f337a314cd3fe27d8a740c022ae36de5eb757e1b1e25596db8d"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/index-final-20261029.mjs",
@@ -4058,13 +4058,13 @@
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/native-reply-capture.mjs",
-      "bytes": 3483,
-      "sha256": "3fccce93760f8d1fcbc9cbd2648050d0841da7fca0b8d14fefcfdd9138562f78"
+      "bytes": 3873,
+      "sha256": "24e26cc2cbb4d78ec466c59b239a7f4098bc7c0b8be12b702514d38fe1754935"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/package.json",
       "bytes": 148,
-      "sha256": "a2b7636bff3e4baf3d8101ae260647832d12a72907b59fbd679faa01aff6bb7f"
+      "sha256": "85548c0e913bc74e67615470143b170acef9938a89f7b8956711593e48501164"
     },
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/reply-forwarder.mjs",
@@ -4084,7 +4084,7 @@
     {
       "path": "harness-plugins/扩展/lian-codex-liaison/使用指南.md",
       "bytes": 2033,
-      "sha256": "83861a064a8a899c49a6093a18ab6d8dbcb0ca2d8a393783886622b36164ca8f"
+      "sha256": "e5ea3165cd821f29c995502afb8d1d5c3f40e6c89c837bcd3fffa20a626784b0"
     },
     {
       "path": "harness-plugins/扩展/lian-continuity/GUIDE.en.md",

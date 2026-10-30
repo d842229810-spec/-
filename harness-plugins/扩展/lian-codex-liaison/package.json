@@ -1,6 +1,6 @@
 {
   "name": "@local/lian-codex-liaison",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "private": true,
   "type": "module",
   "main": "index-direct-reply-20261029.mjs"

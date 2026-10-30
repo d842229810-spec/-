@@ -42,4 +42,6 @@ Liaison 1.5.1 also captures correlated completed-turn final text and actively no
 
 Navigator 1.1.1 makes the evidence scope explicit: state describes registration, implementationState=not-verified means the implementation version has not been verified, and evidence identifies the current-process tool registry. Registration does not establish updated disk code or external dependency health.
 
-Tool counts describe entry points, not full workflow acceptance. Automatic reply capture permits only the audited lian-memory-bootstrap guidance alongside a mail input; other additional input sources still require attention.
+Tool counts describe entry points, not full workflow acceptance. Automatic reply capture has an explicit audited context scope; see the 1.5.2 update below.
+
+Liaison 1.5.2 distinguishes audited internal context from extra requests. It permits fixed memory-bootstrap guidance, ReMe instructions and host runtime/time snapshots. User, QQ and unknown inputs still block automatic forwarding; labels in message text cannot change the structured source.
