@@ -1,5 +1,7 @@
 # Autonomous learning and budget management
 
+Updated to the2026-10-31 source snapshot; see the [update and examples](../../docs/UPDATE-20261031.en.md).
+
 [中文](使用指南.md) | English
 
 Package: `@local/dafeiyu-life` · Version: `1.4.5-lian.1`.

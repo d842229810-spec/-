@@ -15,8 +15,8 @@ import {verifyBrowser,verifyBilibili} from './lib/verification.mjs';
 import {preflightVideo,readCaptions} from './lib/media.mjs';
 import {capabilityStatus} from './lib/health.mjs?revision=20261027';
 import {privateRead} from './lib/sources.mjs';
-import {BilibiliReader,snapshotVideos,serializeBrowserWork} from './lib/bilibili.mjs?revision=20261026-network2';
-import {browserSearch as skillBrowserSearch} from './lib/bili-browser-search.mjs';
+import {BilibiliReader,snapshotVideos,serializeBrowserWork} from './lib/bilibili.mjs?revision=20261031-search2';
+import {browserSearch as skillBrowserSearch} from './lib/bili-browser-search.mjs?revision=20261031-search2';
 import {BilibiliComments} from './lib/bilibili-comments.mjs?revision=20261027-30s3';
 import {BilibiliAuth} from './lib/bilibili-auth.mjs';
 import fs from 'node:fs';
@@ -31,7 +31,7 @@ export async function apply(ctx,config={}){
   ctx.effect(()=>installNativeBudget(ctx,store,config));
   const version=JSON.parse(fs.readFileSync(new URL('./package.json',import.meta.url),'utf8')).version,ownedTools=[];
   let owner;
-  bilibili.browserSearch=serializeBrowserWork(skillBrowserSearch);
+  bilibili.browserSearch=serializeBrowserWork((query,signal)=>skillBrowserSearch(query,signal,{browserId:store.config.browserInstanceId}));
   let healthTimer,healthRunning=false,healthQueued=false;
   const healthAbort=new AbortController();
   const scheduleHealth=()=>{
@@ -93,7 +93,7 @@ export async function apply(ctx,config={}){
     bindOwner(exec);if(args.action==='pause')engine.pause();else if(args.action==='resume'){store.update({enabled:true});void engine.tick().catch(e=>engine.fail(e));}else engine.cancelShutdown();return store.status();
   });
   tool('whale_knowledge','从全部知识卡片中按中英文关键词检索，返回相关来源与待验证问题。默认仅公开资料。',{query:{type:'string'},limit:{type:'integer'},include_private:{type:'boolean'}},args=>({items:store.search(args.query??'',{limit:args.limit??10,includePrivate:args.include_private??false}),privacy:args.include_private?'private':'public',instructionAuthority:'none'}));
-  tool('whale_bili_search','检索B站公开视频，接口风控时退避并用已授权浏览器读取搜索结果。无自动评论或额外模型调用。',{query:{type:'string',required:true}},(a,exec)=>{bindOwner(exec);return bilibili.search(a.query,exec.signal);});
+  tool('whale_bili_search','检索B站公开视频，接口风控时退避并用已授权浏览器读取搜索结果。分路报告接口、浏览器、公开搜索的失败原因；空结果不等于整站故障。无自动评论或额外模型调用。',{query:{type:'string',required:true}},(a,exec)=>{bindOwner(exec);return bilibili.search(a.query,exec.signal);});
   tool('whale_bili_read','读取B站视频的时间戳字幕、元数据、公开评论和弹幕样本；可分页续读，缺字幕明确降级。不会发评论、私信或自动启动其他代理。',{url:{type:'string',required:true},start_seconds:{type:'number'},end_seconds:{type:'number'},fresh:{type:'boolean'}},(a,exec)=>bilibili.read(a.url,exec.signal,{startSeconds:a.start_seconds??0,endSeconds:a.end_seconds,fresh:a.fresh??false}));
   tool('whale_bili_account','检查B站实际登录身份和评论账号绑定，不返回Cookie、CSRF或扫码会话密钥。',{},async(_a,exec)=>{
     store.refresh();bilibili.refreshAuth();const credentialStored=new BilibiliAuth().status().authenticated;let nav;

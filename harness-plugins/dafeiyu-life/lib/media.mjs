@@ -1,3 +1,4 @@
+import {resolveMediaSource,MEDIA_SOURCE_ROOTS} from '../../lian-shared/media-source.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {spawn} from 'node:child_process';
@@ -14,15 +15,8 @@ export function runProcess(file,args,{signal,timeoutMs=30000,maxBytes=1500000}={
     child.on('error',e=>finish(e));child.on('exit',code=>code===0?finish(null,{stdout,stderr}):finish(new Error('媒体工具未完成，退出码'+code+'；'+stderr.slice(-500))));
   });
 }
-export async function allowedMedia(file,config,extensions){
-  if(typeof file!=='string'||!path.isAbsolute(file)||!extensions.test(file))throw new Error('请提供授权目录中的本地媒体或字幕绝对路径');
-  if(/(?:\.env(?:\.|$)|credentials|browser-profile|cookie|\.ssh|\.dsh[\\/])/i.test(file))throw new Error('秘密文件不是媒体输入');
-  const actual=await fs.realpath(file),roots=await Promise.all(config.privateRoots.map(root=>fs.realpath(root)));
-  const norm=value=>path.resolve(value).toLowerCase();
-  if(!roots.some(root=>norm(actual).startsWith(norm(root)+path.sep)))throw new Error('文件不在用户已接入的创作与私人目录中');
-  const stat=await fs.stat(actual);if(!stat.isFile()||stat.size>2*1024**3)throw new Error('媒体文件不是普通文件或超过2GB检查上限');
-  return {actual,bytes:stat.size};
-}
+export async function allowedMedia(file,config,extensions){return resolveMediaSource(file,{roots:[...new Set([...(config.privateRoots??[]),...MEDIA_SOURCE_ROOTS])],extensions});}
+
 function rate(value){const [a,b='1']=String(value??'0').split('/').map(Number);return Number.isFinite(a)&&Number.isFinite(b)&&b!==0?a/b:0;}
 export function inspectProbe(data,{target='any'}={}){
   const streams=Array.isArray(data.streams)?data.streams:[],video=streams.find(s=>s.codec_type==='video'),audio=streams.find(s=>s.codec_type==='audio');

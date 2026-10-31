@@ -40,5 +40,5 @@ export function createNativeReplyCapture({mail,owner,logger=console,onCaptured=(
    }
   }catch(e){logger.warn?.('Bridge final reply capture: '+e.message);}
  }
- return {register,onEvent,close(){pending.clear();turns.clear();}};
+ return {register,onEvent,currentReplyId(){const t=turns.get(currentTurn);if(!t||t.other||t.letters.size!==1)return null;const id=[...t.letters][0];const v=mail.get(id);return !v.reply&&['accepted','delivery-unknown'].includes(v.receipt.state)?id:null;},close(){pending.clear();turns.clear();}};
 }

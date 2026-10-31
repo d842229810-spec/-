@@ -1,3 +1,4 @@
+import {fileURLToPath} from 'node:url';
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';
 import {perceive} from '../perceive.mjs';import {rangePlan,scopeEvidence} from '../evidence.mjs';import {readFrameOcr} from '../frame-ocr.mjs';import {selectBiliStream} from '../bili-backup-streams.mjs';import {verifyAsr} from '../vendor-watch/asr-quality.mjs';
 const roots=[];function temp(){const r=fs.mkdtempSync(path.join(os.tmpdir(),'lian-bili-v110-'));roots.push(r);return r;}
@@ -30,7 +31,7 @@ test('复用watch重复语音检测，但不把它当作字幕语义证明',()=>
  assert.equal(verifyAsr({text:'普通文字',segments:[{start:1,end:3,text:'普通文字'}]}).suspect,false);
 });
 test('真实Windows OCR识别已下载视频画面；相同图片换时间仍命中内容缓存',async()=>{
- const p='E:/LianHome/工作室/待选插件与成长方案_20261026/视频研究资料/BV1gFnw6CEse/frame-03.jpg';const root=temp();
+ const p=fileURLToPath(new URL('./fixtures/public-video-frame03.jpg',import.meta.url));const root=temp();
  const a=await readFrameOcr([{time:30,path:p,has_image:true}],root);assert(!a.rows[0].error,a.rows[0].error);assert.match(a.rows[0].text,/小\s*肥\s*鱼/);
  const b=await readFrameOcr([{time:55,path:p,has_image:true}],root);assert.equal(b.rows[0].cached,true);assert.equal(b.rows[0].time,55);
 });

@@ -1,11 +1,11 @@
 {
-  "snapshotDate": "2026-10-30",
+  "snapshotDate": "2026-10-31",
   "compatibility": "Windows / DeepSeek Harness 0.2.1-rc.3; local rc.5 adaptation checked (see docs/能力升级-20261030.md)",
   "plugins": [
     {
       "path": "dafeiyu-life",
       "name": "@local/dafeiyu-life",
-      "version": "1.4.5-lian.1",
+      "version": "1.4.7-lian.1",
       "title": "自主学习与预算管理"
     },
     {
@@ -17,31 +17,31 @@
     {
       "path": "扩展/lian-continuity",
       "name": "@local/lian-continuity",
-      "version": "1.4.0",
+      "version": "1.5.2",
       "title": "记忆、任务与上下文续接"
     },
     {
       "path": "扩展/lian-extension-bridge",
       "name": "@local/lian-extension-bridge",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "title": "扩展状态与记忆服务桥"
     },
     {
       "path": "扩展/lian-codex-liaison",
       "name": "@local/lian-codex-liaison",
-      "version": "1.5.2",
+      "version": "1.6.0",
       "title": "Harness与Codex双向通信"
     },
     {
       "path": "扩展/lian-video-studio",
       "name": "@local/lian-video-studio",
-      "version": "1.5.2-lian.1",
+      "version": "1.5.3-lian.1",
       "title": "视频项目、渲染与成片核对"
     },
     {
       "path": "扩展/lian-creative-workbench",
       "name": "@local/lian-creative-workbench",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "title": "创作工作台"
     },
     {
@@ -65,7 +65,7 @@
     {
       "path": "扩展/bili-perception",
       "name": "@local/lian-bili-perception",
-      "version": "1.4.0",
+      "version": "1.5.0",
       "title": "B站视频感知与操作适配"
     },
     {
@@ -83,15 +83,15 @@
     {
       "path": "扩展/lian-workspace-manager",
       "name": "@local/lian-workspace-manager",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "title": "本地工作区管理"
     },
     {
       "path": "扩展/lian-workspace-menu",
       "name": "@local/lian-workspace-menu",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "title": "工作区菜单"
     }
   ],
-  "revision": "2026-10-30-capability-update"
+  "revision": "2026-10-31-reliability-media-update"
 }

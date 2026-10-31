@@ -41,5 +41,3 @@ feedback 的data={id,sha256,author,note,status,start?,end?,evidence?}。sha256�
 handoff只生成选定的任务进度、产物版本和未解决反馈，默认1200字符。它不读取全部历史，也不自动寄出。只在用户授权、允许的空闲时段、确有协作内容时用原通信工具发送；对方可以自由回答，不规定措辞，不循环确认。
 
 反馈的accepted只表示同意建议，不表示已改好。resolved须同时给evidence和revisedSha256，目标版本必须已登记；sourceRef可指具体反馈信件或报告。原版sha256、修改后sha256及任务版本分别保留，可更新旧版反馈而不把它冒充新版已采纳。
-
-当 resolved 缺少 evidence 或 revisedSha256 时，工具拒绝本次写入并返回 FEEDBACK_RESOLUTION_EVIDENCE_REQUIRED；当 revisedSha256 没有登记为本任务的产物版本时，返回 FEEDBACK_REVISED_VERSION_UNKNOWN，原反馈状态不变。先登记修订后的产物，再用当前 expectedVersion 提交 resolved。

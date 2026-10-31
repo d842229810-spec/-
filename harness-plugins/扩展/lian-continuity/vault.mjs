@@ -4,13 +4,13 @@ export const VAULT='E:/DSH/插件/lian-memory-vault';
 export class MemoryVault{
  constructor(home,{root=VAULT}={}){this.home=home;this.root=root;this.pending=[];this.pendingAnchors=new Map();this.queue=Promise.resolve();this.files=new Map();this.lastError=null;this.ready=false;this.closed=false;this.anchors=path.join(home,'记忆/连续性档案/vault-anchors.json');
  this.child=spawn(PY,['-X','utf8','-u',path.join(plugin,'vault-helper.py')],{windowsHide:true,stdio:['pipe','pipe','pipe']});this.child.stderr.on('data',()=>{});this.child.on('error',e=>this.fail(e));this.child.on('exit',()=>this.fail(Error('记忆留痕进程退出')));this.child.stdin.on('error',e=>this.fail(e));
- createInterface({input:this.child.stdout}).on('line',line=>{const slot=this.pending.shift();if(!slot)return;try{const v=JSON.parse(line);v.ok?slot.resolve(v.result):slot.reject(Error(v.error))}catch(e){slot.reject(e)}});
+ createInterface({input:this.child.stdout}).on('line',line=>{const slot=this.pending.shift();if(!slot)return;try{const v=JSON.parse(line);v.ok?slot.resolve(v.result):slot.reject(Object.assign(Error(v.error),{code:String(v.error).split(':')[0]}))}catch(e){slot.reject(e)}});
  }
  fail(error){this.lastError=error.message;for(const p of this.pending.splice(0))p.reject(error)}
  rpc(action,extra={}){if(this.closed)return Promise.reject(Error('记忆留痕已关闭'));return new Promise((resolve,reject)=>{this.pending.push({resolve,reject});this.child.stdin.write(JSON.stringify({root:this.root,action,...extra})+'\n')})}
  serial(fn){const p=this.queue.then(fn,fn);this.queue=p.catch(e=>{this.lastError=e.message});return p}
  async *rows(log='changes.jsonl'){const file=path.join(this.root,log);if(!fs.existsSync(file))return;for await(const line of createInterface({input:fs.createReadStream(file,{encoding:'utf8'}),crlfDelay:Infinity})){if(line.trim())yield JSON.parse(line)}}
- async init(){await this.rpc('init');for await(const row of this.rows()){const d=row.data;if(d.kind==='file-observed')d.after?this.files.set(d.file,{sha256:d.after,version:d.version}):this.files.delete(d.file)}await this.verify();this.ready=true;return this}
+ async init(){await this.rpc('init');await this.verify();for await(const row of this.rows()){const d=row.data;if(d.kind==='file-observed')d.after?this.files.set(d.file,{sha256:d.after,version:d.version}):this.files.delete(d.file)}this.ready=true;return this}
  anchor(log,value){let state={};try{state=JSON.parse(fs.readFileSync(this.anchors,'utf8'))}catch{}state[log]={seq:value.seq,head:value.head,at:new Date().toISOString()};fs.mkdirSync(path.dirname(this.anchors),{recursive:true});fs.writeFileSync(this.anchors,JSON.stringify(state,null,2));}
  flushAnchors(){for(const [log,value]of this.pendingAnchors??[]){this.anchor(log,value);this.pendingAnchors.delete(log)}}
  async append(records,log='changes.jsonl'){if(!records.length)return;const r=await this.rpc('append',{records,log});this.pendingAnchors??=new Map();this.pendingAnchors.set(log,r);try{this.flushAnchors()}catch(cause){this.lastError=cause.message;throw Object.assign(new Error('日志已追加，但本地见证尚未保存；只应重试见证与派生索引。',{cause}),{journalCommitted:true,committedLog:log,receipt:r})}return r}

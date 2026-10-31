@@ -9,15 +9,15 @@ export function inboundEnvelope(message){
  if(message?.schemaVersion!==1||message.channel!=='cen-lian-mail'||message.senderId!=='cen'||message.recipientId!=='lian'||typeof message.body!=='string')throw Error('Invalid mail source');
  return '【岑来信：AI助手，不是阿水。直接回复正文，通道会自动回传。】\n'+message.body;
 }
-export function compactInbox(items){return items.slice(-20).map(v=>({id:v.message.id,subject:v.message.subject,state:v.reply?'replied':v.receipt.state,preview:v.message.body.slice(0,100)}));}
-export function currentReplyId(mail){
- const delivered=mail.list().filter(v=>['accepted','delivery-unknown'].includes(v.receipt.state)).sort((a,b)=>(b.receipt.at??'').localeCompare(a.receipt.at??''));
- const current=delivered[0];
- if(!current||!current.receipt.at||current.receipt.state!=='accepted'||(delivered[1]?.receipt.at===current.receipt.at))throw Error('当前来信关联不明确，请用inbox找到对应id再回复。');
- return current.message.id;
+export function compactInbox(items){return items.slice(-20).map(v=>({id:v.message.id,subject:v.message.subject,state:v.reply?'replied':v.receipt.state,responseState:v.receipt.responseState??null,replyDeliveryState:v.replyDelivery?.state??null,preview:v.message.body.slice(0,100)}));}
+export function currentReplyId(mail,{required=true}={}){
+ const delivered=mail.list().filter(v=>!v.reply&&v.receipt.state==='accepted'&&!['replied','needs-attention'].includes(v.receipt.responseState));
+ if(delivered.length!==1){if(!required&&delivered.length===0)return null;throw Error('没有唯一的未回复来信，请用inbox找到对应id；继续聊天用chat。');}
+ return delivered[0].message.id;
 }
 export function compactResult(v,{detail=false}={}){
  if(detail)return {...v,diagnosticNotice:'Codex诊断用量不是小涟账单，也不是这封信的文本长度。'};
+ if(v.nextAction||v.code)return v;
  if(v.reply&&typeof v.reply.body==='string')return v.reply.body;
  const state=v.deliveryState??v.attempt?.state??'queued';
  const notices={queued:'已排队，尚未收到答复。',processing:'正在等待答复。','delivery-unknown':'投递不明，请先查询，勿自动重发。','not-delivered':'尚未投递。'};

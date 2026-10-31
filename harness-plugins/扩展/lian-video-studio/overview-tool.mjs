@@ -1,6 +1,7 @@
+import {MEDIA_SOURCE_ROOTS,resolveMediaSource} from '../../lian-shared/media-source.mjs';
 import fs from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';
 import {authorizeOverviewSource,videoOverview} from './overview.mjs';
-const SOURCES=['E:/LianHome','E:/DSH/大肥鱼创作室','E:/DSH/涟的探索/视频感知-v2/media'];
+const SOURCES=MEDIA_SOURCE_ROOTS;
 const contained=(root,file)=>{const r=path.relative(root,file);return r!==''&&r!=='..'&&!r.startsWith('..'+path.sep)&&!path.isAbsolute(r)};
 export function makeOverviewFollowUp({watchRoots,perceptionRoot}){return (source,cell)=>{
  if(watchRoots.some(root=>contained(root,source)))return {watchArgs:cell.watchArgs};
@@ -17,7 +18,7 @@ async function hostDependencies(){
  const {PROOFS}=await import('./proof-common.mjs');
  const {mediaBinary}=await import('../../dafeiyu-life/lib/media.mjs');
  const roots=await Promise.all(SOURCES.map(p=>fs.realpath(p).catch(e=>{if(e.code==='ENOENT')return null;throw e})));
- return {followUpForSource:makeOverviewFollowUp({watchRoots:roots.slice(0,2).filter(Boolean),perceptionRoot:roots[2]}),outputRoot:path.join(PROOFS,'视频概览'),authorizeSource:file=>authorizeOverviewSource(file,SOURCES),ffmpeg:mediaBinary('ffmpeg'),ffprobe:mediaBinary('ffprobe'),fontFile:'C:/Windows/Fonts/consola.ttf'};
+ return {followUpForSource:makeOverviewFollowUp({watchRoots:roots.filter(Boolean),perceptionRoot:roots.at(-1)}),outputRoot:path.join(PROOFS,'视频概览'),authorizeSource:file=>resolveMediaSource(file,{extensions:/\.(mp4|mov|mkv|webm|avi|flv|ts)$/i}).actual,ffmpeg:mediaBinary('ffmpeg'),ffprobe:mediaBinary('ffprobe'),fontFile:'C:/Windows/Fonts/consola.ttf'};
 }
 export function createOverviewHandler(getDependencies){return async(args,exec,ctx)=>{
  const owner=exec.agent?.session?.id??exec.agent?.id;

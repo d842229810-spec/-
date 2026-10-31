@@ -1,6 +1,8 @@
 import {communicationWindow} from './communication-window.mjs';
 import fs from 'node:fs';
+import path from 'node:path';
 import {createHash} from 'node:crypto';
+import {maintenanceStatus,MAINTENANCE_LEASE} from './maintenance.mjs';
 
 export function replyRequestId(mailId){
  const h=createHash('sha256').update('lian-direct-mail-reply:'+mailId).digest('hex').slice(0,32);
@@ -10,13 +12,25 @@ export function replyRequestId(mailId){
 // A tool reply invokes Codex directly. The watcher only retries requests known
 // not to have started when another process releases the existing bridge lock.
 // Old, unmarked historical replies are never replayed on startup.
-export function createReplyForwarder({mail,liaison,watch=true,logger=console,clock=()=>new Date()}){
+export function createReplyForwarder({mail,liaison,watch=true,logger=console,clock=()=>new Date(),maintenanceLease=MAINTENANCE_LEASE}){
  const running=new Map();let closed=false,watcher,wakeTimer;
  const root=liaison.status().root;
+ const deferred=id=>path.join(mail.root,id+'.maintenance-deferred.json');
  function receipt(id,value){mail.replyDelivery(id,{...value,requestId:replyRequestId(id),at:new Date().toISOString()});}
  async function perform(id){
   const letter=mail.get(id);if(!letter.reply)throw Error('信件尚无小涟回信');
   const requestId=replyRequestId(id);
+  const maintenance=maintenanceStatus({file:maintenanceLease,now:clock()});if(maintenance.held){if(!letter.replyDelivery||['queued','processing'].includes(letter.replyDelivery.state)){const marker=deferred(id);if(!fs.existsSync(marker))fs.writeFileSync(marker,JSON.stringify({reason:'maintenance',at:new Date().toISOString()}),{flag:'wx'});}if(watch&&!wakeTimer){wakeTimer=setTimeout(()=>{wakeTimer=null;void recover().catch(e=>logger.warn?.(e.message));},Math.min(2147483647,maintenance.remainingMs+100));wakeTimer.unref?.();}return {mailId:id,replyStored:true,deliveryState:letter.replyDelivery?.state??'queued',requestId,maintenance,notice:'本机维护租约有效，保留待办；未启动联络模型。'};}
+  // Existing replies and uncertain deliveries are read back, never resubmitted.
+  if(['replied','delivery-unknown'].includes(letter.replyDelivery?.state)){
+   let prior;try{prior=liaison.get(requestId);}catch{}
+   return {...prior,mailId:id,replyStored:true,deliveryState:letter.replyDelivery.state,requestId,notice:letter.replyDelivery.state==='replied'?'读取已有答复，没有重复投递。':'投递不明，保留原记录，不自动重发。'};
+  }
+  if(letter.replyDelivery?.state==='processing'){
+   let prior;try{prior=liaison.get(requestId);}catch{}
+   if(prior?.reply){receipt(id,{state:'replied',threadId:prior.attempt?.threadId,producer:prior.reply.producer});return {...prior,mailId:id,replyStored:true,deliveryState:'replied',requestId};}
+   if(prior?.attempt&&prior.attempt.state!=='not-delivered'){receipt(id,{state:'delivery-unknown',reason:'interrupted-processing'});return {...prior,mailId:id,replyStored:true,deliveryState:'delivery-unknown',requestId};}
+  }
   if(closed){receipt(id,{state:'queued',reason:'bridge-stopped'});return {mailId:id,replyStored:true,deliveryState:'queued',requestId};}
   const window=communicationWindow(clock());if(!window.allowed){receipt(id,{state:'queued',reason:'peak-hours',nextAllowedAt:window.nextAllowedAt});if(watch&&!wakeTimer){wakeTimer=setTimeout(()=>{wakeTimer=null;void recover().catch(e=>logger.warn?.(e.message));},Math.max(1000,new Date(window.nextAllowedAt).getTime()-Date.now()+100));wakeTimer.unref?.();}return {mailId:id,replyStored:true,deliveryState:'queued',requestId,notice:'峰时暂停通信，已保存，空闲时段再投递。',nextAllowedAt:window.nextAllowedAt};}
   receipt(id,{state:'processing'});
@@ -42,9 +56,10 @@ export function createReplyForwarder({mail,liaison,watch=true,logger=console,clo
  }
  async function recover(){
   if(closed)return;
+  const maintenance=maintenanceStatus({file:maintenanceLease,now:clock()});if(maintenance.held){if(watch&&!wakeTimer){wakeTimer=setTimeout(()=>{wakeTimer=null;void recover().catch(e=>logger.warn?.(e.message));},Math.min(2147483647,maintenance.remainingMs+100));wakeTimer.unref?.();}return;}
   for(const item of mail.list()){
    if(closed)return;
-   if(item.reply&&(['queued','processing'].includes(item.replyDelivery?.state)||(!item.replyDelivery&&item.reply.producer?.kind==='harness-completed-turn'))){
+   if(item.reply&&(['queued','processing'].includes(item.replyDelivery?.state)||(!item.replyDelivery&&(item.reply.producer?.kind==='harness-completed-turn'||fs.existsSync(deferred(item.message.id)))))){
     try{await dispatch(item.message.id);}catch(e){logger.warn?.('Direct reply recovery: '+e.message);}
    }
   }

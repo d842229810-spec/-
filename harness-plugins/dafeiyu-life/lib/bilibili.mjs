@@ -1,3 +1,4 @@
+import {resolveBiliVideo} from '../../lian-shared/bili-url.mjs';
 import {lianFetch as fetchBili} from './bili-network.mjs?revision=20261026-network';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -65,15 +66,48 @@ export class BilibiliReader{
     this.refreshAuth();
     query=String(query??'').trim();const reason=this.store.egressReason(query);if(reason)throw new Error(reason);if(!query||query.length>150)throw new Error('检索词应为1至150个字符');
     let rows,fallback;
-    try{if(this.searchApiBlockedUntil>Date.now())throw Object.assign(new Error('接口仍在风控退避期'),{code:'BILIBILI_RISK_CONTROL'});rows=await this.provider.search({keyword:query,page:1,pageSize:6},signal);}
-    catch(e){
+    const inBackoff=this.searchApiBlockedUntil>Date.now();
+    const failure=(error,route)=>({route,code:String(error?.code??'REQUEST_FAILED').slice(0,100),message:clip(error?.message??error,400),...(error?.hint?{hint:clip(error.hint,400)}:{}),...(error?.diagnostic?{diagnostic:error.diagnostic}:{}),...(error?.bilibiliCode!==undefined?{bilibiliCode:error.bilibiliCode}:{})});
+    try{
+      if(inBackoff)throw Object.assign(new Error('此前搜索接口被B站风控，仍处于退避期；本次没有重复请求该接口'),{code:'BILIBILI_RISK_CONTROL',backoff:true});
+      rows=await this.provider.search({keyword:query,page:1,pageSize:6},signal);
+      this.searchApiBlockedUntil=0;this.lastSearchApiFailure=null;
+    }catch(e){
       signal?.throwIfAborted();if(e.code==='BILIBILI_NOT_FOUND')throw e;
-      if(e.code==='BILIBILI_RISK_CONTROL')this.searchApiBlockedUntil=Date.now()+1800000;
-      let r;try{r=this.browserSearch?{items:await this.browserSearch(query,signal),browser:true}:await this.searchFallback(query,signal);}catch(err){signal?.throwIfAborted();if(this.browserSearch)throw err;r={items:[]};}let items=[];
-      for(const row of r.items??[]){try{const bvid=bvidOf(row.url);if(!items.some(x=>x.bvid===bvid))items.push({bvid,url:'https://www.bilibili.com/video/'+bvid,title:row.title,description:row.summary});}catch{}}
-      fallback={mode:r.browser?'logged-browser-search':'public-web-search',reason:message(e),notice:r.browser?'接口已退避；来自本人已授权浏览器的真实搜索页，只是有限样本，不绕过验证码。':'这是公开搜索引擎结果，不是B站完整搜索列表或热榜。'};rows={items:items.slice(0,6),page:1,total:null,hasMore:null};
-      if(!items.length&&this.browserSearch){items=await this.browserSearch(query,signal);fallback={mode:'logged-browser-search',reason:message(e),notice:'接口风控已退避；此为已授权浏览器实际搜索页面里的有限样本，不代表完整列表。'};rows.items=items;}
-      if(!items.length)throw new Error('B站接口暂不可用，检索没有有效BV结果；请稍后再试或用已登录浏览器搜索。');
+      // Reading during cooldown must not keep moving its end thirty minutes forward.
+      if(e.code==='BILIBILI_RISK_CONTROL'&&!inBackoff){this.searchApiBlockedUntil=Date.now()+1800000;this.lastSearchApiFailure=failure(e,'api');}
+      const api={...failure(e,'api'),status:inBackoff?'backoff':'failed',...(this.searchApiBlockedUntil>Date.now()?{retryAt:new Date(this.searchApiBlockedUntil).toISOString()}:{}),...(inBackoff&&this.lastSearchApiFailure?{originalFailure:this.lastSearchApiFailure}:{})};
+      const routes=[api],routeErrors=[];let r;
+      if(this.browserSearch)try{
+        const browserRows=await this.browserSearch(query,signal);
+        r={items:browserRows,browser:true};
+        routes.push({route:'browser',status:browserRows.length?'success':'empty',returned:browserRows.length});
+      }catch(err){
+        signal?.throwIfAborted();const detail=failure(err,'browser');routes.push({...detail,status:'failed'});routeErrors.push(detail);
+        if(err.code==='BILIBILI_MANUAL_VERIFICATION_REQUIRED'){
+          const diagnostic={observedAt:new Date().toISOString(),routes,nextAction:'请在本人浏览器完成B站验证后再试；未自动继续请求验证页面。'};
+          this.lastSearchDiagnostic=diagnostic;this.store.audit?.('bilibili-search-diagnostic',diagnostic);
+          throw Object.assign(new Error('B站浏览器搜索要求人工验证。接口状态：'+api.message+'。'+diagnostic.nextAction),{code:err.code,diagnostic});
+        }
+      }
+      if(!r?.items?.length)try{r=await this.searchFallback(query,signal);routes.push({route:'public-search',status:r.items?.length?'success':'empty',returned:r.items?.length??0});}
+      catch(err){signal?.throwIfAborted();const detail=failure(err,'public-search');routeErrors.push(detail);routes.push({...detail,status:'failed'});r={items:[]};}
+      let items=[];
+      for(const row of r.items??[]){try{const bvid=bvidOf(row.url??row.bvid);if(!items.some(x=>x.bvid===bvid))items.push({bvid,url:'https://www.bilibili.com/video/'+bvid,title:row.title,description:row.summary});}catch{}}
+      const diagnostic={observedAt:new Date().toISOString(),routes,validResults:items.length,...api.retryAt?{apiRetryAt:api.retryAt}:{}};
+      this.lastSearchDiagnostic=diagnostic;this.store.audit?.('bilibili-search-diagnostic',diagnostic);
+      fallback={mode:r.browser?'logged-browser-search':'public-web-search',reason:message(e),routeErrors,diagnostic,notice:r.browser?'搜索接口已退避；来自本人已授权浏览器的真实搜索页，只是有限样本。':'这是公开搜索引擎结果，不是B站完整搜索列表或热榜。'};
+      rows={items:items.slice(0,6),page:1,total:null,hasMore:null};
+      if(!items.length){
+        // An explicitly rendered empty browser search is not an unavailable site.
+        const browserEmpty=routes.some(route=>route.route==='browser'&&route.status==='empty');
+        if(!browserEmpty){
+          const descriptions=routes.map(route=>route.route+': '+(route.code?'['+route.code+'] ':'')+(route.message??(route.status==='empty'?'未找到有效视频结果':route.status))).join('；');
+          const hint='视频读取与搜索分别判断；可以在已登录的B站搜索页手动读取结果。接口退避期间不需反复重试。';
+          throw Object.assign(new Error('B站搜索未成功（不代表视频读取或整站宕机）。'+descriptions+'。'+hint),{code:'BILIBILI_SEARCH_UNAVAILABLE',diagnostic,hint});
+        }
+        fallback.notice+=' 浏览器页面明确显示无搜索结果；本次返回空列表，不表示接口已恢复。';
+      }
     }
     const items=rows.items.map(item=>({...item,title:clip(item.title,250),description:clip(item.description,800),previouslyRead:fs.existsSync(path.join(this.store.root,'视频阅读',bvidOf(item.bvid)+'.json'))}));
     for(const item of items)this.store.receipt(item.url,{kind:'search-result-only',title:item.title});
@@ -83,7 +117,7 @@ export class BilibiliReader{
     this.store.refresh();
     this.refreshAuth();
     sliceTranscript([],startSeconds,endSeconds??Infinity);
-    const bvid=bvidOf(raw),url='https://www.bilibili.com/video/'+bvid,dir=path.join(this.store.root,'视频阅读'),file=path.join(dir,bvid+'.json');
+    const bvid=(await resolveBiliVideo(raw,{signal})).bvid,url='https://www.bilibili.com/video/'+bvid,dir=path.join(this.store.root,'视频阅读'),file=path.join(dir,bvid+'.json');
     signal?.throwIfAborted();let record,cached=false;
     if(!fresh&&fs.existsSync(file)){try{const previous=JSON.parse(fs.readFileSync(file,'utf8'));const check=assessSubtitle(previous.cues,{bvid,cid:previous.metadata?.cid,duration:previous.metadata?.pages?.[0]?.duration||previous.metadata?.duration});if(previous.version===2&&previous.bvid===bvid&&(!previous.cues?.length||check.passed)&&Date.now()-Date.parse(previous.observedAt)<900000){record=previous;cached=true;}}catch{this.store.audit('invalid-video-cache',{bvid,action:'refetch-not-delete'});}}
     if(!record){

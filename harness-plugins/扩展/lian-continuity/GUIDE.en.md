@@ -1,5 +1,7 @@
 # Memory, tasks and context continuity
 
+Updated to the2026-10-31 source snapshot; see the [update and examples](../../../docs/UPDATE-20261031.en.md).
+
 [中文](使用指南.md) | English
 
 Package: `@local/lian-continuity` · Version: `1.4.0`.

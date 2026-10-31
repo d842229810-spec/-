@@ -1,6 +1,6 @@
 {
   "name": "@local/lian-continuity",
-  "version": "1.4.0",
+  "version": "1.5.2",
   "type": "module",
   "main": "index.js",
   "license": "MIT",

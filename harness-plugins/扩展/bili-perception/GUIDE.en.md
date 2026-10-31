@@ -1,5 +1,7 @@
 # Bilibili perception and operation adapter
 
+Updated to the2026-10-31 source snapshot; see the [update and examples](../../../docs/UPDATE-20261031.en.md).
+
 [中文](使用指南.md) | English
 
 Package: `@local/lian-bili-perception` · Version: `1.4.0`.

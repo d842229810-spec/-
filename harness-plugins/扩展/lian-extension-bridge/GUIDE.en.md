@@ -1,5 +1,7 @@
 # Extension status and memory service bridge
 
+Updated to the2026-10-31 source snapshot; see the [update and examples](../../../docs/UPDATE-20261031.en.md).
+
 [中文](使用指南.md) | English
 
 Package: `@local/lian-extension-bridge` · Version: `1.1.1`.

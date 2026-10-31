@@ -1,7 +1,7 @@
 import fs from 'node:fs';import path from 'node:path';
 import {localSource,hashMedia,createProof,proofFile,saveJSON} from './proof-common.mjs';import {runProcess,mediaBinary} from '../../dafeiyu-life/lib/media.mjs';
 const RUNTIME='E:/DSH/插件/film-study-runtime';
-function videoFile(file){try{return localSource(file,/\.(mp4|mov|mkv|webm)$/i)}catch(error){const base='E:/DSH/涟的探索/视频感知-v2/media';if(typeof file!=='string'||!path.isAbsolute(file)||!/\.(mp4|mov|mkv|webm)$/i.test(file)||!fs.existsSync(base))throw error;const p=fs.realpathSync(file);if(!p.toLowerCase().startsWith(fs.realpathSync(base).toLowerCase()+path.sep)||!fs.statSync(p).isFile()||fs.statSync(p).size>2*1024**3)throw error;return p}}
+function videoFile(file){return localSource(file,/\.(mp4|mov|mkv|webm)$/i)}
 export async function analyseFilm(args,signal){
  const file=videoFile(args.file),sha256=await hashMedia(file);const requested={file,start:args.start??0,...args.end!==undefined?{end:args.end}:{},detector:args.detector??'adaptive'};
  if(!['adaptive','content'].includes(requested.detector))throw Error('detector须为adaptive或content');const limit=args.maxFrames??6;if(!Number.isInteger(limit)||limit<1||limit>12)throw Error('每次返回1至12张独立帧');

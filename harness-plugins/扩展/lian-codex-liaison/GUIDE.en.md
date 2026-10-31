@@ -1,5 +1,7 @@
 # Harness–Codex liaison
 
+Updated to the2026-10-31 source snapshot; see the [update and examples](../../../docs/UPDATE-20261031.en.md).
+
 [中文](使用指南.md) | English
 
 Package: `@local/lian-codex-liaison` · Version: `1.5.2`.

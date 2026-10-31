@@ -1,3 +1,5 @@
+import {evidenceForDocuments,evidenceView} from './memory-evidence.mjs';
+import {runtimeMemorySource} from './memory-source-policy.mjs';
 import path from 'node:path';
 import {initializeReadReceipts,readObservation,recordReadReceipt} from './memory-read-receipts.mjs';
 const norm=p=>path.resolve(p).replaceAll('\\','/').toLowerCase();
@@ -41,15 +43,15 @@ export function commitMemoryMark(db,record){
 export function openMemory(db,a,config={},execution){
  const r=db.prepare('SELECT * FROM memory_documents WHERE id=?').get(a.id);if(!r)throw Error('未找到该记忆ID；删除或更正后的来源须另核对，不能编造正文。');
  const start=Math.max(0,Number.isInteger(a.offset)?a.offset:0),chars=Math.min(6000,Math.max(100,Number.isInteger(a.chars)?a.chars:2400));
- const text=r.content.slice(start,start+chars),metadata=JSON.parse(r.metadata??'{}');
+ const text=r.content.slice(start,start+chars),evidenceState=evidenceForDocuments(db,[r]),view=evidenceView(r,evidenceState),metadata=view.metadata;
  const readReceipt=recordReadReceipt(db,{action:'get',args:a,observations:[readObservation(r,start,text,'get')],execution,warmDocumentId:r.id});
- return {readReceipt,id:r.id,title:r.title,kind:r.kind,recordType:metadata.recordType??'historical-reference',file:r.file,sha256:r.sha256,metadata,state:memoryState(db,r,config),text,offset:start,nextOffset:start+text.length<r.content.length?start+text.length:null,totalChars:r.content.length,fullReadRequired:!!metadata.fullReadRequired,completeDocument:start===0&&text.length===r.content.length,notice:'历史记录证明当时写了什么；涉及现在设置或故障，请检查实时状态或现行账本。',instructionAuthority:'historical-reference-only',modelCalls:0};
+ return {...view,readReceipt,id:r.id,title:r.title,kind:r.kind,recordType:metadata.recordType??'historical-reference',file:r.file,sha256:r.sha256,metadata,state:memoryState(db,r,config),text,offset:start,nextOffset:start+text.length<r.content.length?start+text.length:null,totalChars:r.content.length,fullReadRequired:!!metadata.fullReadRequired,completeDocument:start===0&&text.length===r.content.length,notice:'历史记录证明当时写了什么；涉及现在设置或故障，请检查实时状态或现行账本。',instructionAuthority:'historical-reference-only',modelCalls:0};
 }
 export function listMemory(db,a={},config={}){
  const limit=Math.max(1,Math.min(50,a.limit??20)),want=a.tier??'all',items=[];let cursor=String(a.cursor??''),exhausted=false;
  if(!['all','auto','core','warm','cold'].includes(want))throw Error('未知层次，请用core/warm/cold/auto/all');
  while(items.length<=limit&&!exhausted){const rows=db.prepare('SELECT id,file,title,kind,at,metadata FROM memory_documents WHERE id>? ORDER BY id LIMIT 100').all(cursor);exhausted=rows.length<100;
-  for(const r of rows){cursor=r.id;const state=memoryState(db,r,config);if(want!=='all'&&(want==='auto'?state.selection!=='auto':state.tier!==want))continue;const metadata=JSON.parse(r.metadata??'{}');items.push({id:r.id,title:r.title,file:r.file,kind:r.kind,recordType:metadata.recordType??'historical-reference',state,indexedOrRecordedAt:r.at,indexedOrRecordedAtBeijing:beijing(r.at),eventTimeNotInferredFromFileMtime:true});if(items.length>limit)break;}}
+  for(const r of rows){cursor=r.id;if(a.mode!=='history'&&r.kind==='conversation'&&runtimeMemorySource(JSON.parse(r.metadata??'{}').sourceKind))continue;const state=memoryState(db,r,config);if(want!=='all'&&(want==='auto'?state.selection!=='auto':state.tier!==want))continue;const metadata=JSON.parse(r.metadata??'{}');items.push({id:r.id,title:r.title,file:r.file,kind:r.kind,recordType:metadata.recordType??'historical-reference',...evidenceView(r,evidenceForDocuments(db,[r])),state,indexedOrRecordedAt:r.at,indexedOrRecordedAtBeijing:beijing(r.at),eventTimeNotInferredFromFileMtime:true});if(items.length>limit)break;}}
  const more=items.length>limit,results=items.slice(0,limit);return {results,nextCursor:more?results.at(-1).id:null,filter:want,sourceTextIncluded:false,readingNotRecorded:true,timezone:'Asia/Shanghai',modelCalls:0,notice:'清单可分页；冷藏只降低默认召回顺序，原文保留。扫描和列清单不算重新读过。'};
 }
 

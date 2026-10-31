@@ -1,10 +1,12 @@
 import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import {randomBytes,randomUUID} from 'node:crypto';import {homedir} from 'node:os';import {fileURLToPath} from 'node:url';
+import {createPartitionStore,partitionFields} from '../lian-workspace-menu/partition-store.mjs';
 export const name='lian-workspace-manager';
 export const inject=['workspaceRegistry','sessionPersistence','sessionController','sessions','workingDirectory'];
 const owner='session-00000000-0000-0000-0000-000000000000';
 export function apply(ctx,config={}){
  const registry=ctx.workspaceRegistry,persistence=ctx.sessionPersistence,controller=ctx.sessionController,sessions=ctx.sessions,working=ctx.workingDirectory;
  const state=config.stateDir??path.join(homedir(),'.dsh/lian-workspace-manager');fs.mkdirSync(state,{recursive:true});
+ const partitions=createPartitionStore({root:state,registry,persistence});
  const token=randomBytes(32).toString('hex'),port=config.port??53461,origin='http://127.0.0.1:'+port;let queue=Promise.resolve(),closed=false;
  const serial=fn=>{const p=queue.then(fn,fn);queue=p.catch(()=>{});return p;};
  const view=w=>({id:w.id,title:w.title,path:w.path,sessionIds:[...w.sessionIds]});
@@ -12,7 +14,7 @@ export function apply(ctx,config={}){
  function audit(v){fs.appendFileSync(path.join(state,'actions.jsonl'),JSON.stringify({at:new Date().toISOString(),...v,modelCalls:0})+'\n');}
  async function headers(){return (await persistence.list()).map(x=>x.header).filter(h=>h.cwd);}
  async function status(){let cached={};try{cached=JSON.parse(fs.readFileSync(path.join(homedir(),'.dsh/storages/session_projcache.json'),'utf8')).tables.sessions;}catch{}
-  return {owner,modelCalls:0,workspaces:registry.list().map(view),sessions:(await headers()).filter(h=>!h.parentSession).sort((a,b)=>b.createdAt-a.createdAt).map(h=>{const live=sessions.get(h.id),title=cached[h.id]?.rows?.title?.val;return {id:h.id,title:typeof title==='string'?title:(title?.title??(h.id===owner?'小涟（原主会话）':h.id)),originalDirectory:h.cwd,currentDirectory:live?working.get(live):(cached[h.id]?.rows?.workingDirectory?.val??h.cwd),createdAt:h.createdAt,archived:registry.archivedSessionIds.includes(h.id),workspaceId:registry.list().find(w=>w.sessionIds.includes(h.id))?.id??null};})};}
+  const data=partitions.read(),workspaces=registry.list().map(view);return {owner,modelCalls:0,observedAt:new Date().toISOString(),partitionRevision:data.revision,workspaces,sessions:(await headers()).filter(h=>!h.parentSession&&!h.parentSessionId&&!h.parentId).sort((a,b)=>b.createdAt-a.createdAt).map(h=>{const live=sessions.get(h.id),title=cached[h.id]?.rows?.title?.val;return {id:h.id,title:typeof title==='string'?title:(title?.title??(h.id===owner?'小涟（原主会话）':h.id)),originalDirectory:h.cwd,currentDirectory:live?working.get(live):(cached[h.id]?.rows?.workingDirectory?.val??h.cwd),createdAt:h.createdAt,archived:registry.archivedSessionIds.includes(h.id),...partitionFields(h.id,workspaces,data)};})};}
  async function mutate(a){if(closed)throw Error('管理器正在关闭');
   if(a.action==='create'){const p=await fs.promises.realpath(a.path);if(!path.isAbsolute(a.path)||!fs.statSync(p).isDirectory())throw Error('请选择已存在的绝对目录');const b=backup('create-workspace',{path:p});const w=await registry.create(p);audit({action:a.action,workspaceId:w.id,backup:b});return {message:'工作区已登记',workspace:view(w),backup:b};}
   if(a.action==='rename'){const w=registry.get(a.workspaceId);if(!w)throw Error('工作区不存在');const title=String(a.title??'').trim();if(!title||title.length>80)throw Error('名称需为1至80字');if(registry.list().some(x=>x.id!==w.id&&x.title===title))throw Error('已有同名工作区');const b=backup('rename-workspace');await w.setTitle(title);audit({action:a.action,workspaceId:w.id,title,backup:b});return {message:'工作区名称已修改',backup:b};}
@@ -21,8 +23,8 @@ export function apply(ctx,config={}){
    const original=await fs.promises.realpath(h.cwd);let w=a.action==='attach'?registry.get(a.workspaceId):await registry.resolveByPath(original);
    if(a.action==='attach'&&!w)throw Error('目标工作区不存在');
    if(w&&w.path!==original)throw Error('原生侧栏归属必须与会话创建目录一致；如需在别处工作，请用下方“切换工作目录”，原会话和家不搬走。');
-   const b=backup(a.action,{sessionId:h.id});w??=await registry.create(original);await w.attachSession(h.id);
-   if(a.unarchive===true)await registry.unarchiveSession(h.id);
+   const b=backup(a.action,{sessionId:h.id});const expected=a.partitionRevision??partitions.read().revision;
+   await partitions.update({action:'reset',sessionId:h.id,revision:expected},{beforeCommit:async()=>{w??=await registry.create(original);await w.attachSession(h.id);if(a.unarchive===true)await registry.unarchiveSession(h.id);}});
    if(!w.sessionIds.includes(h.id))throw Error('原生回读未确认关联成功');
    audit({action:a.action,sessionId:h.id,workspaceId:w.id,backup:b});return {message:'已恢复到「'+w.title+'」'+(registry.archivedSessionIds.includes(h.id)?'（仍为归档状态，可勾选取消归档）':''),backup:b,workspace:view(w)};
   }
@@ -50,7 +52,7 @@ export function apply(ctx,config={}){
   }res.writeHead(404);res.end('Not found');
  }catch(e){res.statusCode=400;res.setHeader('Content-Type','application/json');res.end(JSON.stringify({error:e.message}));}});
  server.on('error',e=>fs.writeFileSync(path.join(state,'health.json'),JSON.stringify({error:e.message,modelCalls:0})));
- server.listen(port,'127.0.0.1',()=>fs.writeFileSync(path.join(state,'health.json'),JSON.stringify({ready:true,url:origin,version:'1.0.0',modelCalls:0,at:new Date().toISOString()})));
+ server.listen(port,'127.0.0.1',()=>fs.writeFileSync(path.join(state,'health.json'),JSON.stringify({ready:true,url:origin,version:'1.1.0',modelCalls:0,observedAt:new Date().toISOString(),at:new Date().toISOString()})));
  ctx.effect(()=>()=>{closed=true;server.close();});
  // One explicit owner-requested repair; no periodic reattachment and no model wakeup.
  if(config.repairId){const resultFile=path.join(state,'repair-'+config.repairId+'.json');if(!fs.existsSync(resultFile)){const timer=setTimeout(()=>void serial(()=>mutate({action:'restore',sessionId:owner,unarchive:true})).then(result=>fs.writeFileSync(resultFile,JSON.stringify({ok:true,...result,modelCalls:0},null,2))).catch(e=>fs.writeFileSync(resultFile,JSON.stringify({ok:false,error:e.message,modelCalls:0}))),3000);ctx.effect(()=>()=>clearTimeout(timer));}}

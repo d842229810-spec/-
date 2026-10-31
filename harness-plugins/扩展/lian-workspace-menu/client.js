@@ -6,13 +6,20 @@ const descriptors=['getPartitions','setPartition'].map(method=>({id:packageName+
 const TYPERT={package:packageName,face:'host',schemas:[],invocations:descriptors,model:{services:[],events:[],objects:[]}};
 
 
-// Presentation-only membership. Never changes session cwd, native membership or files.
-function projectPartitions(snapshot, assignments) {
+// Pure presentation rules shared by the native manager and the browser bundle.
+function partitionFields(sessionId,workspaces,data){
+ const idOf=w=>w.id??w.workspaceId,valid=new Set(workspaces.map(idOf));
+ const nativeWorkspaceId=idOf(workspaces.find(w=>w.sessionIds.includes(sessionId))??{})??null;
+ const target=data.assignments[sessionId],overridden=Object.hasOwn(data.assignments,sessionId)&&(target===null||valid.has(target));
+ const displayWorkspaceId=overridden?target:nativeWorkspaceId;
+ return {nativeWorkspaceId,displayWorkspaceId,workspaceId:displayWorkspaceId,partitionOverride:overridden,partitionRevision:data.revision};
+}
+function projectPartitions(snapshot,assignments){
  const valid=new Set(snapshot.items.map(w=>w.workspaceId));
  const active=Object.fromEntries(Object.entries(assignments).filter(([,v])=>v===null||valid.has(v)));
  if(!Object.keys(active).length)return snapshot;
  const items=snapshot.items.map(w=>({...w,sessionIds:w.sessionIds.filter(id=>!Object.hasOwn(active,id))}));
- for(const [id,target] of Object.entries(active))if(target!==null)items.find(w=>w.workspaceId===target).sessionIds.push(id);
+ for(const [id,target]of Object.entries(active))if(target!==null)items.find(w=>w.workspaceId===target).sessionIds.push(id);
  return {...snapshot,items};
 }
 
@@ -29,7 +36,7 @@ exports.apply=async function(ctx){
  model.getSnapshot=projectedGet;
  ctx.effect(()=>()=>{alive=false;if(model.getSnapshot===projectedGet)model.getSnapshot=originalGet;model.invalidate(true);});
  async function rpc(method,...args){const r=await api[method](...args);if(!r.ok)throw Error(r.error?.message||'本地分区服务未响应');return JSON.parse(r.value);}
- function install(next){if(!alive)return;data=next;model.invalidate(true);}
+ function install(next){if(!alive||data.revision===next.revision)return;data=next;model.invalidate(true);}
  async function refresh(){install(await rpc('getPartitions'));}
  await refresh();
  ctx.on('connection/reset',()=>void refresh().catch(e=>console.warn('分区刷新失败',e.message)));
@@ -66,7 +73,7 @@ exports.apply=async function(ctx){
   if(!button)return;e.preventDefault();e.stopPropagation();button.click();};
  document.addEventListener('contextmenu',contextmenu,true);ctx.effect(()=>()=>document.removeEventListener('contextmenu',contextmenu,true));
  // Refresh only when the app regains focus; no timer and no model request.
- const focus=()=>void refresh().catch(e=>console.warn('分区刷新失败',e.message));window.addEventListener('focus',focus);ctx.effect(()=>()=>window.removeEventListener('focus',focus));
+ const focus=()=>void refresh().catch(e=>console.warn('分区刷新失败',e.message));window.addEventListener('focus',focus);ctx.effect(()=>()=>window.removeEventListener('focus',focus));let checking=false;const timer=setInterval(async()=>{if(document.hidden||checking)return;checking=true;try{await refresh()}catch{}finally{checking=false}},5000);ctx.effect(()=>()=>clearInterval(timer));
 };
 
 return exports;}});

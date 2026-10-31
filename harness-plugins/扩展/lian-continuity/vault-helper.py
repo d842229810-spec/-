@@ -54,12 +54,38 @@ def append_bytes(file,data):
 def verify(file):
  seq=0;prev=None;rows=[]
  if file.exists():
-  for line in file.open('rb'):
-   if not line:continue
-   r=json.loads(line);h=r.pop('hash');seq+=1
-   if r.get('seq')!=seq or r.get('previous')!=prev or digest(canonical(r))!=h:raise ValueError('journal chain verification failed')
-   prev=h
+  size=file.stat().st_size
+  with file.open('rb') as stream:
+   while True:
+    offset=stream.tell();line=stream.readline()
+    if not line:break
+    if not line.endswith(b'\n'):
+     raise ValueError(f'MEMORY_LOG_TAIL_INCOMPLETE: offset={offset}, bytesRemaining={len(line)}; original retained')
+    try:r=json.loads(line)
+    except Exception:
+     code='MEMORY_LOG_TAIL_INCOMPLETE' if stream.tell()==size else 'MEMORY_LOG_INVALID_RECORD'
+     raise ValueError(f'{code}: offset={offset}; original retained')
+    if not isinstance(r,dict) or 'hash' not in r:raise ValueError(f'MEMORY_LOG_INVALID_RECORD: offset={offset}')
+    h=r.pop('hash');seq+=1
+    if r.get('seq')!=seq or r.get('previous')!=prev:raise ValueError(f'MEMORY_LOG_CHAIN_BROKEN: seq={seq}, offset={offset}')
+    if digest(canonical(r))!=h:raise ValueError(f'MEMORY_LOG_HASH_MISMATCH: seq={seq}, offset={offset}')
+    prev=h;rows.append({**r,'hash':h})
  return seq,prev,rows
+EVENT_CACHE={}
+def event_index(file,stat):
+ key=str(file);signature=(stat.st_size,stat.st_mtime_ns)
+ cached=EVENT_CACHE.get(key)
+ if cached and cached[0]==signature:return dict(cached[1])
+ _,_,rows=verify(file);idx={}
+ for row in rows:
+  data=row.get('data') or {};eid=data.get('eventId') if isinstance(data,dict) else None
+  if not eid:continue
+  content=digest(canonical(data))
+  if eid in idx:raise ValueError('MEMORY_LOG_DUPLICATE_EVENT_ID: eventId='+str(eid)+', firstSeq='+str(idx[eid]['seq'])+', duplicateSeq='+str(row['seq'])+', conflicting='+str(idx[eid]['content']!=content)+'; originals retained')
+  idx[eid]={'content':content,'seq':row['seq'],'hash':row['hash']}
+ # Publish only a verified on-disk snapshot; callers work on a copy.
+ EVENT_CACHE[key]=(signature,dict(idx))
+ return idx
 def main(args):
  root=pathlib.Path(args['root']).resolve()
  if args['action']=='init':return init(root)
@@ -83,15 +109,37 @@ def main(args):
   file=root/name;mutex=kernel.CreateMutexW(None,False,'Local\\LianMemory-'+digest(str(root).encode())[:24]);wait=kernel.WaitForSingleObject(mutex,30000)
   if wait not in (0,0x80):kernel.CloseHandle(mutex);raise TimeoutError('journal writer busy')
   try:
-   size=file.stat().st_size;cached=HEADS.get(str(file))
-   if cached and cached[0]==size:_,seq,prev=cached
+   stat=file.stat();size=stat.st_size;cached=HEADS.get(str(file))
+   signature=(size,stat.st_mtime_ns)
+   if cached and cached[0]==signature:_,seq,prev=cached
    else:seq,prev,_=verify(file)
-   lines=[]
-   for data in args['records']:
-    seq+=1;r={'seq':seq,'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'previous':prev,'data':data};prev=digest(canonical(r));lines.append(canonical({**r,'hash':prev})+b'\n')
-   if lines:append_bytes(file,b''.join(lines))
-   HEADS[str(file)]=(file.stat().st_size,seq,prev)
-   return {'seq':seq,'head':prev,'appended':len(lines)}
+   records=args['records'];key=str(file)
+   need_index=any(isinstance(x,dict) and x.get('eventId') for x in records)
+   idx=event_index(file,stat) if need_index else {}
+   lines=[];events=[]
+   try:
+    for data in records:
+     eid=data.get('eventId') if isinstance(data,dict) else None
+     if eid:
+      if not isinstance(eid,str) or len(eid)>300:raise ValueError('MEMORY_INVALID_EVENT_ID')
+      content=digest(canonical(data))
+      if eid in idx:
+       old=idx[eid]
+       if old['content']!=content:raise ValueError('MEMORY_EVENT_ID_CONFLICT')
+       events.append({'eventId':eid,'status':'exists','seq':old['seq'],'hash':old['hash']});continue
+     seq+=1;r={'seq':seq,'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'previous':prev,'data':data};prev=digest(canonical(r));lines.append(canonical({**r,'hash':prev})+b'\n')
+     if eid:
+      idx[eid]={'content':content,'seq':seq,'hash':prev}
+      events.append({'eventId':eid,'status':'appended','seq':seq,'hash':prev})
+    if lines:append_bytes(file,b''.join(lines))
+    after=file.stat();sig=(after.st_size,after.st_mtime_ns)
+    HEADS[key]=(sig,seq,prev)
+    if need_index:EVENT_CACHE[key]=(sig,dict(idx))
+    else:EVENT_CACHE.pop(key,None)
+    return {'seq':seq,'head':prev,'appended':len(lines),'eventResults':events}
+   except Exception:
+    HEADS.pop(key,None);EVENT_CACHE.pop(key,None)
+    raise
   finally:kernel.ReleaseMutex(mutex);kernel.CloseHandle(mutex)
  raise ValueError('unknown action')
 for line in sys.stdin:

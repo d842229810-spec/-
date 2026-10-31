@@ -1,4 +1,5 @@
 import {assertOffPeak} from './communication-window.mjs';
+import {maintenanceStatus,MAINTENANCE_LEASE} from './maintenance.mjs';
 import {buildPrompt,LIAISON_RULES} from './compact-wire.mjs';
 import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {spawn} from 'node:child_process';import {createInterface} from 'node:readline';
 import {createStore} from './message-store.mjs?revision=direct-reply-v1';
@@ -6,7 +7,7 @@ export const ROOT='E:/CenHome/通信';
 export const WORK='E:/CenHome';
 import {resolveCodexExecutable} from './codex-runtime.mjs';
 export const EXE=resolveCodexExecutable();
-export function createLiaison({root=ROOT,work=WORK,exe,spawnProcess=spawn,clock=()=>new Date()}={}){
+export function createLiaison({root=ROOT,work=WORK,exe,spawnProcess=spawn,clock=()=>new Date(),maintenanceLease=MAINTENANCE_LEASE}={}){
  const currentExe=()=>exe??resolveCodexExecutable();
  const store=createStore(root),stateFile=path.join(root,'connection.json'),lockFile=path.join(root,'active.lock');let queue=Promise.resolve(),closed=false,child;
  const load=()=>{try{return JSON.parse(fs.readFileSync(stateFile,'utf8'))}catch(e){if(e.code==='ENOENT')return {threadId:null};throw e}};
@@ -15,9 +16,10 @@ export function createLiaison({root=ROOT,work=WORK,exe,spawnProcess=spawn,clock=
  const attempt=id=>{try{return JSON.parse(fs.readFileSync(attemptFile(id),'utf8'))}catch(e){if(e.code==='ENOENT')return null;throw e}};
  function persistAttempt(id,v){fs.writeFileSync(attemptFile(id),JSON.stringify(v,null,2))}
  function get(id){return {...store.get(id),attempt:attempt(id)}}
- function status(){return {transport:'codex-cli-json-stdio',installed:!!currentExe()&&fs.existsSync(currentExe()),workspace:work,root,connection:load(),busy:fs.existsSync(lockFile),idleModelCalls:0,automaticPolling:false,standaloneFromOwnerChat:true}}
+ function status(){return {transport:'codex-cli-json-stdio',installed:!!currentExe()&&fs.existsSync(currentExe()),workspace:work,root,connection:load(),busy:fs.existsSync(lockFile),idleModelCalls:0,automaticPolling:false,standaloneFromOwnerChat:true,maintenance:maintenanceStatus({file:maintenanceLease,now:clock()})}}
  async function run(id){
   const v=get(id);if(v.reply)return v;
+  const maintenance=maintenanceStatus({file:maintenanceLease,now:clock()});if(maintenance.held)return {...v,deliveryState:'queued',maintenance,notice:'维护租约有效，消息已本地保存，未启动模型。'};
   const prompt=buildPrompt(v.request);
   const resolvedExe=currentExe();if(!resolvedExe||!fs.existsSync(resolvedExe))throw Error('Codex executable unavailable; no model request started');
   if(v.attempt && v.attempt.state!=='not-delivered') return v; // Delivery uncertain/failed is never silently resubmitted.
